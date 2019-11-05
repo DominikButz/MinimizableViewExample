@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "1b08462f511fc641f2499349d610efb7"
+build_time: [1572943889, 119546000]
+inputs:
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/CustomModal/CustomModal/AppDelegate.swift": [1570343126, 202855435]
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/CustomModal/CustomModal/SceneDelegate.swift": [1570343126, 208771750]
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/CustomModal/CustomModal/ContentExample.swift": [1572943798, 886588191]
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/CustomModal/CustomModal/CompactViewExample.swift": [1572943750, 344226259]
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/CustomModal/CustomModal/ContentView.swift": [1572943889, 37153326]

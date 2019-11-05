@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "b25aaf9fecf4db21296fda5c1564e928"
+build_time: [1572939449, 998030000]
+inputs:
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableView/Tests/MinimizableViewTests/MinimizableViewTests.swift": [1572939449, 879735648]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableView/Tests/MinimizableViewTests/XCTestManifests.swift": [1572935054, 884056520]
