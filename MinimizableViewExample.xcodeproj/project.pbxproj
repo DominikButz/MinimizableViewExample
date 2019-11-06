@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4668E4C23714F5B00E5A1DE /* MinimizableView in Frameworks */ = {isa = PBXBuildFile; productRef = B4668E4B23714F5B00E5A1DE /* MinimizableView */; };
 		B4668E4E23716EBC00E5A1DE /* CompactViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4668E4D23716EBC00E5A1DE /* CompactViewExample.swift */; };
+		B4668E6F2372668500E5A1DE /* MinimizableView in Frameworks */ = {isa = PBXBuildFile; productRef = B4668E6E2372668500E5A1DE /* MinimizableView */; };
 		B48E64A02349C0560036D203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E649F2349C0560036D203 /* AppDelegate.swift */; };
 		B48E64A22349C0560036D203 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E64A12349C0560036D203 /* SceneDelegate.swift */; };
 		B48E64A42349C0560036D203 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E64A32349C0560036D203 /* ContentView.swift */; };
@@ -20,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B4668E4723714D0E00E5A1DE /* MinimizableView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MinimizableView; path = ../../../Libraries/MinimizableView; sourceTree = "<group>"; };
 		B4668E4D23716EBC00E5A1DE /* CompactViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactViewExample.swift; sourceTree = "<group>"; };
+		B4668E6D2372665B00E5A1DE /* MinimizableView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MinimizableView; path = ../MinimizableView; sourceTree = "<group>"; };
 		B48E649C2349C0560036D203 /* MinimizableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinimizableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48E649F2349C0560036D203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B48E64A12349C0560036D203 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4668E4C23714F5B00E5A1DE /* MinimizableView in Frameworks */,
+				B4668E6F2372668500E5A1DE /* MinimizableView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +49,7 @@
 		B4668E4823714EF300E5A1DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B4668E6D2372665B00E5A1DE /* MinimizableView */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -73,7 +74,6 @@
 		B48E649E2349C0560036D203 /* CustomModal */ = {
 			isa = PBXGroup;
 			children = (
-				B4668E4723714D0E00E5A1DE /* MinimizableView */,
 				B48E649F2349C0560036D203 /* AppDelegate.swift */,
 				B48E64A12349C0560036D203 /* SceneDelegate.swift */,
 				B48E64A32349C0560036D203 /* ContentView.swift */,
@@ -113,7 +113,7 @@
 			);
 			name = MinimizableViewExample;
 			packageProductDependencies = (
-				B4668E4B23714F5B00E5A1DE /* MinimizableView */,
+				B4668E6E2372668500E5A1DE /* MinimizableView */,
 			);
 			productName = CustomModal;
 			productReference = B48E649C2349C0560036D203 /* MinimizableViewExample.app */;
@@ -320,7 +320,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = me.duoyun.MinimizableViewExample;
 				PRODUCT_NAME = MinimizableViewExample;
 				SWIFT_VERSION = 5.0;
@@ -341,7 +341,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = me.duoyun.MinimizableViewExample;
 				PRODUCT_NAME = MinimizableViewExample;
 				SWIFT_VERSION = 5.0;
@@ -373,7 +373,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B4668E4B23714F5B00E5A1DE /* MinimizableView */ = {
+		B4668E6E2372668500E5A1DE /* MinimizableView */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MinimizableView;
 		};
