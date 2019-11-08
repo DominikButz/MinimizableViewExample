@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  CustomModal
+//  MinimizableView Example
 //
 //  Created by Dominik Butz on 6/10/2019.
 //  Copyright © 2019 Duoyun. All rights reserved.
@@ -12,7 +12,7 @@ import Combine
 
 struct ContentView: View {
 
-    var minimizableViewState: MinimizableViewState = MinimizableViewState()
+    var minimizableViewHandler: MinimizableViewHandler = MinimizableViewHandler()
     @State var selectedTabIndex: Int = 0
     
     var body: some View {
@@ -23,11 +23,9 @@ struct ContentView: View {
                     
                     Button(action: {
                         
-                        if self.minimizableViewState.isPresented == false {
-                            self.minimizableViewState.isPresented = true
-                        }
+                        self.minimizableViewHandler.present()
                         
-                    }) { Text("Launch Minimizable View").font(.headline).foregroundColor(.secondary).padding(EdgeInsets(top: 5, leading: 7, bottom: 5, trailing: 7)).background(Color.green.opacity(0.6)).clipShape(RoundedRectangle(cornerRadius: 3)).padding() }
+                    }) { TranslucentTextButtonView(title: "Launch Minimizable View", foregroundColor: .green, backgroundColor: .green)}
                         .tabItem {
                             Image(systemName: "chevron.up.square.fill")
                             Text("Main View")
@@ -47,7 +45,7 @@ struct ContentView: View {
                 }
                
 
-                MinimizableView(content: AnyView(ContentExample()), compactView: AnyView(CompactViewExample(width: proxy.size.width, height: 44.0)),  minimizedHeight: 49.0, bottomMargin: 56, expandedTopMargin: 20, geometry: proxy).environmentObject(self.minimizableViewState)
+                MinimizableView(content: AnyView(ContentExample()), compactView: AnyView(CompactViewExample(width: proxy.size.width, height: 44.0)),  minimizedHeight: 49.0, bottomMargin: 56, expandedTopMargin: 20, geometry: proxy).environmentObject(self.minimizableViewHandler)
         
             }
                       

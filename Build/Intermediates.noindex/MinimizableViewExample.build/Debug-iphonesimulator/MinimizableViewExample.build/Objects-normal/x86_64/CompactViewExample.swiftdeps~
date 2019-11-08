@@ -19,29 +19,34 @@ depends-top-level:
 - !private "FloatLiteralType"
 - !private "HStack"
 - !private "IntegerLiteralType"
-- "MinimizableViewState"
+- "MinimizableViewHandler"
 - "PreviewProvider"
 - !private "StringLiteralType"
 - !private "Text"
 - "View"
 depends-member:
+- !private ["SK", "systemBackground"]
+- !private ["s7CVarArgP", "systemBackground"]
+- !private ["Sl", "systemBackground"]
 - !private ["7SwiftUI5ColorV", "init"]
+- ["22MinimizableViewExample07CompactbC0V", "$minimizableViewHandler"]
 - ["22MinimizableViewExample07CompactbC0V", "Body"]
 - ["22MinimizableViewExample07CompactbC0V", "CGFloat"]
 - !private ["22MinimizableViewExample07CompactbC0V", "Color"]
 - ["22MinimizableViewExample07CompactbC0V", "EnvironmentObject"]
 - !private ["22MinimizableViewExample07CompactbC0V", "HStack"]
-- ["22MinimizableViewExample07CompactbC0V", "MinimizableViewState"]
+- ["22MinimizableViewExample07CompactbC0V", "MinimizableViewHandler"]
 - !private ["22MinimizableViewExample07CompactbC0V", "Text"]
 - ["22MinimizableViewExample07CompactbC0V", "View"]
 - ["22MinimizableViewExample07CompactbC0V", "_Default_Body"]
 - ["22MinimizableViewExample07CompactbC0V", "_makeView"]
 - ["22MinimizableViewExample07CompactbC0V", "_makeViewList"]
+- !private ["22MinimizableViewExample07CompactbC0V", "_minimizableViewHandler"]
 - ["22MinimizableViewExample07CompactbC0V", "body"]
 - ["22MinimizableViewExample07CompactbC0V", "deinit"]
 - ["22MinimizableViewExample07CompactbC0V", "height"]
 - ["22MinimizableViewExample07CompactbC0V", "init"]
-- !private ["22MinimizableViewExample07CompactbC0V", "minimizableViewState"]
+- ["22MinimizableViewExample07CompactbC0V", "minimizableViewHandler"]
 - ["22MinimizableViewExample07CompactbC0V", "width"]
 - !private ["22MinimizableViewExample07CompactbC9_PreviewsV", "CompactViewExample"]
 - ["22MinimizableViewExample07CompactbC9_PreviewsV", "Previews"]
@@ -53,11 +58,36 @@ depends-member:
 - ["22MinimizableViewExample07CompactbC9_PreviewsV", "init"]
 - ["22MinimizableViewExample07CompactbC9_PreviewsV", "platform"]
 - ["22MinimizableViewExample07CompactbC9_PreviewsV", "previews"]
+- !private ["SL", "systemBackground"]
+- !private ["s28CustomDebugStringConvertibleP", "systemBackground"]
+- !private ["s17CustomReflectableP", "systemBackground"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "systemBackground"]
+- !private ["Se", "systemBackground"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
+- !private ["SE", "systemBackground"]
+- ["7SwiftUI17EnvironmentObjectV", "init"]
 - !private ["SQ", "init"]
+- !private ["SQ", "systemBackground"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "systemBackground"]
+- !private ["s32ExpressibleByStringInterpolationP", "systemBackground"]
+- !private ["s26ExpressibleByStringLiteralP", "systemBackground"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "systemBackground"]
 - !private ["7SwiftUI6HStackV", "frame"]
 - !private ["7SwiftUI6HStackV", "init"]
 - !private ["SH", "init"]
+- !private ["SH", "systemBackground"]
+- !private ["s25LosslessStringConvertibleP", "systemBackground"]
+- !private ["15MinimizableView0aB7HandlerC", "expand"]
+- !private ["s10MirrorPathP", "systemBackground"]
+- !private ["So8NSCodingP", "systemBackground"]
+- !private ["So9NSCopyingP", "systemBackground"]
+- !private ["So21NSItemProviderReadingP", "systemBackground"]
+- !private ["So21NSItemProviderWritingP", "systemBackground"]
+- !private ["So8NSObjectC", "systemBackground"]
+- !private ["So8NSObjectP", "systemBackground"]
+- !private ["So14NSSecureCodingP", "systemBackground"]
+- !private ["7Combine16ObservableObjectP", "expand"]
 - !private ["7SwiftUI15PreviewProviderP", "CompactViewExample"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -66,12 +96,18 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["Sm", "systemBackground"]
+- !private ["ST", "systemBackground"]
 - !private ["7SwiftUI10ShapeStyleP", "init"]
+- !private ["SS", "systemBackground"]
+- !private ["Sy", "systemBackground"]
 - !private ["7SwiftUI4TextV", "init"]
+- !private ["s16TextOutputStreamP", "systemBackground"]
+- !private ["s20TextOutputStreamableP", "systemBackground"]
+- !private ["So7UIColorC", "systemBackground"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Color"]
 - !private ["7SwiftUI4ViewP", "HStack"]
-- ["7SwiftUI4ViewP", "MinimizableViewState"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
@@ -82,9 +118,18 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "height"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "minimizableViewState"]
+- !private ["7SwiftUI4ViewP", "minimizableViewHandler"]
 - !private ["7SwiftUI4ViewP", "onTapGesture"]
 - !private ["7SwiftUI4ViewP", "width"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "systemBackground"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "systemBackground"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "systemBackground"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "systemBackground"]
+- !private ["s26_ExpressibleByColorLiteralP", "systemBackground"]
+- !private ["s19_HasContiguousBytesP", "systemBackground"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemBackground"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemBackground"]
+- !private ["s21_ObjectiveCBridgeableP", "systemBackground"]
 - !private ["7SwiftUI16_PreviewProviderP", "CompactViewExample"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - ["7SwiftUI16_PreviewProviderP", ""]
@@ -94,17 +139,58 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
 - !private "7SwiftUI5ColorV"
 - "22MinimizableViewExample07CompactbC0V"
 - "22MinimizableViewExample07CompactbC9_PreviewsV"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
+- !private "Se"
+- "7SwiftUI15DynamicPropertyP"
+- !private "SE"
+- "7SwiftUI17EnvironmentObjectV"
 - !private "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "7SwiftUI6HStackV"
 - !private "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "15MinimizableView0aB7HandlerC"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "7Combine16ObservableObjectP"
 - "7SwiftUI15PreviewProviderP"
+- !private "Sm"
+- !private "ST"
 - !private "7SwiftUI10ShapeStyleP"
+- !private "SS"
+- !private "Sy"
 - !private "7SwiftUI4TextV"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So7UIColorC"
 - "7SwiftUI4ViewP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
@@ -140,6 +226,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/Build/Products/Debug-iphonesimulator/MinimizableView.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/usr/include/sys/_types/_timeval32.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/usr/include/sys/_types/_timeval64.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/usr/include/sys/_types/_ucontext64.h"
@@ -1395,4 +1482,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "7041f0dbc32ff780b2f0d6db7ed86141"
+interface-hash: "6b6a674a99459cc8824fe29c722af067"

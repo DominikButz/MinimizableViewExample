@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  CustomModal
+//  MinimizableView Example
 //
 //  Created by Dominik Butz on 6/10/2019.
 //  Copyright © 2019 Duoyun. All rights reserved.

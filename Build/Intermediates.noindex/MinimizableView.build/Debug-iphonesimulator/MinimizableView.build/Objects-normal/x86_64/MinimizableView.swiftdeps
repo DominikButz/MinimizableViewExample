@@ -1,12 +1,12 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "MinimizableViewState"
+- "MinimizableViewHandler"
 - "MinimizableView"
 provides-nominal:
-- "15MinimizableView0aB5StateC"
+- "15MinimizableView0aB7HandlerC"
 - "15MinimizableViewAAV"
 provides-member:
-- ["15MinimizableView0aB5StateC", ""]
+- ["15MinimizableView0aB7HandlerC", ""]
 - ["15MinimizableViewAAV", ""]
 provides-dynamic-lookup:
 depends-top-level:
@@ -31,7 +31,7 @@ depends-top-level:
 - "GeometryProxy"
 - !private "IntegerLiteralType"
 - "MinimizableView"
-- "MinimizableViewState"
+- "MinimizableViewHandler"
 - "ObservableObject"
 - "Published"
 - !private "RoundedRectangle"
@@ -41,6 +41,7 @@ depends-top-level:
 - !private "UIScreen"
 - !private "VStack"
 - "View"
+- "Void"
 - !private "ZStack"
 depends-member:
 - !private ["7SwiftUI9AlignmentV", "top"]
@@ -168,7 +169,7 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "systemGray3"]
 - !private ["s25LosslessStringConvertibleP", "toggle"]
 - ["15MinimizableViewAAV", "$draggedOffset"]
-- ["15MinimizableViewAAV", "$minimizableViewState"]
+- ["15MinimizableViewAAV", "$minimizableViewHandler"]
 - ["15MinimizableViewAAV", "AnyView"]
 - ["15MinimizableViewAAV", "Body"]
 - ["15MinimizableViewAAV", "CGFloat"]
@@ -179,7 +180,7 @@ depends-member:
 - !private ["15MinimizableViewAAV", "DragGesture"]
 - ["15MinimizableViewAAV", "EnvironmentObject"]
 - ["15MinimizableViewAAV", "GeometryProxy"]
-- ["15MinimizableViewAAV", "MinimizableViewState"]
+- ["15MinimizableViewAAV", "MinimizableViewHandler"]
 - !private ["15MinimizableViewAAV", "RoundedRectangle"]
 - ["15MinimizableViewAAV", "State"]
 - !private ["15MinimizableViewAAV", "UIColor"]
@@ -191,7 +192,7 @@ depends-member:
 - !private ["15MinimizableViewAAV", "_draggedOffset"]
 - ["15MinimizableViewAAV", "_makeView"]
 - ["15MinimizableViewAAV", "_makeViewList"]
-- !private ["15MinimizableViewAAV", "_minimizableViewState"]
+- !private ["15MinimizableViewAAV", "_minimizableViewHandler"]
 - ["15MinimizableViewAAV", "body"]
 - ["15MinimizableViewAAV", "bottomMargin"]
 - ["15MinimizableViewAAV", "compactView"]
@@ -202,23 +203,32 @@ depends-member:
 - ["15MinimizableViewAAV", "frameHeight"]
 - ["15MinimizableViewAAV", "geometry"]
 - ["15MinimizableViewAAV", "init"]
-- ["15MinimizableViewAAV", "minimizableViewState"]
+- ["15MinimizableViewAAV", "minimizableViewHandler"]
 - ["15MinimizableViewAAV", "minimizedHeight"]
 - ["15MinimizableViewAAV", "offsetY"]
 - ["15MinimizableViewAAV", "positionY"]
-- ["15MinimizableView0aB5StateC", "$isMinimized"]
-- ["15MinimizableView0aB5StateC", "$isPresented"]
-- ["15MinimizableView0aB5StateC", "Bool"]
-- ["15MinimizableView0aB5StateC", "ObjectWillChangePublisher"]
-- ["15MinimizableView0aB5StateC", "Published"]
-- ["15MinimizableView0aB5StateC", "_Default_ObjectWillChangePublisher"]
-- !private ["15MinimizableView0aB5StateC", "_isMinimized"]
-- !private ["15MinimizableView0aB5StateC", "_isPresented"]
-- ["15MinimizableView0aB5StateC", "deinit"]
-- ["15MinimizableView0aB5StateC", "init"]
-- ["15MinimizableView0aB5StateC", "isMinimized"]
-- ["15MinimizableView0aB5StateC", "isPresented"]
-- ["15MinimizableView0aB5StateC", "objectWillChange"]
+- ["15MinimizableView0aB7HandlerC", "$isMinimized"]
+- ["15MinimizableView0aB7HandlerC", "$isPresented"]
+- ["15MinimizableView0aB7HandlerC", "Bool"]
+- ["15MinimizableView0aB7HandlerC", "ObjectWillChangePublisher"]
+- ["15MinimizableView0aB7HandlerC", "Published"]
+- ["15MinimizableView0aB7HandlerC", "Void"]
+- ["15MinimizableView0aB7HandlerC", "_Default_ObjectWillChangePublisher"]
+- !private ["15MinimizableView0aB7HandlerC", "_isMinimized"]
+- !private ["15MinimizableView0aB7HandlerC", "_isPresented"]
+- ["15MinimizableView0aB7HandlerC", "deinit"]
+- ["15MinimizableView0aB7HandlerC", "dismiss"]
+- ["15MinimizableView0aB7HandlerC", "expand"]
+- ["15MinimizableView0aB7HandlerC", "init"]
+- ["15MinimizableView0aB7HandlerC", "isMinimized"]
+- ["15MinimizableView0aB7HandlerC", "isPresented"]
+- ["15MinimizableView0aB7HandlerC", "minimize"]
+- ["15MinimizableView0aB7HandlerC", "objectWillChange"]
+- ["15MinimizableView0aB7HandlerC", "onDismissal"]
+- ["15MinimizableView0aB7HandlerC", "onExpansion"]
+- ["15MinimizableView0aB7HandlerC", "onMinimization"]
+- ["15MinimizableView0aB7HandlerC", "onPresentation"]
+- ["15MinimizableView0aB7HandlerC", "present"]
 - !private ["s10MirrorPathP", "systemGray3"]
 - !private ["So8NSCodingP", "systemBackground"]
 - !private ["So8NSCodingP", "systemGray3"]
@@ -246,6 +256,10 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "isMinimized"]
 - !private ["7Combine16ObservableObjectP", "isPresented"]
 - ["7Combine16ObservableObjectP", "objectWillChange"]
+- !private ["7Combine16ObservableObjectP", "onDismissal"]
+- !private ["7Combine16ObservableObjectP", "onExpansion"]
+- !private ["7Combine16ObservableObjectP", "onMinimization"]
+- !private ["7Combine16ObservableObjectP", "onPresentation"]
 - !private ["Sq", "none"]
 - !private ["Sq", "some"]
 - !private ["Sq", "spring"]
@@ -308,7 +322,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "gesture"]
 - !private ["7SwiftUI4ViewP", "gray"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "minimizableViewState"]
+- !private ["7SwiftUI4ViewP", "minimizableViewHandler"]
 - !private ["7SwiftUI4ViewP", "minimizedHeight"]
 - !private ["7SwiftUI4ViewP", "none"]
 - !private ["7SwiftUI4ViewP", "offset"]
@@ -389,7 +403,7 @@ depends-nominal:
 - !private "7SwiftUI15InsettableShapeP"
 - !private "s25LosslessStringConvertibleP"
 - "15MinimizableViewAAV"
-- "15MinimizableView0aB5StateC"
+- "15MinimizableView0aB7HandlerC"
 - !private "s10MirrorPathP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
@@ -1719,4 +1733,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f13ea03320c1a434cf08981af2f4eef1"
+interface-hash: "6fe11e617518aaf772d6e0a01d6f295b"

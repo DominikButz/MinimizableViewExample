@@ -12,7 +12,7 @@ import MinimizableView
 
 struct CompactViewExample: View {
     
-    @EnvironmentObject var minimizableViewState: MinimizableViewState
+    @EnvironmentObject var minimizableViewHandler: MinimizableViewHandler
     
     var width: CGFloat
     var height: CGFloat
@@ -26,7 +26,7 @@ struct CompactViewExample: View {
          HStack {
                 Text("Compact View")
          }.frame(width: width, height: self.height).onTapGesture {
-                    self.minimizableViewState.isMinimized = false
+                self.minimizableViewHandler.expand()
          }.background(Color(.systemBackground))
     }
 }
