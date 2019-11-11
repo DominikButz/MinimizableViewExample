@@ -14,23 +14,30 @@ struct ContentExample: View {
     
     var listContent:[String] = ["Text0", "Text1","Text2","Text3","Text4","Text5","Text6","Text7","Text8","Text9", "Text10","Text11","Text12","Text13","Text14" ]
     
+
+    
     var body: some View {
         GeometryReader { proxy in
 
                 VStack(alignment: .center, spacing: 5.0) {
-
+                      
+                    TopDelimiterAreaView(areaWidth: proxy.size.width).onTapGesture {
+                         self.minimizableViewHandler.isMinimized.toggle()
+                    }
+                    
                         HStack {
                                 Spacer()
                                 Button(action: {
                                     self.minimizableViewHandler.dismiss()
                                 }) {
                                     Image(systemName: "xmark.circle").font(.system(size: 20))
-                                }.padding(5)
-                        }
+                                }.padding(.trailing, 8)
+                        }.background(Color(.secondarySystemBackground))
+                    .modifier(VerticalDragGesture(translationHeightTriggerValue: 30)).environmentObject(self.minimizableViewHandler)
                         
                         List(self.listContent, id: \.self) { item in
                             Text(item)
-                        }.frame(width: proxy.size.width - 10)
+                        }.frame(width: proxy.size.width - 10).colorMultiply(Color(.secondarySystemBackground))
                     
                     if self.minimizableViewHandler.isMinimized == false  {
                           HStack(alignment: .bottom) {
@@ -62,7 +69,7 @@ struct ContentExample: View {
                               }
                           }
 
-                }
+                    }
                 
 
         }
@@ -70,5 +77,10 @@ struct ContentExample: View {
 }
 
 
+struct ContentExample_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentExample().environmentObject(MinimizableViewHandler())
+    }
+}
 
 

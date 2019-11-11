@@ -324,7 +324,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.2;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = me.duoyun.MinimizableViewExample;
 				PRODUCT_NAME = MinimizableViewExample;
 				SWIFT_VERSION = 5.0;
@@ -345,7 +345,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.2;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = me.duoyun.MinimizableViewExample;
 				PRODUCT_NAME = MinimizableViewExample;
 				SWIFT_VERSION = 5.0;

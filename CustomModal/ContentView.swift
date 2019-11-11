@@ -15,6 +15,12 @@ struct ContentView: View {
     var minimizableViewHandler: MinimizableViewHandler = MinimizableViewHandler()
     @State var selectedTabIndex: Int = 0
     
+    init() {
+        
+        self.minimizableViewHandler.settings.backgroundColor = Color(.secondarySystemBackground)
+        self.minimizableViewHandler.settings.lateralMargin = 10
+    }
+    
     var body: some View {
         GeometryReader { proxy in
             ZStack {
@@ -45,7 +51,7 @@ struct ContentView: View {
                 }
                
 
-                MinimizableView(content: AnyView(ContentExample()), compactView: AnyView(CompactViewExample(width: proxy.size.width, height: 44.0)),  minimizedHeight: 49.0, bottomMargin: 56, expandedTopMargin: 20, geometry: proxy).environmentObject(self.minimizableViewHandler)
+                MinimizableView(content: AnyView(ContentExample()), compactView: AnyView(CompactViewExample()), bottomMargin: 50.0, geometry: proxy).environmentObject(self.minimizableViewHandler)
         
             }
                       

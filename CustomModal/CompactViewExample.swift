@@ -14,25 +14,19 @@ struct CompactViewExample: View {
     
     @EnvironmentObject var minimizableViewHandler: MinimizableViewHandler
     
-    var width: CGFloat
-    var height: CGFloat
-    
-    init(width: CGFloat, height: CGFloat) {
-        self.width = width
-        self.height = height
-    }
-    
     var body: some View {
-         HStack {
+        GeometryReader { proxy in
+             HStack {
                 Text("Compact View")
-         }.frame(width: width, height: self.height).onTapGesture {
-                self.minimizableViewHandler.expand()
-         }.background(Color(.systemBackground))
+             }.frame(width: proxy.size.width, height: proxy.size.height).onTapGesture {
+                    self.minimizableViewHandler.expand()
+             }.background(Color(.secondarySystemBackground)).modifier(VerticalDragGesture(translationHeightTriggerValue: 40))
+        }
     }
 }
 
 struct CompactViewExample_Previews: PreviewProvider {
     static var previews: some View {
-        CompactViewExample(width: 300, height: 44)
+        CompactViewExample()
     }
 }
