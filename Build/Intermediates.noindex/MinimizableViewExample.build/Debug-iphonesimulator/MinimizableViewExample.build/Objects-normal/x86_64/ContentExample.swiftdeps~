@@ -133,7 +133,9 @@ depends-member:
 - !private ["SQ", "some"]
 - !private ["SQ", "system"]
 - !private ["SQ", "toggle"]
+- !private ["SQ", "trailing"]
 - !private ["SQ", "width"]
+- !private ["s25ExpressibleByArrayLiteralP", "trailing"]
 - !private ["s27ExpressibleByBooleanLiteralP", "toggle"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "secondarySystemBackground"]
 - !private ["s23ExpressibleByNilLiteralP", "none"]
@@ -180,6 +182,7 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "dismiss"]
 - !private ["7Combine16ObservableObjectP", "init"]
 - !private ["7Combine16ObservableObjectP", "isMinimized"]
+- !private ["s9OptionSetP", "trailing"]
 - !private ["Sq", "none"]
 - !private ["Sq", "some"]
 - !private ["Sq", "system"]
@@ -193,7 +196,10 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
 - !private ["Sm", "secondarySystemBackground"]
+- !private ["SY", "trailing"]
 - !private ["ST", "secondarySystemBackground"]
+- !private ["7SwiftUI4EdgeO3SetV", "trailing"]
+- !private ["s10SetAlgebraP", "trailing"]
 - !private ["7SwiftUI10ShapeStyleP", "accentColor"]
 - !private ["7SwiftUI10ShapeStyleP", "init"]
 - !private ["7SwiftUI10ShapeStyleP", "red"]
@@ -297,6 +303,7 @@ depends-nominal:
 - !private "SE"
 - "7SwiftUI17EnvironmentObjectV"
 - !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
@@ -324,10 +331,14 @@ depends-nominal:
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "7Combine16ObservableObjectP"
+- !private "s9OptionSetP"
 - !private "Sq"
 - "7SwiftUI15PreviewProviderP"
 - !private "Sm"
+- !private "SY"
 - !private "ST"
+- !private "7SwiftUI4EdgeO3SetV"
+- !private "s10SetAlgebraP"
 - !private "7SwiftUI10ShapeStyleP"
 - !private "7SwiftUI6SpacerV"
 - !private "SS"

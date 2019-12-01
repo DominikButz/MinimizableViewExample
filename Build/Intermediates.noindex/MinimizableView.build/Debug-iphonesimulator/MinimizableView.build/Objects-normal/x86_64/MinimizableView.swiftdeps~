@@ -197,6 +197,7 @@ depends-member:
 - ["15MinimizableViewAAV", "_makeViewList"]
 - !private ["15MinimizableViewAAV", "_minimizableViewHandler"]
 - ["15MinimizableViewAAV", "body"]
+- ["15MinimizableViewAAV", "bottomMargin"]
 - ["15MinimizableViewAAV", "compactView"]
 - ["15MinimizableViewAAV", "contentView"]
 - ["15MinimizableViewAAV", "deinit"]
@@ -284,7 +285,6 @@ depends-member:
 - ["15MinimizableView8SettingsV", "CGFloat"]
 - ["15MinimizableView8SettingsV", "Color"]
 - ["15MinimizableView8SettingsV", "backgroundColor"]
-- ["15MinimizableView8SettingsV", "bottomMargin"]
 - ["15MinimizableView8SettingsV", "cornerRadius"]
 - ["15MinimizableView8SettingsV", "expandedTopMargin"]
 - ["15MinimizableView8SettingsV", "init"]
@@ -358,6 +358,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "areaWidth"]
 - !private ["7SwiftUI4ViewP", "background"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "bottomMargin"]
 - !private ["7SwiftUI4ViewP", "clipped"]
 - !private ["7SwiftUI4ViewP", "compactView"]
 - !private ["7SwiftUI4ViewP", "contentView"]
@@ -1796,4 +1797,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2573980b9e07a5d6cca3015ad092ccda"
+interface-hash: "29bdeb73e7deec92fd8ca1d08429ad72"

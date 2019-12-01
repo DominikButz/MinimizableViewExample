@@ -50,6 +50,7 @@ depends-top-level:
 - "Published"
 - !private "RoundedRectangle"
 - "Settings"
+- "TernaryPrecedence"
 - "TopDelimiterAreaView"
 - "VerticalDragGesture"
 - "View"

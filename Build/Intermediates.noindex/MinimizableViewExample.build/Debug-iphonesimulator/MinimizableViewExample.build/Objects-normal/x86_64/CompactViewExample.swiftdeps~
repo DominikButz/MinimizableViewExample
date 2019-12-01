@@ -14,12 +14,15 @@ depends-top-level:
 - "CompactViewExample"
 - "CompactViewExample_Previews"
 - "EnvironmentObject"
+- "FloatLiteralType"
 - !private "GeometryReader"
 - !private "HStack"
+- !private "IntegerLiteralType"
 - "MinimizableViewHandler"
 - "PreviewProvider"
 - !private "StringLiteralType"
 - !private "Text"
+- !private "VerticalDragGesture"
 - "View"
 depends-member:
 - !private ["7SwiftUI10AnimatableP", "height"]
@@ -38,6 +41,7 @@ depends-member:
 - !private ["22MinimizableViewExample07CompactbC0V", "HStack"]
 - ["22MinimizableViewExample07CompactbC0V", "MinimizableViewHandler"]
 - !private ["22MinimizableViewExample07CompactbC0V", "Text"]
+- !private ["22MinimizableViewExample07CompactbC0V", "VerticalDragGesture"]
 - ["22MinimizableViewExample07CompactbC0V", "View"]
 - ["22MinimizableViewExample07CompactbC0V", "_Default_Body"]
 - ["22MinimizableViewExample07CompactbC0V", "_makeView"]
@@ -116,11 +120,13 @@ depends-member:
 - !private ["s16TextOutputStreamP", "secondarySystemBackground"]
 - !private ["s20TextOutputStreamableP", "secondarySystemBackground"]
 - !private ["So7UIColorC", "secondarySystemBackground"]
+- !private ["15MinimizableView19VerticalDragGestureV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Color"]
 - !private ["7SwiftUI4ViewP", "GeometryReader"]
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "Text"]
+- !private ["7SwiftUI4ViewP", "VerticalDragGesture"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
@@ -130,7 +136,9 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "minimizableViewHandler"]
+- !private ["7SwiftUI4ViewP", "modifier"]
 - !private ["7SwiftUI4ViewP", "onTapGesture"]
+- !private ["7SwiftUI12ViewModifierP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "secondarySystemBackground"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
@@ -199,7 +207,9 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So7UIColorC"
+- !private "15MinimizableView19VerticalDragGestureV"
 - "7SwiftUI4ViewP"
+- !private "7SwiftUI12ViewModifierP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"

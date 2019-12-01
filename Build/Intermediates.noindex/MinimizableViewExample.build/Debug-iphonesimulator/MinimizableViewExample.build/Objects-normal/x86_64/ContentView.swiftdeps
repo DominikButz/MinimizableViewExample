@@ -32,7 +32,6 @@ depends-top-level:
 - !private "Text"
 - !private "TranslucentTextButtonView"
 - "View"
-- !private "ZStack"
 depends-member:
 - !private ["7SwiftUI7AnyViewV", "init"]
 - !private ["SK", "secondarySystemBackground"]
@@ -64,7 +63,6 @@ depends-member:
 - !private ["22MinimizableViewExample07ContentB0V", "Text"]
 - !private ["22MinimizableViewExample07ContentB0V", "TranslucentTextButtonView"]
 - ["22MinimizableViewExample07ContentB0V", "View"]
-- !private ["22MinimizableViewExample07ContentB0V", "ZStack"]
 - ["22MinimizableViewExample07ContentB0V", "_Default_Body"]
 - ["22MinimizableViewExample07ContentB0V", "_makeView"]
 - ["22MinimizableViewExample07ContentB0V", "_makeViewList"]
@@ -142,6 +140,7 @@ depends-member:
 - !private ["SS", "secondarySystemBackground"]
 - !private ["Sy", "secondarySystemBackground"]
 - !private ["7SwiftUI7TabViewV", "init"]
+- !private ["7SwiftUI7TabViewV", "overlay"]
 - !private ["7SwiftUI4TextV", "init"]
 - !private ["7SwiftUI4TextV", "tabItem"]
 - !private ["s16TextOutputStreamP", "secondarySystemBackground"]
@@ -163,7 +162,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "TabView"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "TranslucentTextButtonView"]
-- !private ["7SwiftUI4ViewP", "ZStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
@@ -173,10 +171,10 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "green"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "minimizableViewHandler"]
+- !private ["7SwiftUI4ViewP", "overlay"]
 - !private ["7SwiftUI4ViewP", "tabItem"]
 - !private ["7SwiftUI4ViewP", "tag"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
-- !private ["7SwiftUI6ZStackV", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "secondarySystemBackground"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "secondarySystemBackground"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "secondarySystemBackground"]
@@ -248,7 +246,6 @@ depends-nominal:
 - !private "So7UIColorC"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
-- !private "7SwiftUI6ZStackV"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"

@@ -23,8 +23,7 @@ struct ContentView: View {
     
     var body: some View {
         GeometryReader { proxy in
-            ZStack {
-                
+
                 TabView(selection: self.$selectedTabIndex) {
                     
                     Button(action: {
@@ -48,12 +47,10 @@ struct ContentView: View {
                     }.tag(2)
                     
                     
-                }
+                }.overlay( MinimizableView(content: AnyView(ContentExample()), compactView: AnyView(CompactViewExample()), bottomMargin: 50.0, geometry: proxy).environmentObject(self.minimizableViewHandler))
                
 
-                MinimizableView(content: AnyView(ContentExample()), compactView: AnyView(CompactViewExample()), bottomMargin: 50.0, geometry: proxy).environmentObject(self.minimizableViewHandler)
-        
-            }
+
                       
                 
         }
