@@ -16,7 +16,9 @@ provides-member:
 - ["15MinimizableView8SettingsV", ""]
 - ["15MinimizableViewAAV", ""]
 - ["15MinimizableView19VerticalDragGestureV", ""]
+- ["7SwiftUI4ViewP", ""]
 - ["15MinimizableView016TopDelimiterAreaB0V", ""]
+- ["7SwiftUI4ViewP", "verticalDragGesture"]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!="
@@ -344,11 +346,14 @@ depends-member:
 - ["15MinimizableView19VerticalDragGestureV", "translationHeightTriggerValue"]
 - !private ["7SwiftUI4ViewP", "AnyView"]
 - ["7SwiftUI4ViewP", "Body"]
+- ["7SwiftUI4ViewP", "CGFloat"]
 - !private ["7SwiftUI4ViewP", "CGPoint"]
 - !private ["7SwiftUI4ViewP", "Capsule"]
 - !private ["7SwiftUI4ViewP", "Color"]
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "RoundedRectangle"]
+- !private ["7SwiftUI4ViewP", "VerticalDragGesture"]
+- ["7SwiftUI4ViewP", "View"]
 - !private ["7SwiftUI4ViewP", "ZStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
@@ -360,7 +365,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "background"]
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "bottomMargin"]
-- !private ["7SwiftUI4ViewP", "clipped"]
+- !private ["7SwiftUI4ViewP", "clipShape"]
 - !private ["7SwiftUI4ViewP", "compactView"]
 - !private ["7SwiftUI4ViewP", "contentView"]
 - !private ["7SwiftUI4ViewP", "fill"]
@@ -372,6 +377,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "gray"]
 - ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "minimizableViewHandler"]
+- !private ["7SwiftUI4ViewP", "modifier"]
 - !private ["7SwiftUI4ViewP", "none"]
 - !private ["7SwiftUI4ViewP", "offset"]
 - !private ["7SwiftUI4ViewP", "offsetY"]
@@ -380,6 +386,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "shadow"]
 - !private ["7SwiftUI4ViewP", "some"]
 - !private ["7SwiftUI4ViewP", "spring"]
+- ["7SwiftUI4ViewP", "verticalDragGesture"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
 - ["7SwiftUI12ViewModifierP", "Body"]
@@ -391,9 +398,10 @@ depends-member:
 - ["7SwiftUI12ViewModifierP", "_makeView"]
 - ["7SwiftUI12ViewModifierP", "_makeViewList"]
 - ["7SwiftUI12ViewModifierP", "body"]
+- !private ["7SwiftUI12ViewModifierP", "init"]
 - !private ["7SwiftUI12ViewModifierP", "minimizableViewHandler"]
 - !private ["7SwiftUI12ViewModifierP", "translationHeightTriggerValue"]
-- !private ["7SwiftUI6ZStackV", "background"]
+- !private ["7SwiftUI6ZStackV", "clipShape"]
 - !private ["7SwiftUI6ZStackV", "init"]
 - !private ["7SwiftUI15_ChangedGestureV", "onEnded"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
@@ -1798,4 +1806,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "29bdeb73e7deec92fd8ca1d08429ad72"
+interface-hash: "08f634828b5a63446fde813bb243e2ef"

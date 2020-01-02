@@ -11,8 +11,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "-"
-- !private "=="
-- !private "BooleanLiteralType"
+- !private "..<"
 - !private "Button"
 - !private "Color"
 - "ContentExample"
@@ -28,23 +27,30 @@ depends-top-level:
 - "PreviewProvider"
 - !private "Spacer"
 - "String"
-- "StringLiteralType"
+- !private "StringLiteralType"
 - !private "Text"
 - !private "TopDelimiterAreaView"
 - !private "VStack"
-- !private "VerticalDragGesture"
 - !private "VerticalSymbolTextButtonView"
 - "View"
 - !private "print"
 depends-member:
 - !private ["7SwiftUI10AnimatableP", "width"]
+- !private ["Sa", "append"]
+- !private ["Sa", "init"]
+- !private ["SK", "append"]
+- !private ["SK", "init"]
 - !private ["SK", "secondarySystemBackground"]
 - !private ["Sb", "toggle"]
 - !private ["7SwiftUI6ButtonV", "init"]
 - !private ["7SwiftUI6ButtonV", "padding"]
 - !private ["So6CGSizeV", "width"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "secondarySystemBackground"]
 - !private ["s7CVarArgP", "toggle"]
+- !private ["Sl", "append"]
+- !private ["Sl", "init"]
 - !private ["Sl", "secondarySystemBackground"]
 - !private ["7SwiftUI5ColorV", "accentColor"]
 - !private ["7SwiftUI5ColorV", "init"]
@@ -65,7 +71,6 @@ depends-member:
 - !private ["22MinimizableViewExample07ContentC0V", "Text"]
 - !private ["22MinimizableViewExample07ContentC0V", "TopDelimiterAreaView"]
 - !private ["22MinimizableViewExample07ContentC0V", "VStack"]
-- !private ["22MinimizableViewExample07ContentC0V", "VerticalDragGesture"]
 - !private ["22MinimizableViewExample07ContentC0V", "VerticalSymbolTextButtonView"]
 - ["22MinimizableViewExample07ContentC0V", "View"]
 - ["22MinimizableViewExample07ContentC0V", "_Default_Body"]
@@ -90,56 +95,62 @@ depends-member:
 - ["22MinimizableViewExample07ContentC9_PreviewsV", "init"]
 - ["22MinimizableViewExample07ContentC9_PreviewsV", "platform"]
 - ["22MinimizableViewExample07ContentC9_PreviewsV", "previews"]
-- !private ["s28CustomDebugStringConvertibleP", "none"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "secondarySystemBackground"]
-- !private ["s28CustomDebugStringConvertibleP", "some"]
 - !private ["s28CustomDebugStringConvertibleP", "system"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
-- !private ["s17CustomReflectableP", "none"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "secondarySystemBackground"]
-- !private ["s17CustomReflectableP", "some"]
 - !private ["s17CustomReflectableP", "system"]
 - !private ["s17CustomReflectableP", "toggle"]
 - !private ["s17CustomReflectableP", "width"]
 - !private ["s23CustomStringConvertibleP", "accentColor"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "red"]
 - !private ["s23CustomStringConvertibleP", "secondarySystemBackground"]
 - !private ["s23CustomStringConvertibleP", "toggle"]
-- !private ["Se", "none"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "init"]
+- !private ["Se", "append"]
+- !private ["Se", "init"]
 - !private ["Se", "secondarySystemBackground"]
-- !private ["Se", "some"]
 - !private ["Se", "system"]
 - !private ["Se", "toggle"]
 - !private ["Se", "width"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
-- !private ["7SwiftUI18DynamicViewContentP", "environmentObject"]
-- !private ["SE", "none"]
+- !private ["SE", "append"]
+- !private ["SE", "init"]
 - !private ["SE", "secondarySystemBackground"]
-- !private ["SE", "some"]
 - !private ["SE", "system"]
 - !private ["SE", "toggle"]
 - !private ["SE", "width"]
 - ["7SwiftUI17EnvironmentObjectV", "init"]
 - !private ["SQ", "accentColor"]
+- !private ["SQ", "append"]
 - !private ["SQ", "bottom"]
 - !private ["SQ", "center"]
-- !private ["SQ", "environmentObject"]
 - !private ["SQ", "font"]
 - !private ["SQ", "init"]
-- !private ["SQ", "none"]
 - !private ["SQ", "red"]
 - !private ["SQ", "secondarySystemBackground"]
-- !private ["SQ", "some"]
 - !private ["SQ", "system"]
 - !private ["SQ", "toggle"]
 - !private ["SQ", "trailing"]
 - !private ["SQ", "width"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "trailing"]
 - !private ["s27ExpressibleByBooleanLiteralP", "toggle"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "secondarySystemBackground"]
-- !private ["s23ExpressibleByNilLiteralP", "none"]
-- !private ["s23ExpressibleByNilLiteralP", "some"]
 - !private ["s23ExpressibleByNilLiteralP", "system"]
 - !private ["s32ExpressibleByStringInterpolationP", "secondarySystemBackground"]
 - !private ["s26ExpressibleByStringLiteralP", "secondarySystemBackground"]
@@ -147,17 +158,14 @@ depends-member:
 - !private ["7SwiftUI4FontV", "system"]
 - !private ["7SwiftUI13GeometryProxyV", "size"]
 - !private ["7SwiftUI14GeometryReaderV", "init"]
-- !private ["7SwiftUI7GestureP", "none"]
-- !private ["7SwiftUI7GestureP", "some"]
 - !private ["7SwiftUI7GestureP", "system"]
 - !private ["7SwiftUI6HStackV", "background"]
 - !private ["7SwiftUI6HStackV", "init"]
 - !private ["SH", "accentColor"]
+- !private ["SH", "append"]
 - !private ["SH", "init"]
-- !private ["SH", "none"]
 - !private ["SH", "red"]
 - !private ["SH", "secondarySystemBackground"]
-- !private ["SH", "some"]
 - !private ["SH", "system"]
 - !private ["SH", "toggle"]
 - !private ["7SwiftUI19HorizontalAlignmentV", "center"]
@@ -171,7 +179,10 @@ depends-member:
 - !private ["15MinimizableView0aB7HandlerC", "init"]
 - !private ["15MinimizableView0aB7HandlerC", "isMinimized"]
 - !private ["s10MirrorPathP", "secondarySystemBackground"]
-- !private ["7SwiftUI15ModifiedContentV", "environmentObject"]
+- !private ["SM", "append"]
+- !private ["SM", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["So8NSCodingP", "secondarySystemBackground"]
 - !private ["So9NSCopyingP", "secondarySystemBackground"]
 - !private ["So21NSItemProviderReadingP", "secondarySystemBackground"]
@@ -183,8 +194,6 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "init"]
 - !private ["7Combine16ObservableObjectP", "isMinimized"]
 - !private ["s9OptionSetP", "trailing"]
-- !private ["Sq", "none"]
-- !private ["Sq", "some"]
 - !private ["Sq", "system"]
 - !private ["7SwiftUI15PreviewProviderP", "ContentExample"]
 - !private ["7SwiftUI15PreviewProviderP", "MinimizableViewHandler"]
@@ -195,8 +204,14 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["Sk", "append"]
+- !private ["Sk", "init"]
+- !private ["Sm", "append"]
+- !private ["Sm", "init"]
 - !private ["Sm", "secondarySystemBackground"]
 - !private ["SY", "trailing"]
+- !private ["ST", "append"]
+- !private ["ST", "init"]
 - !private ["ST", "secondarySystemBackground"]
 - !private ["7SwiftUI4EdgeO3SetV", "trailing"]
 - !private ["s10SetAlgebraP", "trailing"]
@@ -205,8 +220,12 @@ depends-member:
 - !private ["7SwiftUI10ShapeStyleP", "red"]
 - !private ["7SwiftUI6SpacerV", "init"]
 - !private ["SS", "secondarySystemBackground"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["Sy", "secondarySystemBackground"]
 - !private ["7SwiftUI4TextV", "init"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "secondarySystemBackground"]
 - !private ["s20TextOutputStreamableP", "secondarySystemBackground"]
 - !private ["15MinimizableView016TopDelimiterAreaB0V", "init"]
@@ -214,7 +233,6 @@ depends-member:
 - !private ["So7UIColorC", "secondarySystemBackground"]
 - !private ["7SwiftUI6VStackV", "init"]
 - !private ["7SwiftUI17VerticalAlignmentV", "bottom"]
-- !private ["15MinimizableView19VerticalDragGestureV", "init"]
 - !private ["22MinimizableViewExample024VerticalSymbolTextButtonB0V", "deinit"]
 - !private ["22MinimizableViewExample024VerticalSymbolTextButtonB0V", "init"]
 - ["7SwiftUI4ViewP", "Body"]
@@ -225,10 +243,10 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "Image"]
 - !private ["7SwiftUI4ViewP", "List"]
 - !private ["7SwiftUI4ViewP", "Spacer"]
+- !private ["7SwiftUI4ViewP", "String"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "TopDelimiterAreaView"]
 - !private ["7SwiftUI4ViewP", "VStack"]
-- !private ["7SwiftUI4ViewP", "VerticalDragGesture"]
 - !private ["7SwiftUI4ViewP", "VerticalSymbolTextButtonView"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
@@ -244,32 +262,35 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "listContent"]
 - !private ["7SwiftUI4ViewP", "minimizableViewHandler"]
-- !private ["7SwiftUI4ViewP", "modifier"]
-- !private ["7SwiftUI4ViewP", "none"]
 - !private ["7SwiftUI4ViewP", "onTapGesture"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "print"]
 - !private ["7SwiftUI4ViewP", "red"]
-- !private ["7SwiftUI4ViewP", "some"]
 - !private ["7SwiftUI4ViewP", "system"]
+- !private ["7SwiftUI4ViewP", "verticalDragGesture"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
-- !private ["7SwiftUI11ViewBuilderV", "buildIf"]
-- !private ["7SwiftUI12ViewModifierP", "environmentObject"]
-- !private ["7SwiftUI12ViewModifierP", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "secondarySystemBackground"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "toggle"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "toggle"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "secondarySystemBackground"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "secondarySystemBackground"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "secondarySystemBackground"]
 - !private ["s26_ExpressibleByColorLiteralP", "secondarySystemBackground"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "init"]
 - !private ["s19_HasContiguousBytesP", "secondarySystemBackground"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "secondarySystemBackground"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "secondarySystemBackground"]
-- !private ["s21_ObjectiveCBridgeableP", "none"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "secondarySystemBackground"]
-- !private ["s21_ObjectiveCBridgeableP", "some"]
 - !private ["s21_ObjectiveCBridgeableP", "system"]
 - !private ["s21_ObjectiveCBridgeableP", "toggle"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
@@ -284,6 +305,7 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
 - !private "7SwiftUI10AnimatableP"
+- !private "Sa"
 - !private "SK"
 - !private "Sb"
 - !private "7SwiftUI6ButtonV"
@@ -294,12 +316,14 @@ depends-nominal:
 - !private "SL"
 - "22MinimizableViewExample07ContentC0V"
 - "22MinimizableViewExample07ContentC9_PreviewsV"
+- !private "10Foundation15ContiguousBytesP"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
 - !private "Se"
+- !private "s26DefaultStringInterpolationV"
 - "7SwiftUI15DynamicPropertyP"
-- !private "7SwiftUI18DynamicViewContentP"
 - !private "SE"
 - "7SwiftUI17EnvironmentObjectV"
 - !private "SQ"
@@ -322,7 +346,8 @@ depends-nominal:
 - !private "s25LosslessStringConvertibleP"
 - !private "15MinimizableView0aB7HandlerC"
 - !private "s10MirrorPathP"
-- !private "7SwiftUI15ModifiedContentV"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -334,6 +359,7 @@ depends-nominal:
 - !private "s9OptionSetP"
 - !private "Sq"
 - "7SwiftUI15PreviewProviderP"
+- !private "Sk"
 - !private "Sm"
 - !private "SY"
 - !private "ST"
@@ -342,6 +368,7 @@ depends-nominal:
 - !private "7SwiftUI10ShapeStyleP"
 - !private "7SwiftUI6SpacerV"
 - !private "SS"
+- !private "s27StringInterpolationProtocolP"
 - !private "Sy"
 - !private "7SwiftUI4TextV"
 - !private "s16TextOutputStreamP"
@@ -350,18 +377,19 @@ depends-nominal:
 - !private "So7UIColorC"
 - !private "7SwiftUI6VStackV"
 - !private "7SwiftUI17VerticalAlignmentV"
-- !private "15MinimizableView19VerticalDragGestureV"
 - !private "22MinimizableViewExample024VerticalSymbolTextButtonB0V"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
-- !private "7SwiftUI12ViewModifierP"
+- !private "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
@@ -1657,4 +1685,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4aa433c3efdb6dc997478e2a3f9d7f5b"
+interface-hash: "a302406580f214d469bc79d468d72549"

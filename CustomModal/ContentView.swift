@@ -12,7 +12,7 @@ import Combine
 
 struct ContentView: View {
 
-    var minimizableViewHandler: MinimizableViewHandler = MinimizableViewHandler()
+    @ObservedObject var minimizableViewHandler: MinimizableViewHandler = MinimizableViewHandler()
     @State var selectedTabIndex: Int = 0
     
     init() {
@@ -30,7 +30,8 @@ struct ContentView: View {
                         
                         self.minimizableViewHandler.present()
                         
-                    }) { TranslucentTextButtonView(title: "Launch Minimizable View", foregroundColor: .green, backgroundColor: .green)}
+                    }) { TranslucentTextButtonView(title: "Launch Minimizable View", foregroundColor: .green, backgroundColor: .green)}.disabled(self.minimizableViewHandler.isPresented)
+                        
                         .tabItem {
                             Image(systemName: "chevron.up.square.fill")
                             Text("Main View")

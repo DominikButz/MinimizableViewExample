@@ -25,6 +25,7 @@ depends-top-level:
 - "IntegerLiteralType"
 - !private "MinimizableView"
 - "MinimizableViewHandler"
+- "ObservedObject"
 - "PreviewProvider"
 - "State"
 - !private "StringLiteralType"
@@ -35,8 +36,8 @@ depends-top-level:
 depends-member:
 - !private ["7SwiftUI7AnyViewV", "init"]
 - !private ["SK", "secondarySystemBackground"]
+- !private ["7SwiftUI6ButtonV", "disabled"]
 - !private ["7SwiftUI6ButtonV", "init"]
-- !private ["7SwiftUI6ButtonV", "tabItem"]
 - !private ["s7CVarArgP", "secondarySystemBackground"]
 - !private ["Sl", "secondarySystemBackground"]
 - !private ["7SwiftUI5ColorV", "green"]
@@ -46,6 +47,7 @@ depends-member:
 - !private ["SL", "secondarySystemBackground"]
 - !private ["22MinimizableViewExample07ContentC0V", "deinit"]
 - !private ["22MinimizableViewExample07ContentC0V", "init"]
+- ["22MinimizableViewExample07ContentB0V", "$minimizableViewHandler"]
 - ["22MinimizableViewExample07ContentB0V", "$selectedTabIndex"]
 - !private ["22MinimizableViewExample07ContentB0V", "AnyView"]
 - ["22MinimizableViewExample07ContentB0V", "Body"]
@@ -58,6 +60,7 @@ depends-member:
 - ["22MinimizableViewExample07ContentB0V", "Int"]
 - !private ["22MinimizableViewExample07ContentB0V", "MinimizableView"]
 - ["22MinimizableViewExample07ContentB0V", "MinimizableViewHandler"]
+- ["22MinimizableViewExample07ContentB0V", "ObservedObject"]
 - ["22MinimizableViewExample07ContentB0V", "State"]
 - !private ["22MinimizableViewExample07ContentB0V", "TabView"]
 - !private ["22MinimizableViewExample07ContentB0V", "Text"]
@@ -66,6 +69,7 @@ depends-member:
 - ["22MinimizableViewExample07ContentB0V", "_Default_Body"]
 - ["22MinimizableViewExample07ContentB0V", "_makeView"]
 - ["22MinimizableViewExample07ContentB0V", "_makeViewList"]
+- !private ["22MinimizableViewExample07ContentB0V", "_minimizableViewHandler"]
 - !private ["22MinimizableViewExample07ContentB0V", "_selectedTabIndex"]
 - ["22MinimizableViewExample07ContentB0V", "body"]
 - ["22MinimizableViewExample07ContentB0V", "deinit"]
@@ -108,6 +112,7 @@ depends-member:
 - !private ["15MinimizableViewAAV", "environmentObject"]
 - !private ["15MinimizableViewAAV", "init"]
 - ["15MinimizableView0aB7HandlerC", "init"]
+- !private ["15MinimizableView0aB7HandlerC", "isPresented"]
 - !private ["15MinimizableView0aB7HandlerC", "present"]
 - !private ["15MinimizableView0aB7HandlerC", "settings"]
 - !private ["s10MirrorPathP", "secondarySystemBackground"]
@@ -119,8 +124,11 @@ depends-member:
 - !private ["So8NSObjectP", "secondarySystemBackground"]
 - !private ["So14NSSecureCodingP", "secondarySystemBackground"]
 - ["7Combine16ObservableObjectP", "init"]
+- !private ["7Combine16ObservableObjectP", "isPresented"]
 - !private ["7Combine16ObservableObjectP", "present"]
 - !private ["7Combine16ObservableObjectP", "settings"]
+- ["7SwiftUI14ObservedObjectV", "init"]
+- ["7SwiftUI14ObservedObjectV", "wrappedValue"]
 - !private ["7SwiftUI15PreviewProviderP", "ContentView"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -167,6 +175,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "disabled"]
 - !private ["7SwiftUI4ViewP", "environmentObject"]
 - !private ["7SwiftUI4ViewP", "green"]
 - !private ["7SwiftUI4ViewP", "init"]
@@ -230,6 +239,7 @@ depends-nominal:
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
 - "7SwiftUI15PreviewProviderP"
 - !private "Sm"
 - !private "ST"
@@ -1547,4 +1557,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3533ed4170ad6c312a904261bc11109d"
+interface-hash: "4a5b30e17c15ac1c25aa78efb4805772"

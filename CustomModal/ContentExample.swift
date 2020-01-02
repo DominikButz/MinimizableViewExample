@@ -12,7 +12,15 @@ struct ContentExample: View {
     
     @EnvironmentObject var minimizableViewHandler: MinimizableViewHandler
     
-    var listContent:[String] = ["Text0", "Text1","Text2","Text3","Text4","Text5","Text6","Text7","Text8","Text9", "Text10","Text11","Text12","Text13","Text14" ]
+    var listContent:[String] {
+        var content = [String]()
+        for i in 0..<20 {
+            let text = "Content \(i)"
+            content.append(text)
+        }
+       return content
+        
+    }
     
 
     
@@ -32,14 +40,13 @@ struct ContentExample: View {
                                 }) {
                                     Image(systemName: "xmark.circle").font(.system(size: 20))
                                 }.padding(.trailing, 8)
-                        }.background(Color(.secondarySystemBackground))
-                    .modifier(VerticalDragGesture(translationHeightTriggerValue: 30)).environmentObject(self.minimizableViewHandler)
-                        
+                        }.background(Color(.secondarySystemBackground)).verticalDragGesture(translationHeightTriggerValue: 30)
+
                         List(self.listContent, id: \.self) { item in
                             Text(item)
                         }.frame(width: proxy.size.width - 10).colorMultiply(Color(.secondarySystemBackground))
                     
-                    if self.minimizableViewHandler.isMinimized == false  {
+                 //   if self.minimizableViewHandler.isMinimized == false  {
                           HStack(alignment: .bottom) {
                               
                               Spacer()
@@ -67,7 +74,7 @@ struct ContentExample: View {
                                
         
                               }
-                          }
+                       //   }
 
                     }
                 

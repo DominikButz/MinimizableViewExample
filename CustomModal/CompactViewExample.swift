@@ -20,7 +20,7 @@ struct CompactViewExample: View {
                 Text("Compact View")
              }.frame(width: proxy.size.width, height: proxy.size.height).onTapGesture {
                     self.minimizableViewHandler.expand()
-             }.background(Color(.secondarySystemBackground)).modifier(VerticalDragGesture(translationHeightTriggerValue: 40))
+                }.background(Color(.secondarySystemBackground)).verticalDragGesture(translationHeightTriggerValue: 40)
         }
     }
 }
