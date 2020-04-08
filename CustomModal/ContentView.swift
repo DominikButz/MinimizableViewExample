@@ -49,11 +49,7 @@ struct ContentView: View {
                     
                     
                 }.overlay( MinimizableView(content: AnyView(ContentExample()), compactView: AnyView(CompactViewExample()), bottomMargin: 50.0, geometry: proxy).environmentObject(self.minimizableViewHandler))
-               
-
-
-                      
-                
+     
         }
     
         //

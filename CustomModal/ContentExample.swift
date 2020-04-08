@@ -30,7 +30,7 @@ struct ContentExample: View {
                 VStack(alignment: .center, spacing: 5.0) {
                       
                     TopDelimiterAreaView(areaWidth: proxy.size.width).onTapGesture {
-                         self.minimizableViewHandler.isMinimized.toggle()
+                         self.minimizableViewHandler.toggleExpansionState()
                     }
                     
                         HStack {
@@ -49,7 +49,7 @@ struct ContentExample: View {
                  //   if self.minimizableViewHandler.isMinimized == false  {
                           HStack(alignment: .bottom) {
                               
-                              Spacer()
+                                Spacer()
                               
                               // cancel button
                               Button(action: {
@@ -76,7 +76,29 @@ struct ContentExample: View {
                               }
                        //   }
 
+                }.onAppear {
+                    
+                    print("appearing")
+                    
+                    self.minimizableViewHandler.onPresentation = {
+                          print("presenting")
+                      }
+                    
+                    self.minimizableViewHandler.onDismissal = {
+                        print("dismissing")
                     }
+                    
+                    self.minimizableViewHandler.onExpansion = {
+                        
+                        print("expanding")
+                    }
+
+                    self.minimizableViewHandler.onMinimization = {
+                        print("contracting")
+                    }
+                    
+              
+            }
                 
 
         }
