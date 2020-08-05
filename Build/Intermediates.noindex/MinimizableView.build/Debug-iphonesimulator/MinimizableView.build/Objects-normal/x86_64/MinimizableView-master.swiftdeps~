@@ -1,5 +1,5 @@
-version: "Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
-options: "68e46a22ff52e3c90474470cf081d079"
-build_time: [1586247529, 847771000]
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "d4a7bfa91f9fa9a5cf48b940ff965164"
+build_time: [1596596083, 35866000]
 inputs:
-  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableView/Sources/MinimizableView/MinimizableView.swift": [1586247529, 720064982]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableView/Sources/MinimizableView/MinimizableView.swift": [1596596082, 915973203]

@@ -1,0 +1,4 @@
+module MinimizableView {
+header "MinimizableView-Swift.h"
+export *
+}

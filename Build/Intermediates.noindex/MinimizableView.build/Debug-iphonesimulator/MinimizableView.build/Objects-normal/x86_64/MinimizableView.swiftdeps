@@ -1,31 +1,37 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "MinimizableViewHandler"
-- "Settings"
+- "MiniSettings"
 - "MinimizableView"
+- "MinimizableViewModifier"
 - "VerticalDragGesture"
 - "TopDelimiterAreaView"
 provides-nominal:
 - "15MinimizableView0aB7HandlerC"
-- "15MinimizableView8SettingsV"
+- "15MinimizableView12MiniSettingsV"
 - "15MinimizableViewAAV"
+- "15MinimizableView0aB8ModifierV"
 - "15MinimizableView19VerticalDragGestureV"
 - "15MinimizableView016TopDelimiterAreaB0V"
 provides-member:
 - ["15MinimizableView0aB7HandlerC", ""]
-- ["15MinimizableView8SettingsV", ""]
+- ["15MinimizableView12MiniSettingsV", ""]
 - ["15MinimizableViewAAV", ""]
-- ["15MinimizableView19VerticalDragGestureV", ""]
+- ["15MinimizableView0aB8ModifierV", ""]
 - ["7SwiftUI4ViewP", ""]
+- ["15MinimizableView19VerticalDragGestureV", ""]
 - ["15MinimizableView016TopDelimiterAreaB0V", ""]
+- ["7SwiftUI4ViewP", "minimizableView"]
 - ["7SwiftUI4ViewP", "verticalDragGesture"]
 provides-dynamic-lookup:
 - "$draggedOffset"
 - "$isMinimized"
 - "$isPresented"
+- "$settings"
 - "_draggedOffset"
 - "_isMinimized"
 - "_isPresented"
+- "_settings"
 - "dismiss"
 - "draggedOffset"
 - "expand"
@@ -49,7 +55,7 @@ depends-top-level:
 - !private "<"
 - !private "=="
 - !private ">"
-- "AnyView"
+- !private "AnyTransition"
 - "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
@@ -65,14 +71,16 @@ depends-top-level:
 - "GeometryProxy"
 - !private "HStack"
 - "IntegerLiteralType"
+- "MiniSettings"
 - "MinimizableView"
 - "MinimizableViewHandler"
+- "MinimizableViewModifier"
 - "ObservableObject"
 - "Published"
 - !private "RoundedRectangle"
-- "Settings"
 - "TernaryPrecedence"
 - "TopDelimiterAreaView"
+- !private "UIScreen"
 - "VerticalDragGesture"
 - "View"
 - "ViewModifier"
@@ -86,14 +94,18 @@ depends-member:
 - !private ["7SwiftUI10AnimatableP", "init"]
 - !private ["7SwiftUI10AnimatableP", "width"]
 - ["7SwiftUI10AnimatableP", "zero"]
+- !private ["7SwiftUI9AnimationV", "easeInOut"]
 - !private ["7SwiftUI9AnimationV", "spring"]
-- !private ["7SwiftUI7AnyViewV", "init"]
+- !private ["7SwiftUI13AnyTransitionV", "opacity"]
 - ["SK", "systemBackground"]
 - ["SK", "systemGray2"]
 - !private ["So7CGPointV", "init"]
+- !private ["So6CGRectV", "height"]
 - !private ["So6CGSizeV", "height"]
 - !private ["So6CGSizeV", "width"]
 - ["So6CGSizeV", "zero"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "main"]
 - ["s7CVarArgP", "systemBackground"]
 - ["s7CVarArgP", "systemGray2"]
 - !private ["7SwiftUI7CapsuleV", "fill"]
@@ -104,8 +116,11 @@ depends-member:
 - ["7SwiftUI5ColorV", "init"]
 - ["SL", "systemBackground"]
 - ["SL", "systemGray2"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "easeInOut"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "none"]
 - !private ["s28CustomDebugStringConvertibleP", "some"]
 - !private ["s28CustomDebugStringConvertibleP", "spring"]
@@ -113,6 +128,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "systemGray2"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - ["s28CustomDebugStringConvertibleP", "zero"]
+- !private ["s17CustomReflectableP", "easeInOut"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "none"]
@@ -122,11 +138,15 @@ depends-member:
 - ["s17CustomReflectableP", "systemGray2"]
 - !private ["s17CustomReflectableP", "width"]
 - ["s17CustomReflectableP", "zero"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "easeInOut"]
 - !private ["s23CustomStringConvertibleP", "gray"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "spring"]
 - ["s23CustomStringConvertibleP", "systemBackground"]
 - ["s23CustomStringConvertibleP", "systemGray2"]
+- !private ["Se", "easeInOut"]
 - !private ["Se", "height"]
 - !private ["Se", "init"]
 - !private ["Se", "none"]
@@ -139,6 +159,7 @@ depends-member:
 - !private ["7SwiftUI11DragGestureV", "init"]
 - !private ["7SwiftUI11DragGestureV", "onChanged"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
+- !private ["SE", "easeInOut"]
 - !private ["SE", "height"]
 - !private ["SE", "init"]
 - !private ["SE", "none"]
@@ -149,9 +170,12 @@ depends-member:
 - !private ["SE", "width"]
 - ["SE", "zero"]
 - ["7SwiftUI17EnvironmentObjectV", "init"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "easeInOut"]
 - !private ["SQ", "gray"]
 - !private ["SQ", "height"]
 - ["SQ", "init"]
+- !private ["SQ", "main"]
 - !private ["SQ", "none"]
 - !private ["SQ", "some"]
 - !private ["SQ", "spring"]
@@ -163,6 +187,7 @@ depends-member:
 - ["SQ", "zero"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "systemBackground"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "systemGray2"]
+- !private ["s23ExpressibleByNilLiteralP", "easeInOut"]
 - !private ["s23ExpressibleByNilLiteralP", "none"]
 - !private ["s23ExpressibleByNilLiteralP", "some"]
 - !private ["s23ExpressibleByNilLiteralP", "spring"]
@@ -173,6 +198,7 @@ depends-member:
 - ["s33ExpressibleByUnicodeScalarLiteralP", "systemBackground"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "systemGray2"]
 - !private ["7SwiftUI13GeometryProxyV", "size"]
+- !private ["7SwiftUI7GestureP", "easeInOut"]
 - !private ["7SwiftUI7GestureP", "init"]
 - !private ["7SwiftUI7GestureP", "none"]
 - !private ["7SwiftUI7GestureP", "onChanged"]
@@ -181,8 +207,11 @@ depends-member:
 - !private ["7SwiftUI7GestureP", "spring"]
 - !private ["7SwiftUI6HStackV", "frame"]
 - !private ["7SwiftUI6HStackV", "init"]
+- !private ["SH", "bounds"]
+- !private ["SH", "easeInOut"]
 - !private ["SH", "gray"]
 - ["SH", "init"]
+- !private ["SH", "main"]
 - !private ["SH", "none"]
 - !private ["SH", "some"]
 - !private ["SH", "spring"]
@@ -193,8 +222,19 @@ depends-member:
 - !private ["7SwiftUI15InsettableShapeP", "init"]
 - ["s25LosslessStringConvertibleP", "systemBackground"]
 - ["s25LosslessStringConvertibleP", "systemGray2"]
+- ["15MinimizableView12MiniSettingsV", "CGFloat"]
+- ["15MinimizableView12MiniSettingsV", "Color"]
+- ["15MinimizableView12MiniSettingsV", "backgroundColor"]
+- ["15MinimizableView12MiniSettingsV", "bottomMargin"]
+- ["15MinimizableView12MiniSettingsV", "cornerRadius"]
+- ["15MinimizableView12MiniSettingsV", "expandedTopMargin"]
+- ["15MinimizableView12MiniSettingsV", "init"]
+- ["15MinimizableView12MiniSettingsV", "lateralMargin"]
+- ["15MinimizableView12MiniSettingsV", "minimizedHeight"]
+- ["15MinimizableView12MiniSettingsV", "shadowColor"]
+- ["15MinimizableView12MiniSettingsV", "shadowRadius"]
 - ["15MinimizableViewAAV", "$minimizableViewHandler"]
-- ["15MinimizableViewAAV", "AnyView"]
+- !private ["15MinimizableViewAAV", "AnyTransition"]
 - ["15MinimizableViewAAV", "Body"]
 - ["15MinimizableViewAAV", "CGFloat"]
 - !private ["15MinimizableViewAAV", "CGPoint"]
@@ -202,6 +242,7 @@ depends-member:
 - ["15MinimizableViewAAV", "GeometryProxy"]
 - ["15MinimizableViewAAV", "MinimizableViewHandler"]
 - !private ["15MinimizableViewAAV", "RoundedRectangle"]
+- !private ["15MinimizableViewAAV", "UIScreen"]
 - ["15MinimizableViewAAV", "View"]
 - !private ["15MinimizableViewAAV", "ZStack"]
 - ["15MinimizableViewAAV", "_Default_Body"]
@@ -209,10 +250,10 @@ depends-member:
 - ["15MinimizableViewAAV", "_makeViewList"]
 - !private ["15MinimizableViewAAV", "_minimizableViewHandler"]
 - ["15MinimizableViewAAV", "body"]
-- ["15MinimizableViewAAV", "bottomMargin"]
 - ["15MinimizableViewAAV", "compactView"]
 - ["15MinimizableViewAAV", "contentView"]
 - ["15MinimizableViewAAV", "deinit"]
+- !private ["15MinimizableViewAAV", "environmentObject"]
 - ["15MinimizableViewAAV", "frameHeight"]
 - ["15MinimizableViewAAV", "geometry"]
 - ["15MinimizableViewAAV", "init"]
@@ -222,16 +263,18 @@ depends-member:
 - ["15MinimizableView0aB7HandlerC", "$draggedOffset"]
 - ["15MinimizableView0aB7HandlerC", "$isMinimized"]
 - ["15MinimizableView0aB7HandlerC", "$isPresented"]
+- ["15MinimizableView0aB7HandlerC", "$settings"]
 - ["15MinimizableView0aB7HandlerC", "Bool"]
 - ["15MinimizableView0aB7HandlerC", "CGSize"]
+- ["15MinimizableView0aB7HandlerC", "MiniSettings"]
 - ["15MinimizableView0aB7HandlerC", "ObjectWillChangePublisher"]
 - ["15MinimizableView0aB7HandlerC", "Published"]
-- ["15MinimizableView0aB7HandlerC", "Settings"]
 - ["15MinimizableView0aB7HandlerC", "Void"]
 - ["15MinimizableView0aB7HandlerC", "_Default_ObjectWillChangePublisher"]
 - !private ["15MinimizableView0aB7HandlerC", "_draggedOffset"]
 - !private ["15MinimizableView0aB7HandlerC", "_isMinimized"]
 - !private ["15MinimizableView0aB7HandlerC", "_isPresented"]
+- !private ["15MinimizableView0aB7HandlerC", "_settings"]
 - ["15MinimizableView0aB7HandlerC", "deinit"]
 - ["15MinimizableView0aB7HandlerC", "dismiss"]
 - ["15MinimizableView0aB7HandlerC", "draggedOffset"]
@@ -248,6 +291,25 @@ depends-member:
 - ["15MinimizableView0aB7HandlerC", "present"]
 - ["15MinimizableView0aB7HandlerC", "settings"]
 - ["15MinimizableView0aB7HandlerC", "toggleExpansionState"]
+- ["15MinimizableView0aB8ModifierV", "$minimizableViewHandler"]
+- ["15MinimizableView0aB8ModifierV", "Body"]
+- ["15MinimizableView0aB8ModifierV", "Content"]
+- ["15MinimizableView0aB8ModifierV", "EnvironmentObject"]
+- ["15MinimizableView0aB8ModifierV", "GeometryProxy"]
+- !private ["15MinimizableView0aB8ModifierV", "MinimizableView"]
+- ["15MinimizableView0aB8ModifierV", "MinimizableViewHandler"]
+- ["15MinimizableView0aB8ModifierV", "View"]
+- ["15MinimizableView0aB8ModifierV", "_Default_Body"]
+- ["15MinimizableView0aB8ModifierV", "_makeView"]
+- ["15MinimizableView0aB8ModifierV", "_makeViewList"]
+- !private ["15MinimizableView0aB8ModifierV", "_minimizableViewHandler"]
+- ["15MinimizableView0aB8ModifierV", "body"]
+- ["15MinimizableView0aB8ModifierV", "compactView"]
+- ["15MinimizableView0aB8ModifierV", "contentView"]
+- ["15MinimizableView0aB8ModifierV", "deinit"]
+- ["15MinimizableView0aB8ModifierV", "geometry"]
+- ["15MinimizableView0aB8ModifierV", "init"]
+- ["15MinimizableView0aB8ModifierV", "minimizableViewHandler"]
 - ["s10MirrorPathP", "systemBackground"]
 - ["s10MirrorPathP", "systemGray2"]
 - ["So8NSCodingP", "systemBackground"]
@@ -258,21 +320,26 @@ depends-member:
 - ["So21NSItemProviderReadingP", "systemGray2"]
 - ["So21NSItemProviderWritingP", "systemBackground"]
 - ["So21NSItemProviderWritingP", "systemGray2"]
+- !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectC", "main"]
 - ["So8NSObjectC", "systemBackground"]
 - ["So8NSObjectC", "systemGray2"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "main"]
 - ["So8NSObjectP", "systemBackground"]
 - ["So8NSObjectP", "systemGray2"]
 - ["So14NSSecureCodingP", "systemBackground"]
 - ["So14NSSecureCodingP", "systemGray2"]
 - ["7Combine16ObservableObjectP", "CGSize"]
+- ["7Combine16ObservableObjectP", "MiniSettings"]
 - ["7Combine16ObservableObjectP", "ObjectWillChangePublisher"]
 - ["7Combine16ObservableObjectP", "Published"]
-- ["7Combine16ObservableObjectP", "Settings"]
 - ["7Combine16ObservableObjectP", ""]
 - ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
 - !private ["7Combine16ObservableObjectP", "_draggedOffset"]
 - !private ["7Combine16ObservableObjectP", "_isMinimized"]
 - !private ["7Combine16ObservableObjectP", "_isPresented"]
+- !private ["7Combine16ObservableObjectP", "_settings"]
 - !private ["7Combine16ObservableObjectP", "draggedOffset"]
 - !private ["7Combine16ObservableObjectP", "expand"]
 - !private ["7Combine16ObservableObjectP", "isMinimized"]
@@ -284,6 +351,7 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "onMinimization"]
 - !private ["7Combine16ObservableObjectP", "onPresentation"]
 - !private ["7Combine16ObservableObjectP", "settings"]
+- !private ["Sq", "easeInOut"]
 - !private ["Sq", "none"]
 - !private ["Sq", "some"]
 - !private ["Sq", "spring"]
@@ -295,16 +363,6 @@ depends-member:
 - !private ["7SwiftUI16RoundedRectangleV", "init"]
 - ["ST", "systemBackground"]
 - ["ST", "systemGray2"]
-- ["15MinimizableView8SettingsV", "CGFloat"]
-- ["15MinimizableView8SettingsV", "Color"]
-- ["15MinimizableView8SettingsV", "backgroundColor"]
-- ["15MinimizableView8SettingsV", "cornerRadius"]
-- ["15MinimizableView8SettingsV", "expandedTopMargin"]
-- ["15MinimizableView8SettingsV", "init"]
-- ["15MinimizableView8SettingsV", "lateralMargin"]
-- ["15MinimizableView8SettingsV", "minimizedHeight"]
-- ["15MinimizableView8SettingsV", "shadowColor"]
-- ["15MinimizableView8SettingsV", "shadowRadius"]
 - !private ["7SwiftUI5ShapeP", "fill"]
 - !private ["7SwiftUI5ShapeP", "foregroundColor"]
 - !private ["7SwiftUI5ShapeP", "init"]
@@ -334,6 +392,10 @@ depends-member:
 - ["15MinimizableView016TopDelimiterAreaB0V", "init"]
 - ["So7UIColorC", "systemBackground"]
 - ["So7UIColorC", "systemGray2"]
+- !private ["So8UIScreenC", "bounds"]
+- !private ["So8UIScreenC", "main"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "main"]
 - !private ["7SwiftUI11DragGestureV5ValueV", "translation"]
 - !private ["7SwiftUI17VerticalAlignmentV", "top"]
 - ["15MinimizableView19VerticalDragGestureV", "$minimizableViewHandler"]
@@ -354,15 +416,18 @@ depends-member:
 - ["15MinimizableView19VerticalDragGestureV", "init"]
 - ["15MinimizableView19VerticalDragGestureV", "minimizableViewHandler"]
 - ["15MinimizableView19VerticalDragGestureV", "translationHeightTriggerValue"]
-- !private ["7SwiftUI4ViewP", "AnyView"]
+- !private ["7SwiftUI4ViewP", "AnyTransition"]
 - ["7SwiftUI4ViewP", "Body"]
 - ["7SwiftUI4ViewP", "CGFloat"]
 - !private ["7SwiftUI4ViewP", "CGPoint"]
 - !private ["7SwiftUI4ViewP", "Capsule"]
 - !private ["7SwiftUI4ViewP", "Color"]
 - ["7SwiftUI4ViewP", "EnvironmentObject"]
+- ["7SwiftUI4ViewP", "GeometryProxy"]
 - !private ["7SwiftUI4ViewP", "HStack"]
+- !private ["7SwiftUI4ViewP", "MinimizableViewModifier"]
 - !private ["7SwiftUI4ViewP", "RoundedRectangle"]
+- !private ["7SwiftUI4ViewP", "UIScreen"]
 - !private ["7SwiftUI4ViewP", "VerticalDragGesture"]
 - ["7SwiftUI4ViewP", "View"]
 - !private ["7SwiftUI4ViewP", "ZStack"]
@@ -375,10 +440,11 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "areaWidth"]
 - !private ["7SwiftUI4ViewP", "background"]
 - ["7SwiftUI4ViewP", "body"]
-- !private ["7SwiftUI4ViewP", "bottomMargin"]
 - !private ["7SwiftUI4ViewP", "clipShape"]
 - !private ["7SwiftUI4ViewP", "compactView"]
 - !private ["7SwiftUI4ViewP", "contentView"]
+- !private ["7SwiftUI4ViewP", "easeInOut"]
+- !private ["7SwiftUI4ViewP", "environmentObject"]
 - !private ["7SwiftUI4ViewP", "fill"]
 - !private ["7SwiftUI4ViewP", "foregroundColor"]
 - !private ["7SwiftUI4ViewP", "frame"]
@@ -387,16 +453,19 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "gesture"]
 - !private ["7SwiftUI4ViewP", "gray"]
 - ["7SwiftUI4ViewP", "init"]
+- ["7SwiftUI4ViewP", "minimizableView"]
 - !private ["7SwiftUI4ViewP", "minimizableViewHandler"]
 - !private ["7SwiftUI4ViewP", "modifier"]
 - !private ["7SwiftUI4ViewP", "none"]
 - !private ["7SwiftUI4ViewP", "offset"]
 - !private ["7SwiftUI4ViewP", "offsetY"]
+- !private ["7SwiftUI4ViewP", "overlay"]
 - !private ["7SwiftUI4ViewP", "position"]
 - !private ["7SwiftUI4ViewP", "positionY"]
 - !private ["7SwiftUI4ViewP", "shadow"]
 - !private ["7SwiftUI4ViewP", "some"]
 - !private ["7SwiftUI4ViewP", "spring"]
+- !private ["7SwiftUI4ViewP", "transition"]
 - ["7SwiftUI4ViewP", "verticalDragGesture"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
@@ -405,15 +474,19 @@ depends-member:
 - ["7SwiftUI12ViewModifierP", "Content"]
 - !private ["7SwiftUI12ViewModifierP", "DragGesture"]
 - ["7SwiftUI12ViewModifierP", "EnvironmentObject"]
+- !private ["7SwiftUI12ViewModifierP", "MinimizableView"]
 - ["7SwiftUI12ViewModifierP", ""]
 - ["7SwiftUI12ViewModifierP", "_Default_Body"]
 - ["7SwiftUI12ViewModifierP", "_makeView"]
 - ["7SwiftUI12ViewModifierP", "_makeViewList"]
 - ["7SwiftUI12ViewModifierP", "body"]
+- !private ["7SwiftUI12ViewModifierP", "compactView"]
+- !private ["7SwiftUI12ViewModifierP", "contentView"]
+- !private ["7SwiftUI12ViewModifierP", "geometry"]
 - !private ["7SwiftUI12ViewModifierP", "init"]
 - !private ["7SwiftUI12ViewModifierP", "minimizableViewHandler"]
 - !private ["7SwiftUI12ViewModifierP", "translationHeightTriggerValue"]
-- !private ["7SwiftUI6ZStackV", "clipShape"]
+- !private ["7SwiftUI6ZStackV", "frame"]
 - !private ["7SwiftUI6ZStackV", "init"]
 - !private ["7SwiftUI15_ChangedGestureV", "onEnded"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
@@ -432,10 +505,15 @@ depends-member:
 - ["s26_ExpressibleByColorLiteralP", "systemGray2"]
 - ["s19_HasContiguousBytesP", "systemBackground"]
 - ["s19_HasContiguousBytesP", "systemGray2"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "systemBackground"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "systemGray2"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bounds"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemBackground"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemGray2"]
+- !private ["s21_ObjectiveCBridgeableP", "easeInOut"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "none"]
@@ -446,13 +524,15 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - ["s21_ObjectiveCBridgeableP", "zero"]
 - !private ["7SwiftUI21_ViewModifier_ContentV", "gesture"]
+- !private ["7SwiftUI21_ViewModifier_ContentV", "overlay"]
 depends-nominal:
 - !private "7SwiftUI9AlignmentV"
 - "7SwiftUI10AnimatableP"
 - !private "7SwiftUI9AnimationV"
-- !private "7SwiftUI7AnyViewV"
+- !private "7SwiftUI13AnyTransitionV"
 - "SK"
 - !private "So7CGPointV"
+- !private "So6CGRectV"
 - "So6CGSizeV"
 - "s7CVarArgP"
 - !private "7SwiftUI7CapsuleV"
@@ -479,8 +559,10 @@ depends-nominal:
 - "SH"
 - !private "7SwiftUI15InsettableShapeP"
 - "s25LosslessStringConvertibleP"
+- "15MinimizableView12MiniSettingsV"
 - "15MinimizableViewAAV"
 - "15MinimizableView0aB7HandlerC"
+- "15MinimizableView0aB8ModifierV"
 - "s10MirrorPathP"
 - "So8NSCodingP"
 - "So9NSCopyingP"
@@ -495,7 +577,6 @@ depends-nominal:
 - "Sm"
 - !private "7SwiftUI16RoundedRectangleV"
 - "ST"
-- "15MinimizableView8SettingsV"
 - !private "7SwiftUI5ShapeP"
 - "7SwiftUI10ShapeStyleP"
 - "SS"
@@ -504,6 +585,8 @@ depends-nominal:
 - "s20TextOutputStreamableP"
 - "15MinimizableView016TopDelimiterAreaB0V"
 - "So7UIColorC"
+- !private "So8UIScreenC"
+- !private "So18UITraitEnvironmentP"
 - !private "7SwiftUI11DragGestureV5ValueV"
 - !private "7SwiftUI17VerticalAlignmentV"
 - "15MinimizableView19VerticalDragGestureV"
@@ -540,19 +623,19 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9496b22d0dc01c54ef5bc321266df6a9"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "f71497804c82484536e28db8d390c239"

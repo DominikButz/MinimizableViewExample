@@ -19,6 +19,7 @@ struct ContentView: View {
         
         self.minimizableViewHandler.settings.backgroundColor = Color(.secondarySystemBackground)
         self.minimizableViewHandler.settings.lateralMargin = 10
+        self.minimizableViewHandler.settings.shadowColor = .clear
     }
     
     var body: some View {
@@ -48,7 +49,9 @@ struct ContentView: View {
                     }.tag(2)
                     
                     
-                }.overlay( MinimizableView(content: AnyView(ContentExample()), compactView: AnyView(CompactViewExample()), bottomMargin: 50.0, geometry: proxy).environmentObject(self.minimizableViewHandler))
+                }
+                .minimizableView(content: {ContentExample()}, compactView: {CompactViewExample()}, geometry: proxy)
+                .environmentObject(self.minimizableViewHandler)
      
         }
     

@@ -10,7 +10,6 @@ provides-member:
 - ["22MinimizableViewExample07ContentB9_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "AnyView"
 - "AssignmentPrecedence"
 - !private "Button"
 - !private "Color"
@@ -23,7 +22,6 @@ depends-top-level:
 - !private "Image"
 - "Int"
 - "IntegerLiteralType"
-- !private "MinimizableView"
 - "MinimizableViewHandler"
 - "ObservedObject"
 - "PreviewProvider"
@@ -34,7 +32,6 @@ depends-top-level:
 - !private "TranslucentTextButtonView"
 - "View"
 depends-member:
-- !private ["7SwiftUI7AnyViewV", "init"]
 - !private ["SK", "secondarySystemBackground"]
 - !private ["7SwiftUI6ButtonV", "disabled"]
 - !private ["7SwiftUI6ButtonV", "init"]
@@ -49,7 +46,6 @@ depends-member:
 - !private ["22MinimizableViewExample07ContentC0V", "init"]
 - ["22MinimizableViewExample07ContentB0V", "$minimizableViewHandler"]
 - ["22MinimizableViewExample07ContentB0V", "$selectedTabIndex"]
-- !private ["22MinimizableViewExample07ContentB0V", "AnyView"]
 - ["22MinimizableViewExample07ContentB0V", "Body"]
 - !private ["22MinimizableViewExample07ContentB0V", "Button"]
 - !private ["22MinimizableViewExample07ContentB0V", "Color"]
@@ -58,7 +54,6 @@ depends-member:
 - !private ["22MinimizableViewExample07ContentB0V", "GeometryReader"]
 - !private ["22MinimizableViewExample07ContentB0V", "Image"]
 - ["22MinimizableViewExample07ContentB0V", "Int"]
-- !private ["22MinimizableViewExample07ContentB0V", "MinimizableView"]
 - ["22MinimizableViewExample07ContentB0V", "MinimizableViewHandler"]
 - ["22MinimizableViewExample07ContentB0V", "ObservedObject"]
 - ["22MinimizableViewExample07ContentB0V", "State"]
@@ -109,8 +104,9 @@ depends-member:
 - !private ["SH", "secondarySystemBackground"]
 - !private ["7SwiftUI5ImageV", "init"]
 - !private ["s25LosslessStringConvertibleP", "secondarySystemBackground"]
-- !private ["15MinimizableViewAAV", "environmentObject"]
-- !private ["15MinimizableViewAAV", "init"]
+- !private ["15MinimizableView12MiniSettingsV", "backgroundColor"]
+- !private ["15MinimizableView12MiniSettingsV", "lateralMargin"]
+- !private ["15MinimizableView12MiniSettingsV", "shadowColor"]
 - ["15MinimizableView0aB7HandlerC", "init"]
 - !private ["15MinimizableView0aB7HandlerC", "isPresented"]
 - !private ["15MinimizableView0aB7HandlerC", "present"]
@@ -139,8 +135,6 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "previews"]
 - !private ["Sm", "secondarySystemBackground"]
 - !private ["ST", "secondarySystemBackground"]
-- !private ["15MinimizableView8SettingsV", "backgroundColor"]
-- !private ["15MinimizableView8SettingsV", "lateralMargin"]
 - !private ["7SwiftUI10ShapeStyleP", "green"]
 - !private ["7SwiftUI10ShapeStyleP", "init"]
 - ["7SwiftUI5StateV", "init"]
@@ -148,7 +142,7 @@ depends-member:
 - !private ["SS", "secondarySystemBackground"]
 - !private ["Sy", "secondarySystemBackground"]
 - !private ["7SwiftUI7TabViewV", "init"]
-- !private ["7SwiftUI7TabViewV", "overlay"]
+- !private ["7SwiftUI7TabViewV", "minimizableView"]
 - !private ["7SwiftUI4TextV", "init"]
 - !private ["7SwiftUI4TextV", "tabItem"]
 - !private ["s16TextOutputStreamP", "secondarySystemBackground"]
@@ -157,7 +151,6 @@ depends-member:
 - !private ["22MinimizableViewExample021TranslucentTextButtonB0V", "init"]
 - !private ["So7UIColorC", "secondarySystemBackground"]
 - !private ["7SwiftUI4ViewP", "$selectedTabIndex"]
-- !private ["7SwiftUI4ViewP", "AnyView"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Button"]
 - !private ["7SwiftUI4ViewP", "Color"]
@@ -165,8 +158,9 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "ContentExample"]
 - !private ["7SwiftUI4ViewP", "GeometryReader"]
 - !private ["7SwiftUI4ViewP", "Image"]
-- !private ["7SwiftUI4ViewP", "MinimizableView"]
 - ["7SwiftUI4ViewP", "MinimizableViewHandler"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
+- ["7SwiftUI4ViewP", "State"]
 - !private ["7SwiftUI4ViewP", "TabView"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "TranslucentTextButtonView"]
@@ -179,8 +173,8 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "environmentObject"]
 - !private ["7SwiftUI4ViewP", "green"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "minimizableView"]
 - !private ["7SwiftUI4ViewP", "minimizableViewHandler"]
-- !private ["7SwiftUI4ViewP", "overlay"]
 - !private ["7SwiftUI4ViewP", "tabItem"]
 - !private ["7SwiftUI4ViewP", "tag"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
@@ -202,7 +196,6 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
-- !private "7SwiftUI7AnyViewV"
 - !private "SK"
 - !private "7SwiftUI6ButtonV"
 - !private "s7CVarArgP"
@@ -228,7 +221,7 @@ depends-nominal:
 - !private "SH"
 - !private "7SwiftUI5ImageV"
 - !private "s25LosslessStringConvertibleP"
-- !private "15MinimizableViewAAV"
+- !private "15MinimizableView12MiniSettingsV"
 - "15MinimizableView0aB7HandlerC"
 - !private "s10MirrorPathP"
 - !private "So8NSCodingP"
@@ -243,7 +236,6 @@ depends-nominal:
 - "7SwiftUI15PreviewProviderP"
 - !private "Sm"
 - !private "ST"
-- !private "15MinimizableView8SettingsV"
 - !private "7SwiftUI10ShapeStyleP"
 - "7SwiftUI5StateV"
 - !private "SS"
@@ -268,22 +260,6 @@ depends-nominal:
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/CoreData.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/CoreImage.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/QuartzCore.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Metal.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/os.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/UIKit.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/SwiftUI.framework/Modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftinterface"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
@@ -301,19 +277,19 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/Build/Products/Debug-iphonesimulator/MinimizableView.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "4a5b30e17c15ac1c25aa78efb4805772"

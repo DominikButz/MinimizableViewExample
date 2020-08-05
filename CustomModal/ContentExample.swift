@@ -44,7 +44,7 @@ struct ContentExample: View {
 
                         List(self.listContent, id: \.self) { item in
                             Text(item)
-                        }.frame(width: proxy.size.width - 10).colorMultiply(Color(.secondarySystemBackground))
+                        }.frame(width: proxy.size.width - 10)
                     
                  //   if self.minimizableViewHandler.isMinimized == false  {
                           HStack(alignment: .bottom) {
