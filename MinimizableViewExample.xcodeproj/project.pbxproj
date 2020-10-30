@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B461DFAA254C3DE400E29DE5 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B461DFA9254C3DE400E29DE5 /* ListView.swift */; };
 		B4668E4E23716EBC00E5A1DE /* CompactViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4668E4D23716EBC00E5A1DE /* CompactViewExample.swift */; };
 		B4668E74237405A400E5A1DE /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4668E73237405A400E5A1DE /* Buttons.swift */; };
 		B4668E7F23756A0D00E5A1DE /* MinimizableView in Frameworks */ = {isa = PBXBuildFile; productRef = B4668E7E23756A0D00E5A1DE /* MinimizableView */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B461DFA9254C3DE400E29DE5 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		B4668E4D23716EBC00E5A1DE /* CompactViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactViewExample.swift; sourceTree = "<group>"; };
 		B4668E73237405A400E5A1DE /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		B4668E7D237569EB00E5A1DE /* MinimizableView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MinimizableView; path = ../MinimizableView; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				B48E649F2349C0560036D203 /* AppDelegate.swift */,
 				B48E64A12349C0560036D203 /* SceneDelegate.swift */,
 				B48E64A32349C0560036D203 /* ContentView.swift */,
+				B461DFA9254C3DE400E29DE5 /* ListView.swift */,
 				B48E64B32349C0E00036D203 /* ContentExample.swift */,
 				B4668E4D23716EBC00E5A1DE /* CompactViewExample.swift */,
 				B4668E73237405A400E5A1DE /* Buttons.swift */,
@@ -177,6 +180,7 @@
 				B48E64A02349C0560036D203 /* AppDelegate.swift in Sources */,
 				B48E64A22349C0560036D203 /* SceneDelegate.swift in Sources */,
 				B48E64B42349C0E00036D203 /* ContentExample.swift in Sources */,
+				B461DFAA254C3DE400E29DE5 /* ListView.swift in Sources */,
 				B4668E74237405A400E5A1DE /* Buttons.swift in Sources */,
 				B4668E4E23716EBC00E5A1DE /* CompactViewExample.swift in Sources */,
 				B48E64A42349C0560036D203 /* ContentView.swift in Sources */,

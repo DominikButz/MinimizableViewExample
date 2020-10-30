@@ -43,13 +43,14 @@ struct ContentView: View {
                         Text("2nd View")
                     }.tag(1)
                     
-                    Text("Even more stuff").tabItem {
+                    ListView(availableWidth: proxy.size.width)
+                        .tabItem {
                         Image(systemName: "square.split.2x1.fill")
-                        Text("3rd View")
+                        Text("List View")
                     }.tag(2)
                     
                     
-                }
+                }.background(Color(.secondarySystemFill))
                 .minimizableView(content: {ContentExample()}, compactView: {CompactViewExample()}, geometry: proxy)
                 .environmentObject(self.minimizableViewHandler)
      
