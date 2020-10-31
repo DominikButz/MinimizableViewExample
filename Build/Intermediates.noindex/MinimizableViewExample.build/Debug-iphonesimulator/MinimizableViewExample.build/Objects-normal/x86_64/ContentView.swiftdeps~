@@ -41,6 +41,7 @@ depends-member:
 - !private ["SK", "secondarySystemFill"]
 - !private ["7SwiftUI6ButtonV", "disabled"]
 - !private ["7SwiftUI6ButtonV", "init"]
+- !private ["So10CGColorRefa", "secondarySystemFill"]
 - !private ["So6CGSizeV", "width"]
 - !private ["8CloudKit21CKRecordValueProtocolP", "secondarySystemBackground"]
 - !private ["8CloudKit21CKRecordValueProtocolP", "secondarySystemFill"]
@@ -142,9 +143,7 @@ depends-member:
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["s32ExpressibleByStringInterpolationP", "secondarySystemBackground"]
 - !private ["s32ExpressibleByStringInterpolationP", "secondarySystemFill"]
-- !private ["s26ExpressibleByStringLiteralP", "StringLiteralType"]
 - ["s26ExpressibleByStringLiteralP", ""]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "secondarySystemBackground"]
 - !private ["s26ExpressibleByStringLiteralP", "secondarySystemFill"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
@@ -208,6 +207,7 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["7SwiftUI5ColorV13RGBColorSpaceO", "secondarySystemFill"]
 - !private ["Sm", "secondarySystemBackground"]
 - !private ["Sm", "secondarySystemFill"]
 - ["ST", ""]
@@ -277,6 +277,8 @@ depends-member:
 - !private ["7SwiftUI11ViewBuilderV", "buildFinalResult"]
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
 - !private ["7SwiftUI11ViewBuilderV", "buildOptional"]
+- !private ["14CoreFoundation9_CFObjectP", "secondarySystemFill"]
+- !private ["12CoreGraphics22_CGColorInitTrampolineP", "secondarySystemFill"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "secondarySystemBackground"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "secondarySystemFill"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
@@ -314,6 +316,7 @@ depends-nominal:
 - "7SwiftUI10AnimatableP"
 - "SK"
 - !private "7SwiftUI6ButtonV"
+- !private "So10CGColorRefa"
 - !private "So6CGSizeV"
 - !private "8CloudKit21CKRecordValueProtocolP"
 - !private "s7CVarArgP"
@@ -356,6 +359,7 @@ depends-nominal:
 - "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
 - "7SwiftUI15PreviewProviderP"
+- !private "7SwiftUI5ColorV13RGBColorSpaceO"
 - !private "Sm"
 - "ST"
 - !private "7SwiftUI10ShapeStyleP"
@@ -371,6 +375,8 @@ depends-nominal:
 - !private "So7UIColorC"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
+- !private "14CoreFoundation9_CFObjectP"
+- !private "12CoreGraphics22_CGColorInitTrampolineP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"

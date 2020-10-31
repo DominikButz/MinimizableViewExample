@@ -10,7 +10,7 @@ import SwiftUI
 import MinimizableView
 import Combine
 
-struct ContentView: View {
+struct RootView: View {
 
     @ObservedObject var minimizableViewHandler: MinimizableViewHandler = MinimizableViewHandler()
     @State var selectedTabIndex: Int = 0
@@ -19,7 +19,6 @@ struct ContentView: View {
         
         self.minimizableViewHandler.settings.backgroundColor = Color(.secondarySystemBackground)
         self.minimizableViewHandler.settings.lateralMargin = 10
-        self.minimizableViewHandler.settings.shadowColor = .clear
     }
     
     var body: some View {
@@ -51,7 +50,7 @@ struct ContentView: View {
                     
                     
                 }.background(Color(.secondarySystemFill))
-                .minimizableView(content: {ContentExample()}, compactView: {CompactViewExample()}, geometry: proxy)
+                .minimizableView(content: {ContentExample()}, compactView:{CompactViewExample()}, geometry: proxy)
                 .environmentObject(self.minimizableViewHandler)
      
         }
@@ -62,6 +61,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        RootView()
     }
 }

@@ -12,7 +12,6 @@ provides-dynamic-lookup:
 depends-top-level:
 - "*"
 - "..."
-- "Button"
 - "CGFloat"
 - "EnvironmentObject"
 - "FloatLiteralType"
@@ -32,14 +31,12 @@ depends-top-level:
 - "availableWidth"
 - "data"
 - !private "item"
-- "miniHandler"
 depends-member:
 - ["7SwiftUI10AnimatableP", ""]
 - !private ["7SwiftUI10AnimatableP", "foregroundColor"]
 - !private ["7SwiftUI10AnimatableP", "init"]
 - ["SK", ""]
 - ["SK", "map"]
-- !private ["7SwiftUI6ButtonV", "init"]
 - ["SN", "map"]
 - ["Sl", ""]
 - ["Sl", "map"]
@@ -101,7 +98,6 @@ depends-member:
 - ["22MinimizableViewExample04ListB0V", "$data"]
 - ["22MinimizableViewExample04ListB0V", "$miniHandler"]
 - ["22MinimizableViewExample04ListB0V", "Body"]
-- !private ["22MinimizableViewExample04ListB0V", "Button"]
 - ["22MinimizableViewExample04ListB0V", "CGFloat"]
 - ["22MinimizableViewExample04ListB0V", "Default_Body"]
 - ["22MinimizableViewExample04ListB0V", "EnvironmentObject"]
@@ -126,11 +122,9 @@ depends-member:
 - ["22MinimizableViewExample04ListB0V", "init"]
 - ["22MinimizableViewExample04ListB0V", "miniHandler"]
 - ["s25LosslessStringConvertibleP", ""]
-- !private ["15MinimizableView0aB7HandlerC", "present"]
 - ["So8NSCodingP", ""]
 - ["So8NSObjectP", ""]
 - !private ["7SwiftUI14NavigationViewV", "init"]
-- !private ["7Combine16ObservableObjectP", "present"]
 - !private ["s9OptionSetP", "horizontal"]
 - !private ["Sq", "green"]
 - ["Sk", "map"]
@@ -178,7 +172,6 @@ depends-member:
 - ["s16TextOutputStreamP", "appendLiteral"]
 - ["s20TextOutputStreamableP", ""]
 - ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "Button"]
 - ["7SwiftUI4ViewP", "Default_Body"]
 - ["7SwiftUI4ViewP", "EnvironmentObject"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
@@ -202,8 +195,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "green"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "item"]
-- !private ["7SwiftUI4ViewP", "miniHandler"]
-- !private ["7SwiftUI4ViewP", "navigationBarItems"]
 - !private ["7SwiftUI4ViewP", "navigationBarTitle"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
@@ -220,7 +211,6 @@ depends-member:
 depends-nominal:
 - "7SwiftUI10AnimatableP"
 - "SK"
-- !private "7SwiftUI6ButtonV"
 - "SN"
 - "Sl"
 - !private "7SwiftUI5ColorV"
@@ -251,11 +241,9 @@ depends-nominal:
 - !private "7SwiftUI4ListV"
 - "22MinimizableViewExample04ListB0V"
 - "s25LosslessStringConvertibleP"
-- !private "15MinimizableView0aB7HandlerC"
 - "So8NSCodingP"
 - "So8NSObjectP"
 - !private "7SwiftUI14NavigationViewV"
-- !private "7Combine16ObservableObjectP"
 - !private "s9OptionSetP"
 - !private "Sq"
 - "Sk"

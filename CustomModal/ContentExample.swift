@@ -28,25 +28,32 @@ struct ContentExample: View {
         GeometryReader { proxy in
 
                 VStack(alignment: .center, spacing: 5.0) {
-                      
-                    TopDelimiterAreaView(areaWidth: proxy.size.width).onTapGesture {
-                         self.minimizableViewHandler.toggleExpansionState()
-                    }
+                   
+                 
+                        VStack {
+                            TopDelimiterAreaView(areaWidth: proxy.size.width).onTapGesture {
+                                 self.minimizableViewHandler.toggleExpansionState()
+                            }
+                        
+                            HStack {
+                                    Spacer()
+                                    Button(action: {
+                                        self.minimizableViewHandler.dismiss()
+                                    }) {
+                                        Image(systemName: "xmark.circle").font(.system(size: 20))
+                                    }.padding(.trailing, 8)
+                            }.background(Color(.secondarySystemBackground)).verticalDragGesture(translationHeightTriggerValue: 30)
+                        }.transition(AnyTransition.opacity)
                     
-                        HStack {
-                                Spacer()
-                                Button(action: {
-                                    self.minimizableViewHandler.dismiss()
-                                }) {
-                                    Image(systemName: "xmark.circle").font(.system(size: 20))
-                                }.padding(.trailing, 8)
-                        }.background(Color(.secondarySystemBackground)).verticalDragGesture(translationHeightTriggerValue: 30)
-
+                    // List
+                    if self.minimizableViewHandler.isMinimized  == false {
                         List(self.listContent, id: \.self) { item in
                             Text(item)
-                        }.frame(width: proxy.size.width - 10)
+                        }.frame(width: proxy.size.width - 10).transition(AnyTransition.move(edge: .bottom))
+                    }
                     
-                 //   if self.minimizableViewHandler.isMinimized == false  {
+                    // toolbar
+                   if self.minimizableViewHandler.isMinimized == false  {
                           HStack(alignment: .bottom) {
                               
                                 Spacer()
@@ -56,11 +63,9 @@ struct ContentExample: View {
                                     self.minimizableViewHandler.dismiss()
                                       }) {
                                           VerticalSymbolTextButtonView(imageSystemName: "xmark.circle", title:"Abort", foregroundColor: .red, size: 25.0)
-                    
                               }
                               
                               Spacer()
-                                      // Add  button
                                       Button(action: {
                                                   print("add button tapped")
                                           
@@ -68,21 +73,16 @@ struct ContentExample: View {
 
                                           VerticalSymbolTextButtonView(imageSystemName: "plus.circle", title: "Add", foregroundColor: .accentColor, size: 25.0)
                                       }
-                              
-
+   
                                   Spacer()
                                
-        
-                              }
-                       //   }
+                          }.transition(AnyTransition.asymmetric(insertion: AnyTransition.move(edge: .trailing).animation(Animation.linear.delay(0.3)), removal: AnyTransition.opacity))
+                        }
 
                 }.onAppear {
                     
-                    print("appearing")
+                    print("appearing & presenting")
                     
-                    self.minimizableViewHandler.onPresentation = {
-                          print("presenting")
-                      }
                     
                     self.minimizableViewHandler.onDismissal = {
                         print("dismissing")
@@ -102,6 +102,7 @@ struct ContentExample: View {
                 
 
         }
+        .transition(AnyTransition.move(edge: .bottom))
     }
 }
 

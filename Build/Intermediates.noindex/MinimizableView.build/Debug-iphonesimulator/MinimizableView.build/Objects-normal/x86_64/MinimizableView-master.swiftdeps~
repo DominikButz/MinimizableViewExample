@@ -1,5 +1,6 @@
 version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
-options: "a5ced392676ab14d78b3524deaa49a37"
-build_time: [1600596147, 962966000]
+options: "ebda06c2c95aef22402ec2f2d48f279f"
+build_time: [1604124052, 697643000]
 inputs:
-  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableView/Sources/MinimizableView/MinimizableView.swift": [1600596147, 865461383]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableView/Sources/MinimizableView/MinimizableView.swift": [1604123747, 313980381]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableView/Sources/MinimizableView/MinimizableView_Model.swift": [1604124045, 87116156]

@@ -16,7 +16,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- !private "ContentView"
+- !private "RootView"
 - "SceneDelegate"
 - !private "UIHostingController"
 - "UIResponder"
@@ -33,7 +33,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
 - !private ["So15CALayerDelegateP", "rootViewController"]
 - ["s7CVarArgP", "ConnectionOptions"]
-- !private ["s7CVarArgP", "ContentView"]
+- !private ["s7CVarArgP", "RootView"]
 - !private ["s7CVarArgP", "UIHostingController"]
 - !private ["s7CVarArgP", "UIWindow"]
 - ["s7CVarArgP", ""]
@@ -52,10 +52,8 @@ depends-member:
 - ["s7CVarArgP", "windowScene"]
 - ["Sl", ""]
 - ["SL", ""]
-- !private ["22MinimizableViewExample07ContentB0V", ""]
-- !private ["22MinimizableViewExample07ContentB0V", "init"]
 - ["s28CustomDebugStringConvertibleP", "ConnectionOptions"]
-- !private ["s28CustomDebugStringConvertibleP", "ContentView"]
+- !private ["s28CustomDebugStringConvertibleP", "RootView"]
 - !private ["s28CustomDebugStringConvertibleP", "UIHostingController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -73,7 +71,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "window"]
 - ["s28CustomDebugStringConvertibleP", "windowScene"]
 - ["s23CustomStringConvertibleP", "ConnectionOptions"]
-- !private ["s23CustomStringConvertibleP", "ContentView"]
+- !private ["s23CustomStringConvertibleP", "RootView"]
 - !private ["s23CustomStringConvertibleP", "UIHostingController"]
 - !private ["s23CustomStringConvertibleP", "UIWindow"]
 - ["s23CustomStringConvertibleP", ""]
@@ -91,7 +89,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "window"]
 - ["s23CustomStringConvertibleP", "windowScene"]
 - ["SQ", "ConnectionOptions"]
-- !private ["SQ", "ContentView"]
+- !private ["SQ", "RootView"]
 - !private ["SQ", "UIHostingController"]
 - !private ["SQ", "UIWindow"]
 - ["SQ", ""]
@@ -116,7 +114,7 @@ depends-member:
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["SF", ""]
 - ["SH", "ConnectionOptions"]
-- !private ["SH", "ContentView"]
+- !private ["SH", "RootView"]
 - !private ["SH", "UIHostingController"]
 - !private ["SH", "UIWindow"]
 - ["SH", ""]
@@ -140,7 +138,7 @@ depends-member:
 - !private ["So8NSCodingP", "rootViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - ["So8NSObjectC", "ConnectionOptions"]
-- !private ["So8NSObjectC", "ContentView"]
+- !private ["So8NSObjectC", "RootView"]
 - !private ["So8NSObjectC", "UIHostingController"]
 - ["So8NSObjectC", "UIScene"]
 - ["So8NSObjectC", "UISceneSession"]
@@ -161,7 +159,7 @@ depends-member:
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectC", "windowScene"]
 - ["So8NSObjectP", "ConnectionOptions"]
-- !private ["So8NSObjectP", "ContentView"]
+- !private ["So8NSObjectP", "RootView"]
 - !private ["So8NSObjectP", "UIHostingController"]
 - ["So8NSObjectP", "UIScene"]
 - ["So8NSObjectP", "UISceneSession"]
@@ -183,7 +181,9 @@ depends-member:
 - ["So8NSObjectP", "window"]
 - ["So8NSObjectP", "windowScene"]
 - !private ["Sj", ""]
-- !private ["22MinimizableViewExample13SceneDelegateC", "ContentView"]
+- !private ["22MinimizableViewExample04RootB0V", ""]
+- !private ["22MinimizableViewExample04RootB0V", "init"]
+- !private ["22MinimizableViewExample13SceneDelegateC", "RootView"]
 - !private ["22MinimizableViewExample13SceneDelegateC", "UIHostingController"]
 - ["22MinimizableViewExample13SceneDelegateC", "UIScene"]
 - ["22MinimizableViewExample13SceneDelegateC", "UISceneSession"]
@@ -246,7 +246,7 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "makeKeyAndVisible"]
 - !private ["So24UILargeContentViewerItemP", "rootViewController"]
 - ["So30UIPasteConfigurationSupportingP", "ConnectionOptions"]
-- !private ["So30UIPasteConfigurationSupportingP", "ContentView"]
+- !private ["So30UIPasteConfigurationSupportingP", "RootView"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIHostingController"]
 - ["So30UIPasteConfigurationSupportingP", "UIScene"]
 - ["So30UIPasteConfigurationSupportingP", "UISceneSession"]
@@ -268,7 +268,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So30UIPasteConfigurationSupportingP", "windowScene"]
 - ["So11UIResponderC", "ConnectionOptions"]
-- !private ["So11UIResponderC", "ContentView"]
+- !private ["So11UIResponderC", "RootView"]
 - !private ["So11UIResponderC", "UIHostingController"]
 - ["So11UIResponderC", "UIScene"]
 - ["So11UIResponderC", "UISceneSession"]
@@ -289,7 +289,7 @@ depends-member:
 - ["So11UIResponderC", "window"]
 - ["So11UIResponderC", "windowScene"]
 - ["So30UIResponderStandardEditActionsP", "ConnectionOptions"]
-- !private ["So30UIResponderStandardEditActionsP", "ContentView"]
+- !private ["So30UIResponderStandardEditActionsP", "RootView"]
 - !private ["So30UIResponderStandardEditActionsP", "UIHostingController"]
 - ["So30UIResponderStandardEditActionsP", "UIScene"]
 - ["So30UIResponderStandardEditActionsP", "UISceneSession"]
@@ -312,7 +312,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "windowScene"]
 - ["So7UISceneC", "ConnectionOptions"]
 - ["So7UISceneC", ""]
-- !private ["So15UISceneDelegateP", "ContentView"]
+- !private ["So15UISceneDelegateP", "RootView"]
 - !private ["So15UISceneDelegateP", "UIHostingController"]
 - !private ["So15UISceneDelegateP", "UIWindow"]
 - ["So15UISceneDelegateP", ""]
@@ -334,7 +334,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
 - !private ["So18UITraitEnvironmentP", "rootViewController"]
 - ["So23UIUserActivityRestoringP", "ConnectionOptions"]
-- !private ["So23UIUserActivityRestoringP", "ContentView"]
+- !private ["So23UIUserActivityRestoringP", "RootView"]
 - !private ["So23UIUserActivityRestoringP", "UIHostingController"]
 - ["So23UIUserActivityRestoringP", "UIScene"]
 - ["So23UIUserActivityRestoringP", "UISceneSession"]
@@ -364,7 +364,7 @@ depends-member:
 - !private ["So8UIWindowC", "init"]
 - !private ["So8UIWindowC", "makeKeyAndVisible"]
 - !private ["So8UIWindowC", "rootViewController"]
-- !private ["So21UIWindowSceneDelegateP", "ContentView"]
+- !private ["So21UIWindowSceneDelegateP", "RootView"]
 - !private ["So21UIWindowSceneDelegateP", "UIHostingController"]
 - !private ["So21UIWindowSceneDelegateP", "UIWindow"]
 - ["So21UIWindowSceneDelegateP", ""]
@@ -385,7 +385,7 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ConnectionOptions"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "ContentView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "RootView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIHostingController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -403,7 +403,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "windowScene"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ConnectionOptions"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ContentView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "RootView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIHostingController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIWindow"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
@@ -431,7 +431,6 @@ depends-nominal:
 - "s7CVarArgP"
 - "Sl"
 - "SL"
-- !private "22MinimizableViewExample07ContentB0V"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
 - "SQ"
@@ -449,6 +448,7 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "Sj"
+- !private "22MinimizableViewExample04RootB0V"
 - "22MinimizableViewExample13SceneDelegateC"
 - "ST"
 - !private "s13SignedNumericP"
