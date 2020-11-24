@@ -486,7 +486,7 @@ depends-member:
 - !private ["7SwiftUI12ViewModifierP", "init"]
 - !private ["7SwiftUI12ViewModifierP", "minimizableViewHandler"]
 - !private ["7SwiftUI12ViewModifierP", "translationHeightTriggerValue"]
-- !private ["7SwiftUI6ZStackV", "clipShape"]
+- !private ["7SwiftUI6ZStackV", "frame"]
 - !private ["7SwiftUI6ZStackV", "init"]
 - !private ["7SwiftUI15_ChangedGestureV", "onEnded"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
@@ -638,4 +638,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "da2e7005141325ac8a1df7e2f263a9ed"
+interface-hash: "f71497804c82484536e28db8d390c239"

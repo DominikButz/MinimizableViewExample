@@ -36,12 +36,19 @@ struct ContentExample: View {
                             }
                         
                             HStack {
+                                
+                                Button {
+                                    self.minimizableViewHandler.minimize()
+                                } label: {
+                                    Image(systemName: "chevron.down").foregroundColor(.secondary)
+                                }.padding(.leading, 10)
+
                                     Spacer()
                                     Button(action: {
                                         self.minimizableViewHandler.dismiss()
                                     }) {
                                         Image(systemName: "xmark.circle").font(.system(size: 20))
-                                    }.padding(.trailing, 8)
+                                    }.padding(.trailing, 10)
                             }.background(Color(.secondarySystemBackground)).verticalDragGesture(translationHeightTriggerValue: 30)
                         }.transition(AnyTransition.opacity)
                     

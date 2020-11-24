@@ -27,6 +27,7 @@ depends-top-level:
 - "<"
 - "=="
 - ">"
+- !private "Alignment"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "CGFloat"
@@ -49,6 +50,7 @@ depends-top-level:
 - "MinimizableViewHandler"
 - "MinimizableViewModifier"
 - !private "RoundedRectangle"
+- !private "StringLiteralType"
 - "TernaryPrecedence"
 - "TopDelimiterAreaView"
 - !private "UIScreen"
@@ -59,11 +61,13 @@ depends-top-level:
 - !private "ZStack"
 - !private "areaHeight"
 - !private "areaWidth"
-- !private "compactView"
-- !private "contentView"
-- !private "geometry"
+- "compactView"
+- "contentView"
+- "geometry"
+- !private "print"
 depends-member:
 - !private ["s18AdditiveArithmeticP", ""]
+- !private ["7SwiftUI9AlignmentV", "init"]
 - !private ["7SwiftUI9AlignmentV", "top"]
 - ["7SwiftUI10AnimatableP", ""]
 - !private ["7SwiftUI10AnimatableP", "fill"]
@@ -72,7 +76,6 @@ depends-member:
 - !private ["7SwiftUI10AnimatableP", "init"]
 - !private ["7SwiftUI10AnimatableP", "width"]
 - !private ["7SwiftUI10AnimatableP", "zero"]
-- !private ["7SwiftUI9AnimationV", "spring"]
 - ["SK", ""]
 - !private ["SB", "init"]
 - !private ["SB", "isTotallyOrdered"]
@@ -99,28 +102,28 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "none"]
 - !private ["s28CustomDebugStringConvertibleP", "some"]
-- !private ["s28CustomDebugStringConvertibleP", "spring"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s28CustomDebugStringConvertibleP", "zero"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "none"]
 - !private ["s17CustomReflectableP", "some"]
-- !private ["s17CustomReflectableP", "spring"]
 - !private ["s17CustomReflectableP", "width"]
 - !private ["s17CustomReflectableP", "zero"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "bounds"]
 - !private ["s23CustomStringConvertibleP", "gray"]
 - !private ["s23CustomStringConvertibleP", "main"]
-- !private ["s23CustomStringConvertibleP", "spring"]
 - !private ["Se", "height"]
 - !private ["Se", "init"]
 - !private ["Se", "none"]
 - !private ["Se", "some"]
-- !private ["Se", "spring"]
 - !private ["Se", "width"]
 - !private ["Se", "zero"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["7SwiftUI11DragGestureV", "init"]
 - !private ["7SwiftUI11DragGestureV", "onChanged"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
@@ -128,7 +131,6 @@ depends-member:
 - !private ["SE", "init"]
 - !private ["SE", "none"]
 - !private ["SE", "some"]
-- !private ["SE", "spring"]
 - !private ["SE", "width"]
 - !private ["SE", "zero"]
 - ["7SwiftUI17EnvironmentObjectV", "init"]
@@ -136,14 +138,15 @@ depends-member:
 - ["7SwiftUI17EnvironmentObjectV", "subscript"]
 - ["7SwiftUI17EnvironmentObjectV", "wrappedValue"]
 - ["SQ", ""]
+- !private ["SQ", "bottom"]
 - !private ["SQ", "bounds"]
+- !private ["SQ", "center"]
 - !private ["SQ", "gray"]
 - !private ["SQ", "height"]
 - !private ["SQ", "init"]
 - !private ["SQ", "main"]
 - !private ["SQ", "none"]
 - !private ["SQ", "some"]
-- !private ["SQ", "spring"]
 - !private ["SQ", "top"]
 - !private ["SQ", "translation"]
 - !private ["SQ", "width"]
@@ -154,8 +157,9 @@ depends-member:
 - ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "none"]
 - !private ["s23ExpressibleByNilLiteralP", "some"]
-- !private ["s23ExpressibleByNilLiteralP", "spring"]
+- !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
 - ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
 - ["s26ExpressibleByStringLiteralP", ""]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["SF", "*"]
@@ -220,7 +224,6 @@ depends-member:
 - !private ["7SwiftUI7GestureP", "onChanged"]
 - !private ["7SwiftUI7GestureP", "onEnded"]
 - !private ["7SwiftUI7GestureP", "some"]
-- !private ["7SwiftUI7GestureP", "spring"]
 - !private ["7SwiftUI6HStackV", "frame"]
 - !private ["7SwiftUI6HStackV", "init"]
 - ["SH", ""]
@@ -229,7 +232,7 @@ depends-member:
 - !private ["SH", "main"]
 - !private ["SH", "none"]
 - !private ["SH", "some"]
-- !private ["SH", "spring"]
+- !private ["7SwiftUI19HorizontalAlignmentV", "center"]
 - !private ["7SwiftUI15InsettableShapeP", "fill"]
 - !private ["7SwiftUI15InsettableShapeP", "foregroundColor"]
 - !private ["7SwiftUI15InsettableShapeP", "init"]
@@ -272,14 +275,17 @@ depends-member:
 - ["15MinimizableViewAAV", "minimizableViewHandler"]
 - ["15MinimizableViewAAV", "offsetY"]
 - ["15MinimizableViewAAV", "positionY"]
+- !private ["15MinimizableViewAAV", "print"]
 - ["15MinimizableView0aB7HandlerC", ""]
 - !private ["15MinimizableView0aB7HandlerC", "draggedOffset"]
 - !private ["15MinimizableView0aB7HandlerC", "expand"]
 - !private ["15MinimizableView0aB7HandlerC", "isMinimized"]
 - !private ["15MinimizableView0aB7HandlerC", "isPresented"]
+- !private ["15MinimizableView0aB7HandlerC", "isVisible"]
 - !private ["15MinimizableView0aB7HandlerC", "minimize"]
 - !private ["15MinimizableView0aB7HandlerC", "settings"]
 - ["15MinimizableView0aB8ModifierV", "$minimizableViewHandler"]
+- !private ["15MinimizableView0aB8ModifierV", "Alignment"]
 - ["15MinimizableView0aB8ModifierV", "Body"]
 - ["15MinimizableView0aB8ModifierV", "Content"]
 - ["15MinimizableView0aB8ModifierV", "Default_Body"]
@@ -288,6 +294,7 @@ depends-member:
 - !private ["15MinimizableView0aB8ModifierV", "MinimizableView"]
 - ["15MinimizableView0aB8ModifierV", "MinimizableViewHandler"]
 - ["15MinimizableView0aB8ModifierV", "View"]
+- !private ["15MinimizableView0aB8ModifierV", "ZStack"]
 - ["15MinimizableView0aB8ModifierV", ""]
 - ["15MinimizableView0aB8ModifierV", "_Default_Body"]
 - ["15MinimizableView0aB8ModifierV", "_makeView"]
@@ -312,11 +319,11 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "expand"]
 - !private ["7Combine16ObservableObjectP", "isMinimized"]
 - !private ["7Combine16ObservableObjectP", "isPresented"]
+- !private ["7Combine16ObservableObjectP", "isVisible"]
 - !private ["7Combine16ObservableObjectP", "minimize"]
 - !private ["7Combine16ObservableObjectP", "settings"]
 - !private ["Sq", "none"]
 - !private ["Sq", "some"]
-- !private ["Sq", "spring"]
 - !private ["7Combine9PublishedV", "init"]
 - !private ["7Combine9PublishedV", "projectedValue"]
 - !private ["7Combine9PublishedV", "subscript"]
@@ -332,7 +339,12 @@ depends-member:
 - !private ["s13SignedNumericP", "-"]
 - !private ["s13SignedNumericP", ""]
 - !private ["Sx", ""]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s27StringInterpolationProtocolP", "init"]
 - ["s16TextOutputStreamP", ""]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - ["s20TextOutputStreamableP", ""]
 - ["15MinimizableView016TopDelimiterAreaB0V", "Body"]
 - ["15MinimizableView016TopDelimiterAreaB0V", "CGFloat"]
@@ -356,6 +368,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "bounds"]
 - !private ["So18UITraitEnvironmentP", "main"]
 - !private ["7SwiftUI11DragGestureV5ValueV", "translation"]
+- !private ["7SwiftUI17VerticalAlignmentV", "bottom"]
 - !private ["7SwiftUI17VerticalAlignmentV", "top"]
 - ["15MinimizableView19VerticalDragGestureV", "$minimizableViewHandler"]
 - ["15MinimizableView19VerticalDragGestureV", "Body"]
@@ -398,7 +411,6 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "_viewListCount"]
-- !private ["7SwiftUI4ViewP", "animation"]
 - !private ["7SwiftUI4ViewP", "areaHeight"]
 - !private ["7SwiftUI4ViewP", "areaWidth"]
 - !private ["7SwiftUI4ViewP", "background"]
@@ -421,18 +433,18 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "none"]
 - !private ["7SwiftUI4ViewP", "offset"]
 - !private ["7SwiftUI4ViewP", "offsetY"]
-- !private ["7SwiftUI4ViewP", "overlay"]
 - !private ["7SwiftUI4ViewP", "position"]
 - !private ["7SwiftUI4ViewP", "positionY"]
+- !private ["7SwiftUI4ViewP", "print"]
 - !private ["7SwiftUI4ViewP", "shadow"]
 - !private ["7SwiftUI4ViewP", "some"]
-- !private ["7SwiftUI4ViewP", "spring"]
 - ["7SwiftUI4ViewP", "verticalDragGesture"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildExpression"]
 - !private ["7SwiftUI11ViewBuilderV", "buildFinalResult"]
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
 - !private ["7SwiftUI11ViewBuilderV", "buildOptional"]
+- !private ["7SwiftUI12ViewModifierP", "Alignment"]
 - ["7SwiftUI12ViewModifierP", "Body"]
 - !private ["7SwiftUI12ViewModifierP", "CGSize"]
 - ["7SwiftUI12ViewModifierP", "Content"]
@@ -440,6 +452,7 @@ depends-member:
 - !private ["7SwiftUI12ViewModifierP", "DragGesture"]
 - ["7SwiftUI12ViewModifierP", "EnvironmentObject"]
 - !private ["7SwiftUI12ViewModifierP", "MinimizableView"]
+- !private ["7SwiftUI12ViewModifierP", "ZStack"]
 - ["7SwiftUI12ViewModifierP", ""]
 - ["7SwiftUI12ViewModifierP", "_Default_Body"]
 - ["7SwiftUI12ViewModifierP", "_makeView"]
@@ -462,6 +475,7 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
@@ -471,16 +485,13 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "none"]
 - !private ["s21_ObjectiveCBridgeableP", "some"]
-- !private ["s21_ObjectiveCBridgeableP", "spring"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 - !private ["7SwiftUI21_ViewModifier_ContentV", "gesture"]
-- !private ["7SwiftUI21_ViewModifier_ContentV", "overlay"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
 - !private "7SwiftUI9AlignmentV"
 - "7SwiftUI10AnimatableP"
-- !private "7SwiftUI9AnimationV"
 - "SK"
 - !private "SB"
 - !private "So7CGPointV"
@@ -495,6 +506,7 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "Se"
+- !private "s26DefaultStringInterpolationV"
 - !private "7SwiftUI11DragGestureV"
 - "7SwiftUI15DynamicPropertyP"
 - !private "SE"
@@ -511,6 +523,7 @@ depends-nominal:
 - !private "7SwiftUI7GestureP"
 - !private "7SwiftUI6HStackV"
 - "SH"
+- !private "7SwiftUI19HorizontalAlignmentV"
 - !private "7SwiftUI15InsettableShapeP"
 - "s25LosslessStringConvertibleP"
 - !private "15MinimizableView12MiniSettingsV"
@@ -530,6 +543,7 @@ depends-nominal:
 - !private "7SwiftUI10ShapeStyleP"
 - !private "s13SignedNumericP"
 - !private "Sx"
+- !private "s27StringInterpolationProtocolP"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - "15MinimizableView016TopDelimiterAreaB0V"
@@ -548,6 +562,7 @@ depends-nominal:
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
@@ -575,24 +590,24 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CloudKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/DeveloperToolsSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/usr/include/mach-o/dyld.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UniformTypeIdentifiers.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UniformTypeIdentifiers.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "fa84f99593625a6ffc5e21d2ee9feba4"
