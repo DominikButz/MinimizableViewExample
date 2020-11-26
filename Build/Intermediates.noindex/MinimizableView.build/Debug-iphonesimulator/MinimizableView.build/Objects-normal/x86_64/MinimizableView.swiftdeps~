@@ -2,93 +2,70 @@
 provides-top-level:
 - "MinimizableView"
 - "MinimizableViewModifier"
-- "VerticalDragGesture"
-- "TopDelimiterAreaView"
 provides-nominal:
 - "15MinimizableViewAAV"
 - "15MinimizableView0aB8ModifierV"
-- "15MinimizableView19VerticalDragGestureV"
-- "15MinimizableView016TopDelimiterAreaB0V"
 provides-member:
 - ["15MinimizableViewAAV", ""]
 - ["15MinimizableView0aB8ModifierV", ""]
 - ["7SwiftUI4ViewP", ""]
-- ["15MinimizableView19VerticalDragGestureV", ""]
-- ["15MinimizableView016TopDelimiterAreaB0V", ""]
 - ["7SwiftUI4ViewP", "minimizableView"]
-- ["7SwiftUI4ViewP", "verticalDragGesture"]
 provides-dynamic-lookup:
 depends-top-level:
 - "&&"
 - !private "*"
 - !private "+"
-- "-"
+- !private "-"
 - !private "/"
-- "<"
+- !private "<"
 - "=="
-- ">"
 - !private "Alignment"
 - "AssignmentPrecedence"
+- "BackgroundView"
 - !private "BooleanLiteralType"
 - "CGFloat"
-- "CGSize"
-- "Capsule"
 - !private "CastingPrecedence"
-- "Color"
 - "CompactContent"
 - "Content"
-- !private "DragGesture"
+- "DragGesture"
 - "EmptyView"
 - "EnvironmentObject"
-- "FloatLiteralType"
+- !private "FloatLiteralType"
 - "GeometryProxy"
-- !private "HStack"
-- "IntegerLiteralType"
+- !private "IntegerLiteralType"
 - "MainContent"
+- "MiniSettings"
 - "MinimizableView"
 - "MinimizableViewHandler"
 - "MinimizableViewModifier"
-- !private "RoundedRectangle"
-- !private "StringLiteralType"
 - "TernaryPrecedence"
-- "TopDelimiterAreaView"
 - !private "UIScreen"
-- "VerticalDragGesture"
 - "View"
 - "ViewBuilder"
 - "ViewModifier"
 - !private "ZStack"
-- !private "areaHeight"
-- !private "areaWidth"
+- "backgroundView"
 - "compactView"
 - "contentView"
 - "geometry"
-- !private "print"
+- "settings"
 depends-member:
 - !private ["s18AdditiveArithmeticP", ""]
 - !private ["7SwiftUI9AlignmentV", "init"]
 - !private ["7SwiftUI9AlignmentV", "top"]
 - ["7SwiftUI10AnimatableP", ""]
-- !private ["7SwiftUI10AnimatableP", "fill"]
-- !private ["7SwiftUI10AnimatableP", "foregroundColor"]
+- !private ["7SwiftUI10AnimatableP", "bottom"]
 - !private ["7SwiftUI10AnimatableP", "height"]
-- !private ["7SwiftUI10AnimatableP", "init"]
 - !private ["7SwiftUI10AnimatableP", "width"]
-- !private ["7SwiftUI10AnimatableP", "zero"]
 - ["SK", ""]
 - !private ["SB", "init"]
 - !private ["SB", "isTotallyOrdered"]
 - !private ["SB", "radix"]
 - !private ["So6CGRectV", "height"]
-- !private ["So6CGSizeV", "height"]
 - !private ["So6CGSizeV", "width"]
-- !private ["So6CGSizeV", "zero"]
 - !private ["s7CVarArgP", "bounds"]
 - !private ["s7CVarArgP", "main"]
-- !private ["7SwiftUI7CapsuleV", "fill"]
-- !private ["7SwiftUI7CapsuleV", "init"]
 - ["Sl", ""]
-- !private ["7SwiftUI5ColorV", "gray"]
 - !private ["SL", "<"]
 - !private ["SL", "<="]
 - !private ["SL", ">"]
@@ -100,33 +77,26 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "none"]
 - !private ["s28CustomDebugStringConvertibleP", "some"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
-- !private ["s28CustomDebugStringConvertibleP", "zero"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "none"]
 - !private ["s17CustomReflectableP", "some"]
 - !private ["s17CustomReflectableP", "width"]
-- !private ["s17CustomReflectableP", "zero"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
-- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "bounds"]
-- !private ["s23CustomStringConvertibleP", "gray"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["Se", "height"]
 - !private ["Se", "none"]
 - !private ["Se", "some"]
 - !private ["Se", "width"]
-- !private ["Se", "zero"]
-- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
-- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- ["7SwiftUI11DragGestureV", "Value"]
 - !private ["7SwiftUI11DragGestureV", "init"]
 - !private ["7SwiftUI11DragGestureV", "onChanged"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
+- !private ["7SwiftUI10EdgeInsetsV", "bottom"]
 - !private ["SE", "height"]
 - !private ["SE", "none"]
 - !private ["SE", "some"]
 - !private ["SE", "width"]
-- !private ["SE", "zero"]
 - ["7SwiftUI17EnvironmentObjectV", "init"]
 - ["7SwiftUI17EnvironmentObjectV", "projectedValue"]
 - ["7SwiftUI17EnvironmentObjectV", "subscript"]
@@ -135,25 +105,22 @@ depends-member:
 - !private ["SQ", "bottom"]
 - !private ["SQ", "bounds"]
 - !private ["SQ", "center"]
-- !private ["SQ", "gray"]
 - !private ["SQ", "height"]
 - !private ["SQ", "init"]
 - !private ["SQ", "main"]
 - !private ["SQ", "none"]
 - !private ["SQ", "some"]
 - !private ["SQ", "top"]
-- !private ["SQ", "translation"]
 - !private ["SQ", "width"]
-- !private ["SQ", "zero"]
+- !private ["s25ExpressibleByArrayLiteralP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "bottom"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
-- ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
+- !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
 - !private ["s27ExpressibleByIntegerLiteralP", ""]
-- ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "none"]
 - !private ["s23ExpressibleByNilLiteralP", "some"]
-- !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
 - ["s32ExpressibleByStringInterpolationP", ""]
-- !private ["s32ExpressibleByStringInterpolationP", "init"]
 - ["s26ExpressibleByStringLiteralP", ""]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["SF", "*"]
@@ -212,33 +179,27 @@ depends-member:
 - !private ["SF", "truncatingRemainder"]
 - !private ["SF", "ulp"]
 - !private ["SF", "ulpOfOne"]
+- !private ["7SwiftUI13GeometryProxyV", "safeAreaInsets"]
 - !private ["7SwiftUI13GeometryProxyV", "size"]
+- ["7SwiftUI7GestureP", "Value"]
 - !private ["7SwiftUI7GestureP", "init"]
 - !private ["7SwiftUI7GestureP", "none"]
 - !private ["7SwiftUI7GestureP", "onChanged"]
 - !private ["7SwiftUI7GestureP", "onEnded"]
 - !private ["7SwiftUI7GestureP", "some"]
-- !private ["7SwiftUI6HStackV", "frame"]
-- !private ["7SwiftUI6HStackV", "init"]
 - ["SH", ""]
 - !private ["SH", "bounds"]
-- !private ["SH", "gray"]
 - !private ["SH", "main"]
 - !private ["SH", "none"]
 - !private ["SH", "some"]
 - !private ["7SwiftUI19HorizontalAlignmentV", "center"]
-- !private ["7SwiftUI15InsettableShapeP", "fill"]
-- !private ["7SwiftUI15InsettableShapeP", "foregroundColor"]
-- !private ["7SwiftUI15InsettableShapeP", "init"]
 - ["s25LosslessStringConvertibleP", ""]
-- !private ["15MinimizableView12MiniSettingsV", "backgroundColor"]
-- !private ["15MinimizableView12MiniSettingsV", "bottomMargin"]
-- !private ["15MinimizableView12MiniSettingsV", "cornerRadius"]
-- !private ["15MinimizableView12MiniSettingsV", "expandedTopMargin"]
+- !private ["15MinimizableView12MiniSettingsV", "animation"]
+- !private ["15MinimizableView12MiniSettingsV", "init"]
 - !private ["15MinimizableView12MiniSettingsV", "lateralMargin"]
+- !private ["15MinimizableView12MiniSettingsV", "minimizedBottomMargin"]
 - !private ["15MinimizableView12MiniSettingsV", "minimizedHeight"]
-- !private ["15MinimizableView12MiniSettingsV", "shadowColor"]
-- !private ["15MinimizableView12MiniSettingsV", "shadowRadius"]
+- !private ["15MinimizableView12MiniSettingsV", "overrideHeight"]
 - ["15MinimizableViewAAV", "$minimizableViewHandler"]
 - ["15MinimizableViewAAV", "Body"]
 - ["15MinimizableViewAAV", "CGFloat"]
@@ -246,8 +207,8 @@ depends-member:
 - !private ["15MinimizableViewAAV", "EmptyView"]
 - ["15MinimizableViewAAV", "EnvironmentObject"]
 - ["15MinimizableViewAAV", "GeometryProxy"]
+- ["15MinimizableViewAAV", "MiniSettings"]
 - ["15MinimizableViewAAV", "MinimizableViewHandler"]
-- !private ["15MinimizableViewAAV", "RoundedRectangle"]
 - !private ["15MinimizableViewAAV", "UIScreen"]
 - ["15MinimizableViewAAV", "View"]
 - ["15MinimizableViewAAV", "ViewBuilder"]
@@ -258,32 +219,32 @@ depends-member:
 - ["15MinimizableViewAAV", "_makeViewList"]
 - !private ["15MinimizableViewAAV", "_minimizableViewHandler"]
 - ["15MinimizableViewAAV", "_viewListCount"]
+- ["15MinimizableViewAAV", "backgroundView"]
 - ["15MinimizableViewAAV", "body"]
 - ["15MinimizableViewAAV", "compactView"]
 - ["15MinimizableViewAAV", "contentView"]
-- !private ["15MinimizableViewAAV", "environmentObject"]
 - ["15MinimizableViewAAV", "frameHeight"]
 - ["15MinimizableViewAAV", "geometry"]
+- !private ["15MinimizableViewAAV", "gesture"]
 - ["15MinimizableViewAAV", "init"]
 - ["15MinimizableViewAAV", "minimizableViewHandler"]
+- ["15MinimizableViewAAV", "minimizedOffsetY"]
 - ["15MinimizableViewAAV", "offsetY"]
-- ["15MinimizableViewAAV", "positionY"]
-- !private ["15MinimizableViewAAV", "print"]
+- ["15MinimizableViewAAV", "settings"]
 - ["15MinimizableView0aB7HandlerC", ""]
-- !private ["15MinimizableView0aB7HandlerC", "draggedOffset"]
-- !private ["15MinimizableView0aB7HandlerC", "expand"]
+- !private ["15MinimizableView0aB7HandlerC", "draggedOffsetY"]
 - !private ["15MinimizableView0aB7HandlerC", "isMinimized"]
 - !private ["15MinimizableView0aB7HandlerC", "isPresented"]
 - !private ["15MinimizableView0aB7HandlerC", "isVisible"]
-- !private ["15MinimizableView0aB7HandlerC", "minimize"]
-- !private ["15MinimizableView0aB7HandlerC", "settings"]
 - ["15MinimizableView0aB8ModifierV", "$minimizableViewHandler"]
 - !private ["15MinimizableView0aB8ModifierV", "Alignment"]
 - ["15MinimizableView0aB8ModifierV", "Body"]
 - ["15MinimizableView0aB8ModifierV", "Content"]
 - ["15MinimizableView0aB8ModifierV", "Default_Body"]
+- ["15MinimizableView0aB8ModifierV", "DragGesture"]
 - ["15MinimizableView0aB8ModifierV", "EnvironmentObject"]
 - ["15MinimizableView0aB8ModifierV", "GeometryProxy"]
+- ["15MinimizableView0aB8ModifierV", "MiniSettings"]
 - !private ["15MinimizableView0aB8ModifierV", "MinimizableView"]
 - ["15MinimizableView0aB8ModifierV", "MinimizableViewHandler"]
 - ["15MinimizableView0aB8ModifierV", "View"]
@@ -294,12 +255,16 @@ depends-member:
 - ["15MinimizableView0aB8ModifierV", "_makeViewList"]
 - !private ["15MinimizableView0aB8ModifierV", "_minimizableViewHandler"]
 - ["15MinimizableView0aB8ModifierV", "_viewListCount"]
+- ["15MinimizableView0aB8ModifierV", "backgroundView"]
 - ["15MinimizableView0aB8ModifierV", "body"]
 - ["15MinimizableView0aB8ModifierV", "compactView"]
 - ["15MinimizableView0aB8ModifierV", "contentView"]
+- ["15MinimizableView0aB8ModifierV", "dragOnChanged"]
+- ["15MinimizableView0aB8ModifierV", "dragOnEnded"]
 - ["15MinimizableView0aB8ModifierV", "geometry"]
 - ["15MinimizableView0aB8ModifierV", "init"]
 - ["15MinimizableView0aB8ModifierV", "minimizableViewHandler"]
+- ["15MinimizableView0aB8ModifierV", "settings"]
 - ["So8NSCodingP", ""]
 - ["So8NSObjectC", ""]
 - !private ["So8NSObjectC", "bounds"]
@@ -308,93 +273,42 @@ depends-member:
 - !private ["So8NSObjectP", "bounds"]
 - !private ["So8NSObjectP", "main"]
 - !private ["Sj", ""]
-- !private ["7Combine16ObservableObjectP", "draggedOffset"]
-- !private ["7Combine16ObservableObjectP", "expand"]
+- !private ["7Combine16ObservableObjectP", "draggedOffsetY"]
 - !private ["7Combine16ObservableObjectP", "isMinimized"]
 - !private ["7Combine16ObservableObjectP", "isPresented"]
 - !private ["7Combine16ObservableObjectP", "isVisible"]
-- !private ["7Combine16ObservableObjectP", "minimize"]
-- !private ["7Combine16ObservableObjectP", "settings"]
+- !private ["s9OptionSetP", "bottom"]
 - !private ["Sq", "none"]
 - !private ["Sq", "some"]
 - !private ["7Combine9PublishedV", "init"]
 - !private ["7Combine9PublishedV", "projectedValue"]
 - !private ["7Combine9PublishedV", "subscript"]
 - !private ["7Combine9PublishedV", "wrappedValue"]
-- !private ["7SwiftUI16RoundedRectangleV", "foregroundColor"]
-- !private ["7SwiftUI16RoundedRectangleV", "init"]
+- !private ["SY", ""]
+- !private ["SY", "bottom"]
 - ["ST", ""]
-- !private ["7SwiftUI5ShapeP", ""]
-- !private ["7SwiftUI5ShapeP", "fill"]
-- !private ["7SwiftUI5ShapeP", "foregroundColor"]
-- !private ["7SwiftUI5ShapeP", "init"]
-- !private ["7SwiftUI10ShapeStyleP", "gray"]
+- !private ["7SwiftUI4EdgeO3SetV", "bottom"]
+- !private ["s10SetAlgebraP", ""]
+- !private ["s10SetAlgebraP", "bottom"]
 - !private ["s13SignedNumericP", "-"]
 - !private ["s13SignedNumericP", ""]
 - !private ["Sx", ""]
-- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
-- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
-- !private ["s27StringInterpolationProtocolP", "init"]
 - ["s16TextOutputStreamP", ""]
-- !private ["s16TextOutputStreamP", "appendInterpolation"]
-- !private ["s16TextOutputStreamP", "appendLiteral"]
 - ["s20TextOutputStreamableP", ""]
-- ["15MinimizableView016TopDelimiterAreaB0V", "Body"]
-- ["15MinimizableView016TopDelimiterAreaB0V", "CGFloat"]
-- !private ["15MinimizableView016TopDelimiterAreaB0V", "Capsule"]
-- !private ["15MinimizableView016TopDelimiterAreaB0V", "Color"]
-- ["15MinimizableView016TopDelimiterAreaB0V", "Default_Body"]
-- !private ["15MinimizableView016TopDelimiterAreaB0V", "HStack"]
-- ["15MinimizableView016TopDelimiterAreaB0V", "View"]
-- ["15MinimizableView016TopDelimiterAreaB0V", ""]
-- ["15MinimizableView016TopDelimiterAreaB0V", "_Default_Body"]
-- ["15MinimizableView016TopDelimiterAreaB0V", "_makeView"]
-- ["15MinimizableView016TopDelimiterAreaB0V", "_makeViewList"]
-- ["15MinimizableView016TopDelimiterAreaB0V", "_viewListCount"]
-- ["15MinimizableView016TopDelimiterAreaB0V", "areaHeight"]
-- ["15MinimizableView016TopDelimiterAreaB0V", "areaWidth"]
-- ["15MinimizableView016TopDelimiterAreaB0V", "body"]
-- ["15MinimizableView016TopDelimiterAreaB0V", "init"]
 - !private ["So18UIFocusEnvironmentP", ""]
 - !private ["So8UIScreenC", "bounds"]
 - !private ["So8UIScreenC", "main"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
 - !private ["So18UITraitEnvironmentP", "main"]
-- !private ["7SwiftUI11DragGestureV5ValueV", "translation"]
 - !private ["7SwiftUI17VerticalAlignmentV", "bottom"]
-- !private ["7SwiftUI17VerticalAlignmentV", "top"]
-- ["15MinimizableView19VerticalDragGestureV", "$minimizableViewHandler"]
-- ["15MinimizableView19VerticalDragGestureV", "Body"]
-- ["15MinimizableView19VerticalDragGestureV", "CGFloat"]
-- !private ["15MinimizableView19VerticalDragGestureV", "CGSize"]
-- ["15MinimizableView19VerticalDragGestureV", "Content"]
-- ["15MinimizableView19VerticalDragGestureV", "Default_Body"]
-- !private ["15MinimizableView19VerticalDragGestureV", "DragGesture"]
-- ["15MinimizableView19VerticalDragGestureV", "EnvironmentObject"]
-- ["15MinimizableView19VerticalDragGestureV", "MinimizableViewHandler"]
-- ["15MinimizableView19VerticalDragGestureV", "View"]
-- ["15MinimizableView19VerticalDragGestureV", ""]
-- ["15MinimizableView19VerticalDragGestureV", "_Default_Body"]
-- ["15MinimizableView19VerticalDragGestureV", "_makeView"]
-- ["15MinimizableView19VerticalDragGestureV", "_makeViewList"]
-- !private ["15MinimizableView19VerticalDragGestureV", "_minimizableViewHandler"]
-- ["15MinimizableView19VerticalDragGestureV", "_viewListCount"]
-- ["15MinimizableView19VerticalDragGestureV", "body"]
-- ["15MinimizableView19VerticalDragGestureV", "init"]
-- ["15MinimizableView19VerticalDragGestureV", "minimizableViewHandler"]
-- ["15MinimizableView19VerticalDragGestureV", "translationHeightTriggerValue"]
 - ["7SwiftUI4ViewP", "Body"]
-- ["7SwiftUI4ViewP", "CGFloat"]
-- !private ["7SwiftUI4ViewP", "Capsule"]
-- !private ["7SwiftUI4ViewP", "Color"]
 - ["7SwiftUI4ViewP", "Default_Body"]
+- ["7SwiftUI4ViewP", "DragGesture"]
 - ["7SwiftUI4ViewP", "EnvironmentObject"]
 - ["7SwiftUI4ViewP", "GeometryProxy"]
-- !private ["7SwiftUI4ViewP", "HStack"]
+- ["7SwiftUI4ViewP", "MiniSettings"]
 - !private ["7SwiftUI4ViewP", "MinimizableViewModifier"]
-- !private ["7SwiftUI4ViewP", "RoundedRectangle"]
 - !private ["7SwiftUI4ViewP", "UIScreen"]
-- !private ["7SwiftUI4ViewP", "VerticalDragGesture"]
 - ["7SwiftUI4ViewP", "View"]
 - ["7SwiftUI4ViewP", "ViewBuilder"]
 - !private ["7SwiftUI4ViewP", "ZStack"]
@@ -403,32 +317,28 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "_viewListCount"]
-- !private ["7SwiftUI4ViewP", "areaHeight"]
-- !private ["7SwiftUI4ViewP", "areaWidth"]
+- !private ["7SwiftUI4ViewP", "animation"]
 - !private ["7SwiftUI4ViewP", "background"]
+- !private ["7SwiftUI4ViewP", "backgroundView"]
 - ["7SwiftUI4ViewP", "body"]
-- !private ["7SwiftUI4ViewP", "clipShape"]
 - !private ["7SwiftUI4ViewP", "compactView"]
 - !private ["7SwiftUI4ViewP", "contentView"]
+- !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI4ViewP", "environmentObject"]
-- !private ["7SwiftUI4ViewP", "fill"]
-- !private ["7SwiftUI4ViewP", "foregroundColor"]
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "frameHeight"]
 - !private ["7SwiftUI4ViewP", "geometry"]
 - !private ["7SwiftUI4ViewP", "gesture"]
-- !private ["7SwiftUI4ViewP", "gray"]
 - !private ["7SwiftUI4ViewP", "init"]
 - ["7SwiftUI4ViewP", "minimizableView"]
 - !private ["7SwiftUI4ViewP", "minimizableViewHandler"]
+- !private ["7SwiftUI4ViewP", "minimizedOffsetY"]
 - !private ["7SwiftUI4ViewP", "modifier"]
 - !private ["7SwiftUI4ViewP", "none"]
 - !private ["7SwiftUI4ViewP", "offset"]
 - !private ["7SwiftUI4ViewP", "offsetY"]
-- !private ["7SwiftUI4ViewP", "print"]
-- !private ["7SwiftUI4ViewP", "shadow"]
+- !private ["7SwiftUI4ViewP", "settings"]
 - !private ["7SwiftUI4ViewP", "some"]
-- ["7SwiftUI4ViewP", "verticalDragGesture"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildExpression"]
 - !private ["7SwiftUI11ViewBuilderV", "buildFinalResult"]
@@ -436,7 +346,6 @@ depends-member:
 - !private ["7SwiftUI11ViewBuilderV", "buildOptional"]
 - !private ["7SwiftUI12ViewModifierP", "Alignment"]
 - ["7SwiftUI12ViewModifierP", "Body"]
-- !private ["7SwiftUI12ViewModifierP", "CGSize"]
 - ["7SwiftUI12ViewModifierP", "Content"]
 - ["7SwiftUI12ViewModifierP", "Default_Body"]
 - !private ["7SwiftUI12ViewModifierP", "DragGesture"]
@@ -448,23 +357,25 @@ depends-member:
 - ["7SwiftUI12ViewModifierP", "_makeView"]
 - ["7SwiftUI12ViewModifierP", "_makeViewList"]
 - ["7SwiftUI12ViewModifierP", "_viewListCount"]
+- !private ["7SwiftUI12ViewModifierP", "backgroundView"]
 - ["7SwiftUI12ViewModifierP", "body"]
 - !private ["7SwiftUI12ViewModifierP", "compactView"]
 - !private ["7SwiftUI12ViewModifierP", "contentView"]
+- !private ["7SwiftUI12ViewModifierP", "dragOnChanged"]
+- !private ["7SwiftUI12ViewModifierP", "dragOnEnded"]
 - !private ["7SwiftUI12ViewModifierP", "geometry"]
 - !private ["7SwiftUI12ViewModifierP", "init"]
 - !private ["7SwiftUI12ViewModifierP", "minimizableViewHandler"]
-- !private ["7SwiftUI12ViewModifierP", "translationHeightTriggerValue"]
+- !private ["7SwiftUI12ViewModifierP", "settings"]
+- !private ["7SwiftUI6ZStackV", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI6ZStackV", "frame"]
 - !private ["7SwiftUI6ZStackV", "init"]
 - !private ["7SwiftUI15_ChangedGestureV", "onEnded"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "zero"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
-- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
@@ -474,8 +385,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "none"]
 - !private ["s21_ObjectiveCBridgeableP", "some"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
-- !private ["s21_ObjectiveCBridgeableP", "zero"]
-- !private ["7SwiftUI21_ViewModifier_ContentV", "gesture"]
+- !private ["7SwiftUI11_VectorMathP", "bottom"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
 - !private "7SwiftUI9AlignmentV"
@@ -485,33 +395,30 @@ depends-nominal:
 - !private "So6CGRectV"
 - !private "So6CGSizeV"
 - !private "s7CVarArgP"
-- !private "7SwiftUI7CapsuleV"
 - "Sl"
-- !private "7SwiftUI5ColorV"
 - "SL"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "Se"
-- !private "s26DefaultStringInterpolationV"
-- !private "7SwiftUI11DragGestureV"
+- "7SwiftUI11DragGestureV"
 - "7SwiftUI15DynamicPropertyP"
+- !private "7SwiftUI10EdgeInsetsV"
 - !private "SE"
 - "7SwiftUI17EnvironmentObjectV"
 - "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- "s27ExpressibleByIntegerLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "SF"
 - !private "7SwiftUI13GeometryProxyV"
-- !private "7SwiftUI7GestureP"
-- !private "7SwiftUI6HStackV"
+- "7SwiftUI7GestureP"
 - "SH"
 - !private "7SwiftUI19HorizontalAlignmentV"
-- !private "7SwiftUI15InsettableShapeP"
 - "s25LosslessStringConvertibleP"
 - !private "15MinimizableView12MiniSettingsV"
 - "15MinimizableViewAAV"
@@ -522,24 +429,21 @@ depends-nominal:
 - !private "So8NSObjectP"
 - !private "Sj"
 - !private "7Combine16ObservableObjectP"
+- !private "s9OptionSetP"
 - !private "Sq"
 - !private "7Combine9PublishedV"
-- !private "7SwiftUI16RoundedRectangleV"
+- !private "SY"
 - "ST"
-- !private "7SwiftUI5ShapeP"
-- !private "7SwiftUI10ShapeStyleP"
+- !private "7SwiftUI4EdgeO3SetV"
+- !private "s10SetAlgebraP"
 - !private "s13SignedNumericP"
 - !private "Sx"
-- !private "s27StringInterpolationProtocolP"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
-- "15MinimizableView016TopDelimiterAreaB0V"
 - !private "So18UIFocusEnvironmentP"
 - !private "So8UIScreenC"
 - !private "So18UITraitEnvironmentP"
-- !private "7SwiftUI11DragGestureV5ValueV"
 - !private "7SwiftUI17VerticalAlignmentV"
-- "15MinimizableView19VerticalDragGestureV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
 - "7SwiftUI12ViewModifierP"
@@ -548,13 +452,12 @@ depends-nominal:
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "7SwiftUI21_ViewModifier_ContentV"
+- !private "7SwiftUI11_VectorMathP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
@@ -597,4 +500,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "fa84f99593625a6ffc5e21d2ee9feba4"
+interface-hash: "0d686a71c14a18e2efc653f639dbce6f"

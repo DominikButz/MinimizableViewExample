@@ -1,0 +1,342 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MinimizableViewHandler"
+- "MiniSettings"
+- "KeyboardNotifier"
+provides-nominal:
+- "15MinimizableView0aB7HandlerC"
+- "15MinimizableView12MiniSettingsV"
+- "15MinimizableView16KeyboardNotifierC"
+provides-member:
+- ["15MinimizableView0aB7HandlerC", ""]
+- ["15MinimizableView12MiniSettingsV", ""]
+- ["15MinimizableView16KeyboardNotifierC", ""]
+provides-dynamic-lookup:
+- "$draggedOffsetY"
+- "$isMinimized"
+- "$isPresented"
+- "$isVisible"
+- "$settings"
+- "_draggedOffsetY"
+- "_isMinimized"
+- "_isPresented"
+- "_isVisible"
+- "_settings"
+- "dismiss"
+- "draggedOffsetY"
+- "expand"
+- "isMinimized"
+- "isPresented"
+- "isVisible"
+- "keyBoardWillHide"
+- "keyBoardWillShow"
+- "keyboardResponder"
+- "keyboardWillHide"
+- "keyboardWillShow"
+- "minimize"
+- "notificationCentre"
+- "onDismissal"
+- "onExpansion"
+- "onMinimization"
+- "onPresentation"
+- "present"
+- "settings"
+- "toggleExpansionState"
+depends-top-level:
+- !private "=="
+- "Animation"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CGFloat"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "KeyboardNotifier"
+- "MiniSettings"
+- "MinimizableViewHandler"
+- "Notification"
+- "NotificationCenter"
+- "ObservableObject"
+- "Published"
+- !private "UIResponder"
+- "Void"
+- !private "isMinimized"
+- !private "isPresented"
+- !private "keyBoardWillHide"
+- !private "keyBoardWillShow"
+- !private "notificationCentre"
+depends-member:
+- !private ["7SwiftUI9AnimationV", "interactiveSpring"]
+- !private ["SK", ""]
+- !private ["s7CVarArgP", "addObserver"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "keyboardWillHideNotification"]
+- !private ["s7CVarArgP", "keyboardWillShowNotification"]
+- !private ["s7CVarArgP", "removeObserver"]
+- !private ["Sl", ""]
+- !private ["SL", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "interactiveSpring"]
+- !private ["s28CustomDebugStringConvertibleP", "keyboardWillHideNotification"]
+- !private ["s28CustomDebugStringConvertibleP", "keyboardWillShowNotification"]
+- !private ["s28CustomDebugStringConvertibleP", "removeObserver"]
+- !private ["s17CustomReflectableP", "interactiveSpring"]
+- !private ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "addObserver"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "interactiveSpring"]
+- !private ["s23CustomStringConvertibleP", "keyboardWillHideNotification"]
+- !private ["s23CustomStringConvertibleP", "keyboardWillShowNotification"]
+- !private ["s23CustomStringConvertibleP", "removeObserver"]
+- !private ["SQ", ""]
+- !private ["SQ", "addObserver"]
+- !private ["SQ", "default"]
+- !private ["SQ", "interactiveSpring"]
+- !private ["SQ", "keyboardWillHideNotification"]
+- !private ["SQ", "keyboardWillShowNotification"]
+- !private ["SQ", "removeObserver"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
+- ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s26ExpressibleByStringLiteralP", ""]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["SH", ""]
+- !private ["SH", "addObserver"]
+- !private ["SH", "default"]
+- !private ["SH", "keyboardWillHideNotification"]
+- !private ["SH", "keyboardWillShowNotification"]
+- !private ["SH", "removeObserver"]
+- ["15MinimizableView16KeyboardNotifierC", "Default_ObjectWillChangePublisher"]
+- ["15MinimizableView16KeyboardNotifierC", "Notification"]
+- ["15MinimizableView16KeyboardNotifierC", "NotificationCenter"]
+- ["15MinimizableView16KeyboardNotifierC", "ObjectWillChangePublisher"]
+- !private ["15MinimizableView16KeyboardNotifierC", "UIResponder"]
+- ["15MinimizableView16KeyboardNotifierC", "Void"]
+- ["15MinimizableView16KeyboardNotifierC", ""]
+- ["15MinimizableView16KeyboardNotifierC", "_Default_ObjectWillChangePublisher"]
+- ["15MinimizableView16KeyboardNotifierC", "deinit"]
+- ["15MinimizableView16KeyboardNotifierC", "init"]
+- ["15MinimizableView16KeyboardNotifierC", "keyBoardWillHide"]
+- ["15MinimizableView16KeyboardNotifierC", "keyBoardWillShow"]
+- ["15MinimizableView16KeyboardNotifierC", "keyboardWillHide"]
+- ["15MinimizableView16KeyboardNotifierC", "keyboardWillShow"]
+- !private ["15MinimizableView16KeyboardNotifierC", "notificationCentre"]
+- ["15MinimizableView16KeyboardNotifierC", "objectWillChange"]
+- !private ["s25LosslessStringConvertibleP", ""]
+- ["15MinimizableView12MiniSettingsV", "Animation"]
+- ["15MinimizableView12MiniSettingsV", "CGFloat"]
+- ["15MinimizableView12MiniSettingsV", "animation"]
+- ["15MinimizableView12MiniSettingsV", "expandedTopMargin"]
+- ["15MinimizableView12MiniSettingsV", "init"]
+- ["15MinimizableView12MiniSettingsV", "lateralMargin"]
+- ["15MinimizableView12MiniSettingsV", "minimizedHeight"]
+- ["15MinimizableView0aB7HandlerC", "$draggedOffsetY"]
+- ["15MinimizableView0aB7HandlerC", "$isMinimized"]
+- ["15MinimizableView0aB7HandlerC", "$isPresented"]
+- ["15MinimizableView0aB7HandlerC", "$isVisible"]
+- ["15MinimizableView0aB7HandlerC", "$settings"]
+- ["15MinimizableView0aB7HandlerC", "Bool"]
+- ["15MinimizableView0aB7HandlerC", "CGFloat"]
+- ["15MinimizableView0aB7HandlerC", "Default_ObjectWillChangePublisher"]
+- ["15MinimizableView0aB7HandlerC", "KeyboardNotifier"]
+- ["15MinimizableView0aB7HandlerC", "MiniSettings"]
+- ["15MinimizableView0aB7HandlerC", "ObjectWillChangePublisher"]
+- ["15MinimizableView0aB7HandlerC", "Published"]
+- ["15MinimizableView0aB7HandlerC", "Void"]
+- ["15MinimizableView0aB7HandlerC", ""]
+- ["15MinimizableView0aB7HandlerC", "_Default_ObjectWillChangePublisher"]
+- !private ["15MinimizableView0aB7HandlerC", "_draggedOffsetY"]
+- !private ["15MinimizableView0aB7HandlerC", "_isMinimized"]
+- !private ["15MinimizableView0aB7HandlerC", "_isPresented"]
+- !private ["15MinimizableView0aB7HandlerC", "_isVisible"]
+- !private ["15MinimizableView0aB7HandlerC", "_settings"]
+- ["15MinimizableView0aB7HandlerC", "deinit"]
+- ["15MinimizableView0aB7HandlerC", "dismiss"]
+- ["15MinimizableView0aB7HandlerC", "draggedOffsetY"]
+- ["15MinimizableView0aB7HandlerC", "expand"]
+- ["15MinimizableView0aB7HandlerC", "init"]
+- ["15MinimizableView0aB7HandlerC", "isMinimized"]
+- ["15MinimizableView0aB7HandlerC", "isPresented"]
+- ["15MinimizableView0aB7HandlerC", "isVisible"]
+- ["15MinimizableView0aB7HandlerC", "keyboardResponder"]
+- ["15MinimizableView0aB7HandlerC", "minimize"]
+- ["15MinimizableView0aB7HandlerC", "objectWillChange"]
+- ["15MinimizableView0aB7HandlerC", "onDismissal"]
+- ["15MinimizableView0aB7HandlerC", "onExpansion"]
+- ["15MinimizableView0aB7HandlerC", "onMinimization"]
+- ["15MinimizableView0aB7HandlerC", "onPresentation"]
+- ["15MinimizableView0aB7HandlerC", "present"]
+- ["15MinimizableView0aB7HandlerC", "settings"]
+- ["15MinimizableView0aB7HandlerC", "toggleExpansionState"]
+- !private ["So8NSCodingP", ""]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "addObserver"]
+- !private ["So8NSObjectC", "addObserverForName"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "keyboardWillHideNotification"]
+- !private ["So8NSObjectC", "keyboardWillShowNotification"]
+- !private ["So8NSObjectC", "removeObserver"]
+- !private ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addObserver"]
+- !private ["So8NSObjectP", "addObserverForName"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "keyboardWillHideNotification"]
+- !private ["So8NSObjectP", "keyboardWillShowNotification"]
+- !private ["So8NSObjectP", "removeObserver"]
+- !private ["So20NSNotificationCenterC", "addObserver"]
+- !private ["So20NSNotificationCenterC", "default"]
+- !private ["So20NSNotificationCenterC", "removeObserver"]
+- ["7Combine16ObservableObjectP", "Default_ObjectWillChangePublisher"]
+- ["7Combine16ObservableObjectP", "Failure"]
+- !private ["7Combine16ObservableObjectP", "KeyboardNotifier"]
+- ["7Combine16ObservableObjectP", "MiniSettings"]
+- !private ["7Combine16ObservableObjectP", "NotificationCenter"]
+- ["7Combine16ObservableObjectP", "ObjectWillChangePublisher"]
+- ["7Combine16ObservableObjectP", "Published"]
+- !private ["7Combine16ObservableObjectP", "UIResponder"]
+- ["7Combine16ObservableObjectP", ""]
+- ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
+- !private ["7Combine16ObservableObjectP", "_draggedOffsetY"]
+- !private ["7Combine16ObservableObjectP", "_isMinimized"]
+- !private ["7Combine16ObservableObjectP", "_isPresented"]
+- !private ["7Combine16ObservableObjectP", "_isVisible"]
+- !private ["7Combine16ObservableObjectP", "_settings"]
+- !private ["7Combine16ObservableObjectP", "dismiss"]
+- !private ["7Combine16ObservableObjectP", "draggedOffsetY"]
+- !private ["7Combine16ObservableObjectP", "expand"]
+- !private ["7Combine16ObservableObjectP", "init"]
+- !private ["7Combine16ObservableObjectP", "isMinimized"]
+- !private ["7Combine16ObservableObjectP", "isPresented"]
+- !private ["7Combine16ObservableObjectP", "isVisible"]
+- !private ["7Combine16ObservableObjectP", "keyBoardWillHide"]
+- !private ["7Combine16ObservableObjectP", "keyBoardWillShow"]
+- !private ["7Combine16ObservableObjectP", "keyboardResponder"]
+- !private ["7Combine16ObservableObjectP", "keyboardWillHide"]
+- !private ["7Combine16ObservableObjectP", "keyboardWillShow"]
+- !private ["7Combine16ObservableObjectP", "minimize"]
+- !private ["7Combine16ObservableObjectP", "notificationCentre"]
+- ["7Combine16ObservableObjectP", "objectWillChange"]
+- !private ["7Combine16ObservableObjectP", "onDismissal"]
+- !private ["7Combine16ObservableObjectP", "onExpansion"]
+- !private ["7Combine16ObservableObjectP", "onMinimization"]
+- !private ["7Combine16ObservableObjectP", "onPresentation"]
+- !private ["7Combine16ObservableObjectP", "present"]
+- !private ["7Combine16ObservableObjectP", "settings"]
+- !private ["7Combine16ObservableObjectP", "toggleExpansionState"]
+- ["7Combine9PublishedV", "init"]
+- ["7Combine9PublishedV", "projectedValue"]
+- ["7Combine9PublishedV", "subscript"]
+- ["7Combine9PublishedV", "wrappedValue"]
+- !private ["ST", ""]
+- !private ["s16TextOutputStreamP", ""]
+- !private ["s20TextOutputStreamableP", ""]
+- !private ["So18UIFocusEnvironmentP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "keyboardWillHideNotification"]
+- !private ["So30UIPasteConfigurationSupportingP", "keyboardWillShowNotification"]
+- !private ["So11UIResponderC", "keyboardWillHideNotification"]
+- !private ["So11UIResponderC", "keyboardWillShowNotification"]
+- !private ["So30UIResponderStandardEditActionsP", "keyboardWillHideNotification"]
+- !private ["So30UIResponderStandardEditActionsP", "keyboardWillShowNotification"]
+- !private ["So23UIUserActivityRestoringP", "keyboardWillHideNotification"]
+- !private ["So23UIUserActivityRestoringP", "keyboardWillShowNotification"]
+- ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "keyboardWillHideNotification"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "keyboardWillShowNotification"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeObserver"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addObserver"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "default"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "keyboardWillHideNotification"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "keyboardWillShowNotification"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "removeObserver"]
+depends-nominal:
+- !private "7SwiftUI9AnimationV"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s27ExpressibleByIntegerLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SH"
+- "15MinimizableView16KeyboardNotifierC"
+- !private "s25LosslessStringConvertibleP"
+- "15MinimizableView12MiniSettingsV"
+- "15MinimizableView0aB7HandlerC"
+- !private "So8NSCodingP"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So20NSNotificationCenterC"
+- "7Combine16ObservableObjectP"
+- "7Combine9PublishedV"
+- !private "ST"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
+- "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s33_ExpressibleByBuiltinFloatLiteralP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UniformTypeIdentifiers.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CloudKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/DeveloperToolsSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UniformTypeIdentifiers.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "a1fd4ab664cdfc7eecaed918d3aeba8e"

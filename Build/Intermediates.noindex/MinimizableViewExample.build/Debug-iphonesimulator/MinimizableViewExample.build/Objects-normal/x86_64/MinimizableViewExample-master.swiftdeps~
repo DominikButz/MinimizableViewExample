@@ -1,11 +1,12 @@
 version: "Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)"
-options: "e410cd74eae7b830adaa2e99947f7edb"
-build_time: [1606186440, 749248000]
+options: "f3a6d6b7c3dcff8155751ccee9c4978f"
+build_time: [1606372709, 817216000]
 inputs:
   "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/AppDelegate.swift": [1575090815, 0]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/BlurView.swift": [1606118673, 49132046]
   "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/SceneDelegate.swift": [1604118704, 725953247]
-  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/ContentExample.swift": [1606186440, 681775619]
-  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/ListView.swift": [1604061716, 194724162]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/ContentExample.swift": [1606286820, 509193152]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/ListView.swift": [1606271202, 951926392]
   "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/Buttons.swift": [1575090815, 0]
-  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/CompactViewExample.swift": [1606020147, 832032357]
-  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/RootView.swift": [1606020147, 833674362]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/CompactViewExample.swift": [1606200325, 806644689]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/RootView.swift": [1606291181, 67726059]

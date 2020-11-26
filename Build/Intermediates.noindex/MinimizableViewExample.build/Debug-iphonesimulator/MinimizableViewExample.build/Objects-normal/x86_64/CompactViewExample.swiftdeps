@@ -18,7 +18,6 @@ depends-top-level:
 - !private "FloatLiteralType"
 - !private "GeometryReader"
 - "HStack"
-- !private "IntegerLiteralType"
 - "MinimizableViewHandler"
 - "PreviewProvider"
 - !private "StringLiteralType"
@@ -36,6 +35,7 @@ depends-member:
 - !private ["7SwiftUI13AnyTransitionV", "opacity"]
 - ["SK", ""]
 - !private ["SK", "secondarySystemBackground"]
+- !private ["So10CGColorRefa", "secondarySystemBackground"]
 - !private ["So6CGSizeV", "height"]
 - !private ["So6CGSizeV", "width"]
 - !private ["8CloudKit21CKRecordValueProtocolP", "secondarySystemBackground"]
@@ -119,8 +119,6 @@ depends-member:
 - !private ["SQ", "width"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "secondarySystemBackground"]
-- !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
-- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "easeIn"]
 - !private ["s23ExpressibleByNilLiteralP", "easeOut"]
 - ["s32ExpressibleByStringInterpolationP", ""]
@@ -203,19 +201,19 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "minimizableViewHandler"]
 - !private ["7SwiftUI4ViewP", "onTapGesture"]
 - !private ["7SwiftUI4ViewP", "transition"]
-- !private ["7SwiftUI4ViewP", "verticalDragGesture"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildExpression"]
 - !private ["7SwiftUI11ViewBuilderV", "buildFinalResult"]
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
 - !private ["7SwiftUI11ViewBuilderV", "buildOptional"]
+- !private ["14CoreFoundation9_CFObjectP", "secondarySystemBackground"]
+- !private ["12CoreGraphics22_CGColorInitTrampolineP", "secondarySystemBackground"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "secondarySystemBackground"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "secondarySystemBackground"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "secondarySystemBackground"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
@@ -243,6 +241,7 @@ depends-nominal:
 - !private "7SwiftUI9AnimationV"
 - !private "7SwiftUI13AnyTransitionV"
 - "SK"
+- !private "So10CGColorRefa"
 - !private "So6CGSizeV"
 - !private "8CloudKit21CKRecordValueProtocolP"
 - !private "s7CVarArgP"
@@ -260,7 +259,6 @@ depends-nominal:
 - "7SwiftUI17EnvironmentObjectV"
 - "SQ"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
@@ -294,10 +292,11 @@ depends-nominal:
 - !private "So7UIColorC"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
+- !private "14CoreFoundation9_CFObjectP"
+- !private "12CoreGraphics22_CGColorInitTrampolineP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"

@@ -21,7 +21,8 @@ struct CompactViewExample: View {
                 Text("Compact View")
              }.frame(width: proxy.size.width, height: proxy.size.height).onTapGesture {
                     self.minimizableViewHandler.expand()
-            }.background(Color(.secondarySystemBackground)).verticalDragGesture(translationHeightTriggerValue: 40)
+            }.background(Color(.secondarySystemBackground))
+             //.verticalDragGesture(translationHeightTriggerValue: 40)
         }.transition(AnyTransition.asymmetric(insertion: AnyTransition.opacity.animation(.easeIn(duration: 0.5)), removal: AnyTransition.opacity.animation(.easeOut(duration: 0.1))))
     }
 }

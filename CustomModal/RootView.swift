@@ -12,14 +12,11 @@ import Combine
 
 struct RootView: View {
 
-    @ObservedObject var minimizableViewHandler: MinimizableViewHandler = MinimizableViewHandler()
+    @ObservedObject var miniHandler: MinimizableViewHandler = MinimizableViewHandler()
     @State var selectedTabIndex: Int = 0
     
-    init() {
-        
-        self.minimizableViewHandler.settings.backgroundColor = Color(.secondarySystemBackground)
-        self.minimizableViewHandler.settings.lateralMargin = 10
-    }
+    @Namespace var namespace
+
     
     var body: some View {
         GeometryReader { proxy in
@@ -27,10 +24,10 @@ struct RootView: View {
                 TabView(selection: self.$selectedTabIndex) {
                     
                     Button(action: {
+                        print(proxy.safeAreaInsets.bottom)
+                        self.miniHandler.present()
                         
-                        self.minimizableViewHandler.present()
-                        
-                    }) { TranslucentTextButtonView(title: "Launch Minimizable View", foregroundColor: .green, backgroundColor: .green)}.disabled(self.minimizableViewHandler.isPresented)
+                    }) { TranslucentTextButtonView(title: "Launch Minimizable View", foregroundColor: .green, backgroundColor: .green)}.disabled(self.miniHandler.isPresented)
                         
                         .tabItem {
                             Image(systemName: "chevron.up.square.fill")
@@ -50,17 +47,71 @@ struct RootView: View {
                     
                     
                 }.background(Color(.secondarySystemFill))
-                .minimizableView(content: {ContentExample()}, compactView:{CompactViewExample()}, geometry: proxy)
-                .environmentObject(self.minimizableViewHandler)
+                .statusBar(hidden: self.miniHandler.isPresented && self.miniHandler.isMinimized == false)
+                .minimizableView(content: {ContentExample(animationNamespaceId: self.namespace)}, compactView: {EmptyView()}, backgroundView: {
+                    VStack(spacing: 0){
+                        
+                        BlurView(style: .systemChromeMaterial)
+                        if self.miniHandler.isMinimized {
+                            Divider()
+                        }
+                    }.cornerRadius(self.miniHandler.isMinimized ? 0 : 20)
+                    .onTapGesture(perform: {
+                        if self.miniHandler.isMinimized {
+                        withAnimation(.spring()){self.miniHandler.isMinimized = false}
+                        }
+                    })
+                }, dragOnChanged: { (value) in
+                    self.dragOnChanged(value: value)
+                }, dragOnEnded: { (value) in
+                    self.dragOnEnded(value: value)
+                }, geometry: proxy, settings: MiniSettings(minimizedHeight: 80))
+                .environmentObject(self.miniHandler)
      
         }
     
         //
     }
+    
+    
+    func dragOnChanged(value: DragGesture.Value) {
+        if self.miniHandler.isMinimized == false  { // expanded state
+            if value.translation.height > 0 {
+                self.miniHandler.draggedOffsetY = value.translation.height
+
+            }
+        } else {// minimized state
+            
+            if value.translation.height < 0 {
+                self.miniHandler.draggedOffsetY = value.translation.height
+
+            }
+        }
+    }
+    
+    func dragOnEnded(value: DragGesture.Value) {
+        if self.miniHandler.isMinimized == false  {
+            if value.translation.height > 60 {
+                  self.miniHandler.minimize()
+           
+            }
+            
+        } else {
+            if value.translation.height < -60 {
+                  self.miniHandler.expand()
+    
+              }
+            
+        }
+       withAnimation(.spring()) {
+            self.miniHandler.draggedOffsetY = 0
+       }
+
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        RootView()
+        RootView().colorScheme(.dark)
     }
 }

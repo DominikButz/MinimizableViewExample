@@ -19,6 +19,7 @@
 		B48E64AC2349C05A0036D203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48E64AA2349C05A0036D203 /* LaunchScreen.storyboard */; };
 		B48E64B42349C0E00036D203 /* ContentExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E64B32349C0E00036D203 /* ContentExample.swift */; };
 		B48E64B62349EB670036D203 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48E64B52349EB670036D203 /* Colors.xcassets */; };
+		B4AA02A2256CFE550069D9F4 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AA02A1256CFE550069D9F4 /* BlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		B48E64AD2349C05A0036D203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B48E64B32349C0E00036D203 /* ContentExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentExample.swift; sourceTree = "<group>"; };
 		B48E64B52349EB670036D203 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		B4AA02A1256CFE550069D9F4 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				B48E649F2349C0560036D203 /* AppDelegate.swift */,
 				B48E64A12349C0560036D203 /* SceneDelegate.swift */,
+				B4AA02A1256CFE550069D9F4 /* BlurView.swift */,
 				B48E64A32349C0560036D203 /* RootView.swift */,
 				B461DFA9254C3DE400E29DE5 /* ListView.swift */,
 				B48E64B32349C0E00036D203 /* ContentExample.swift */,
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48E64A02349C0560036D203 /* AppDelegate.swift in Sources */,
+				B4AA02A2256CFE550069D9F4 /* BlurView.swift in Sources */,
 				B48E64A22349C0560036D203 /* SceneDelegate.swift in Sources */,
 				B48E64B42349C0E00036D203 /* ContentExample.swift in Sources */,
 				B461DFAA254C3DE400E29DE5 /* ListView.swift in Sources */,
@@ -251,7 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -305,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -324,7 +328,7 @@
 				DEVELOPMENT_TEAM = 76FXG652LY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CustomModal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,7 +350,7 @@
 				DEVELOPMENT_TEAM = 76FXG652LY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CustomModal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

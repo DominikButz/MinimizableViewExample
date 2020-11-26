@@ -1,10 +1,12 @@
-version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
-options: "73b4db5954ed3c84069fdda88fb18f72"
-build_time: [1573457584, 992886000]
+version: "Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)"
+options: "b88d351a84fc8378f0cad1da1ee62e2b"
+build_time: [1606285434, 693704000]
 inputs:
-  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/AppDelegate.swift": [1573205092, 626309682]
-  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/SceneDelegate.swift": [1573205092, 610482359]
-  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/ContentExample.swift": [1573457584, 912134950]
-  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/Buttons.swift": [1573113486, 834434549]
-  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/CompactViewExample.swift": [1573456965, 817403434]
-  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/ContentView.swift": [1573456965, 896128693]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/AppDelegate.swift": [1575090815, 0]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/BlurView.swift": [1606118673, 49132046]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/SceneDelegate.swift": [1604118704, 725953247]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/ContentExample.swift": [1606276560, 145906738]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/ListView.swift": [1606271202, 951926392]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/Buttons.swift": [1575090815, 0]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/CompactViewExample.swift": [1606200325, 806644689]
+  "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/RootView.swift": [1606285430, 661428183]

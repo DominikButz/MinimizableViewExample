@@ -12,18 +12,18 @@ provides-member:
 - ["15MinimizableView12MiniSettingsV", ""]
 - ["15MinimizableView16KeyboardNotifierC", ""]
 provides-dynamic-lookup:
-- "$draggedOffset"
+- "$draggedOffsetY"
 - "$isMinimized"
 - "$isPresented"
 - "$isVisible"
 - "$settings"
-- "_draggedOffset"
+- "_draggedOffsetY"
 - "_isMinimized"
 - "_isPresented"
 - "_isVisible"
 - "_settings"
 - "dismiss"
-- "draggedOffset"
+- "draggedOffsetY"
 - "expand"
 - "isMinimized"
 - "isPresented"
@@ -44,11 +44,11 @@ provides-dynamic-lookup:
 - "toggleExpansionState"
 depends-top-level:
 - !private "=="
+- "Animation"
 - "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
 - "CGFloat"
-- "CGSize"
 - "Color"
 - "FloatLiteralType"
 - "IntegerLiteralType"
@@ -59,7 +59,6 @@ depends-top-level:
 - "NotificationCenter"
 - "ObservableObject"
 - "Published"
-- "TernaryPrecedence"
 - !private "UIResponder"
 - "Void"
 - !private "isMinimized"
@@ -68,11 +67,10 @@ depends-top-level:
 - !private "keyBoardWillShow"
 - !private "notificationCentre"
 depends-member:
-- ["7SwiftUI10AnimatableP", "zero"]
+- !private ["7SwiftUI9AnimationV", "interactiveSpring"]
 - !private ["SK", ""]
 - !private ["SK", "systemBackground"]
 - !private ["SK", "systemGray2"]
-- ["So6CGSizeV", "zero"]
 - !private ["8CloudKit21CKRecordValueProtocolP", "systemBackground"]
 - !private ["8CloudKit21CKRecordValueProtocolP", "systemGray2"]
 - !private ["s7CVarArgP", "addObserver"]
@@ -91,19 +89,20 @@ depends-member:
 - !private ["SL", "systemGray2"]
 - !private ["s28CustomDebugStringConvertibleP", "addObserver"]
 - !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "interactiveSpring"]
 - !private ["s28CustomDebugStringConvertibleP", "keyboardWillHideNotification"]
 - !private ["s28CustomDebugStringConvertibleP", "keyboardWillShowNotification"]
 - !private ["s28CustomDebugStringConvertibleP", "removeObserver"]
 - !private ["s28CustomDebugStringConvertibleP", "systemBackground"]
 - !private ["s28CustomDebugStringConvertibleP", "systemGray2"]
-- ["s28CustomDebugStringConvertibleP", "zero"]
+- !private ["s17CustomReflectableP", "interactiveSpring"]
 - !private ["s17CustomReflectableP", "systemBackground"]
 - !private ["s17CustomReflectableP", "systemGray2"]
-- ["s17CustomReflectableP", "zero"]
 - !private ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addObserver"]
 - !private ["s23CustomStringConvertibleP", "default"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "interactiveSpring"]
 - !private ["s23CustomStringConvertibleP", "keyboardWillHideNotification"]
 - !private ["s23CustomStringConvertibleP", "keyboardWillShowNotification"]
 - !private ["s23CustomStringConvertibleP", "removeObserver"]
@@ -111,20 +110,18 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "systemGray2"]
 - !private ["Se", "systemBackground"]
 - !private ["Se", "systemGray2"]
-- ["Se", "zero"]
 - !private ["SE", "systemBackground"]
 - !private ["SE", "systemGray2"]
-- ["SE", "zero"]
 - !private ["SQ", ""]
 - !private ["SQ", "addObserver"]
 - !private ["SQ", "default"]
 - !private ["SQ", "init"]
+- !private ["SQ", "interactiveSpring"]
 - !private ["SQ", "keyboardWillHideNotification"]
 - !private ["SQ", "keyboardWillShowNotification"]
 - !private ["SQ", "removeObserver"]
 - !private ["SQ", "systemBackground"]
 - !private ["SQ", "systemGray2"]
-- ["SQ", "zero"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "systemBackground"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "systemGray2"]
@@ -169,8 +166,10 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", ""]
 - !private ["s25LosslessStringConvertibleP", "systemBackground"]
 - !private ["s25LosslessStringConvertibleP", "systemGray2"]
+- ["15MinimizableView12MiniSettingsV", "Animation"]
 - ["15MinimizableView12MiniSettingsV", "CGFloat"]
 - ["15MinimizableView12MiniSettingsV", "Color"]
+- ["15MinimizableView12MiniSettingsV", "animation"]
 - ["15MinimizableView12MiniSettingsV", "backgroundColor"]
 - ["15MinimizableView12MiniSettingsV", "bottomMargin"]
 - ["15MinimizableView12MiniSettingsV", "cornerRadius"]
@@ -180,13 +179,13 @@ depends-member:
 - ["15MinimizableView12MiniSettingsV", "minimizedHeight"]
 - ["15MinimizableView12MiniSettingsV", "shadowColor"]
 - ["15MinimizableView12MiniSettingsV", "shadowRadius"]
-- ["15MinimizableView0aB7HandlerC", "$draggedOffset"]
+- ["15MinimizableView0aB7HandlerC", "$draggedOffsetY"]
 - ["15MinimizableView0aB7HandlerC", "$isMinimized"]
 - ["15MinimizableView0aB7HandlerC", "$isPresented"]
 - ["15MinimizableView0aB7HandlerC", "$isVisible"]
 - ["15MinimizableView0aB7HandlerC", "$settings"]
 - ["15MinimizableView0aB7HandlerC", "Bool"]
-- ["15MinimizableView0aB7HandlerC", "CGSize"]
+- ["15MinimizableView0aB7HandlerC", "CGFloat"]
 - ["15MinimizableView0aB7HandlerC", "Default_ObjectWillChangePublisher"]
 - ["15MinimizableView0aB7HandlerC", "KeyboardNotifier"]
 - ["15MinimizableView0aB7HandlerC", "MiniSettings"]
@@ -195,14 +194,14 @@ depends-member:
 - ["15MinimizableView0aB7HandlerC", "Void"]
 - ["15MinimizableView0aB7HandlerC", ""]
 - ["15MinimizableView0aB7HandlerC", "_Default_ObjectWillChangePublisher"]
-- !private ["15MinimizableView0aB7HandlerC", "_draggedOffset"]
+- !private ["15MinimizableView0aB7HandlerC", "_draggedOffsetY"]
 - !private ["15MinimizableView0aB7HandlerC", "_isMinimized"]
 - !private ["15MinimizableView0aB7HandlerC", "_isPresented"]
 - !private ["15MinimizableView0aB7HandlerC", "_isVisible"]
 - !private ["15MinimizableView0aB7HandlerC", "_settings"]
 - ["15MinimizableView0aB7HandlerC", "deinit"]
 - ["15MinimizableView0aB7HandlerC", "dismiss"]
-- ["15MinimizableView0aB7HandlerC", "draggedOffset"]
+- ["15MinimizableView0aB7HandlerC", "draggedOffsetY"]
 - ["15MinimizableView0aB7HandlerC", "expand"]
 - ["15MinimizableView0aB7HandlerC", "init"]
 - ["15MinimizableView0aB7HandlerC", "isMinimized"]
@@ -220,7 +219,7 @@ depends-member:
 - ["15MinimizableView0aB7HandlerC", "toggleExpansionState"]
 - !private ["s10MirrorPathP", "systemBackground"]
 - !private ["s10MirrorPathP", "systemGray2"]
-- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "systemBackground"]
 - !private ["So8NSCodingP", "systemGray2"]
 - !private ["So9NSCopyingP", "systemBackground"]
@@ -252,7 +251,6 @@ depends-member:
 - !private ["So20NSNotificationCenterC", "addObserver"]
 - !private ["So20NSNotificationCenterC", "default"]
 - !private ["So20NSNotificationCenterC", "removeObserver"]
-- ["7Combine16ObservableObjectP", "CGSize"]
 - ["7Combine16ObservableObjectP", "Default_ObjectWillChangePublisher"]
 - ["7Combine16ObservableObjectP", "Failure"]
 - !private ["7Combine16ObservableObjectP", "KeyboardNotifier"]
@@ -263,13 +261,13 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "UIResponder"]
 - ["7Combine16ObservableObjectP", ""]
 - ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
-- !private ["7Combine16ObservableObjectP", "_draggedOffset"]
+- !private ["7Combine16ObservableObjectP", "_draggedOffsetY"]
 - !private ["7Combine16ObservableObjectP", "_isMinimized"]
 - !private ["7Combine16ObservableObjectP", "_isPresented"]
 - !private ["7Combine16ObservableObjectP", "_isVisible"]
 - !private ["7Combine16ObservableObjectP", "_settings"]
 - !private ["7Combine16ObservableObjectP", "dismiss"]
-- !private ["7Combine16ObservableObjectP", "draggedOffset"]
+- !private ["7Combine16ObservableObjectP", "draggedOffsetY"]
 - !private ["7Combine16ObservableObjectP", "expand"]
 - !private ["7Combine16ObservableObjectP", "init"]
 - !private ["7Combine16ObservableObjectP", "isMinimized"]
@@ -324,7 +322,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "systemBackground"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "systemGray2"]
-- ["s30_CustomPlaygroundQuickLookableP", "zero"]
 - ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "systemBackground"]
@@ -356,22 +353,20 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemGray2"]
 - !private ["s21_ObjectiveCBridgeableP", "systemBackground"]
 - !private ["s21_ObjectiveCBridgeableP", "systemGray2"]
-- ["s21_ObjectiveCBridgeableP", "zero"]
 depends-nominal:
-- "7SwiftUI10AnimatableP"
+- !private "7SwiftUI9AnimationV"
 - !private "SK"
-- "So6CGSizeV"
 - !private "8CloudKit21CKRecordValueProtocolP"
 - !private "s7CVarArgP"
 - !private "Sl"
 - !private "7SwiftUI5ColorV"
 - !private "SL"
-- "s28CustomDebugStringConvertibleP"
-- "s17CustomReflectableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
-- "Se"
-- "SE"
-- "SQ"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s25ExpressibleByFloatLiteralP"
 - "s27ExpressibleByIntegerLiteralP"
@@ -384,7 +379,7 @@ depends-nominal:
 - "15MinimizableView12MiniSettingsV"
 - "15MinimizableView0aB7HandlerC"
 - !private "s10MirrorPathP"
-- "So8NSCodingP"
+- !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
@@ -408,7 +403,7 @@ depends-nominal:
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So23UIUserActivityRestoringP"
 - !private "7SwiftUI4ViewP"
-- "s30_CustomPlaygroundQuickLookableP"
+- !private "s30_CustomPlaygroundQuickLookableP"
 - "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s33_ExpressibleByBuiltinFloatLiteralP"
@@ -419,7 +414,7 @@ depends-nominal:
 - !private "s19_HasContiguousBytesP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
-- "s21_ObjectiveCBridgeableP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64-apple-ios.swiftmodule"
@@ -442,24 +437,24 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CloudKit.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/DeveloperToolsSupport.swiftmodule/arm64-apple-ios.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/usr/include/mach-o/dyld.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UniformTypeIdentifiers.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d7da060b14c0804d06ade2720159662a"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UniformTypeIdentifiers.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "b15f48c86cc5c328bcfc13c3977eae74"

@@ -14,18 +14,22 @@ import SwiftUI
 struct ListView: View {
     @EnvironmentObject var miniHandler: MinimizableViewHandler
     
-    @State var data = (1...10).map { "Item \($0)" }
+    @State var data = (1...20).map { "Item \($0)" }
     var availableWidth: CGFloat
-    
+
     var body: some View {
     
             NavigationView {
-                List {
-                    ForEach(data, id:\.self) { item in
-                        RowView(availableWidth: availableWidth * 0.9, item: item)
-                    }
-                }.navigationBarTitle(Text("List"))
-            }
+                ScrollView {
+                    LazyVGrid(columns:  [GridItem(.adaptive(minimum: 160, maximum: 160))], alignment: .center, spacing: 20) {
+                        ForEach(data, id:\.self) { item in
+                            RowView(availableWidth: 150, item: item).onTapGesture {
+                                self.miniHandler.isPresented = true
+                            }
+                        }
+                    }.navigationBarTitle(Text("List"))
+                }
+            }.navigationViewStyle(StackNavigationViewStyle())
         }
         
     
@@ -40,7 +44,7 @@ struct RowView: View {
 
     var body: some View {
 
-        Text(item).frame(width: availableWidth, height:100).background(RoundedRectangle(cornerRadius: 5).foregroundColor(.green)).padding(.horizontal, 10)
+        Text(item).frame(width: availableWidth, height:100).background(RoundedRectangle(cornerRadius: 5).foregroundColor(.blue)).padding(.horizontal, 10)
 
     }
 }

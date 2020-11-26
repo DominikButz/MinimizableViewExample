@@ -180,7 +180,16 @@ depends-member:
 - ["So8NSObjectP", "stateRestorationActivityForScene"]
 - ["So8NSObjectP", "window"]
 - ["So8NSObjectP", "windowScene"]
+- !private ["7SwiftUI9NamespaceV", "init"]
+- !private ["7SwiftUI9NamespaceV", "projectedValue"]
+- !private ["7SwiftUI9NamespaceV", "subscript"]
+- !private ["7SwiftUI9NamespaceV", "wrappedValue"]
+- !private ["7SwiftUI9NamespaceV", "wrapperValue"]
 - !private ["Sj", ""]
+- !private ["7SwiftUI14ObservedObjectV", "init"]
+- !private ["7SwiftUI14ObservedObjectV", "projectedValue"]
+- !private ["7SwiftUI14ObservedObjectV", "subscript"]
+- !private ["7SwiftUI14ObservedObjectV", "wrappedValue"]
 - !private ["22MinimizableViewExample04RootB0V", ""]
 - !private ["22MinimizableViewExample04RootB0V", "init"]
 - !private ["22MinimizableViewExample13SceneDelegateC", "RootView"]
@@ -204,6 +213,10 @@ depends-member:
 - ["22MinimizableViewExample13SceneDelegateC", "windowScene"]
 - ["ST", ""]
 - !private ["s13SignedNumericP", ""]
+- !private ["7SwiftUI5StateV", "init"]
+- !private ["7SwiftUI5StateV", "projectedValue"]
+- !private ["7SwiftUI5StateV", "subscript"]
+- !private ["7SwiftUI5StateV", "wrappedValue"]
 - !private ["Sx", ""]
 - ["s16TextOutputStreamP", ""]
 - ["s20TextOutputStreamableP", ""]
@@ -447,11 +460,14 @@ depends-nominal:
 - !private "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "7SwiftUI9NamespaceV"
 - !private "Sj"
+- !private "7SwiftUI14ObservedObjectV"
 - !private "22MinimizableViewExample04RootB0V"
 - "22MinimizableViewExample13SceneDelegateC"
 - "ST"
 - !private "s13SignedNumericP"
+- !private "7SwiftUI5StateV"
 - !private "Sx"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
