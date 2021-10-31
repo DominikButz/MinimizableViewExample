@@ -33,11 +33,13 @@ depends-top-level:
 - "FloatLiteralType"
 - "GeometryProxy"
 - "IntegerLiteralType"
+- "KeyboardNotifier"
 - "MainContent"
 - "MiniSettings"
 - "MinimizableView"
 - "MinimizableViewHandler"
 - "MinimizableViewModifier"
+- "ObservedObject"
 - "TernaryPrecedence"
 - !private "UIScreen"
 - "View"
@@ -93,6 +95,7 @@ depends-member:
 - !private ["7SwiftUI11DragGestureV", "init"]
 - !private ["7SwiftUI11DragGestureV", "onChanged"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
+- ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
 - !private ["7SwiftUI10EdgeInsetsV", "bottom"]
 - !private ["SE", "height"]
 - !private ["SE", "none"]
@@ -194,6 +197,8 @@ depends-member:
 - !private ["SH", "none"]
 - !private ["SH", "some"]
 - !private ["7SwiftUI19HorizontalAlignmentV", "center"]
+- ["15MinimizableView16KeyboardNotifierC", ""]
+- ["15MinimizableView16KeyboardNotifierC", "init"]
 - ["s25LosslessStringConvertibleP", ""]
 - !private ["15MinimizableView12MiniSettingsV", "animation"]
 - !private ["15MinimizableView12MiniSettingsV", "init"]
@@ -237,6 +242,7 @@ depends-member:
 - !private ["15MinimizableView0aB7HandlerC", "isMinimized"]
 - !private ["15MinimizableView0aB7HandlerC", "isPresented"]
 - !private ["15MinimizableView0aB7HandlerC", "isVisible"]
+- ["15MinimizableView0aB8ModifierV", "$keyboardNotifier"]
 - ["15MinimizableView0aB8ModifierV", "$minimizableViewHandler"]
 - !private ["15MinimizableView0aB8ModifierV", "Alignment"]
 - ["15MinimizableView0aB8ModifierV", "Body"]
@@ -246,13 +252,16 @@ depends-member:
 - ["15MinimizableView0aB8ModifierV", "DragGesture"]
 - ["15MinimizableView0aB8ModifierV", "EnvironmentObject"]
 - ["15MinimizableView0aB8ModifierV", "GeometryProxy"]
+- ["15MinimizableView0aB8ModifierV", "KeyboardNotifier"]
 - ["15MinimizableView0aB8ModifierV", "MiniSettings"]
 - !private ["15MinimizableView0aB8ModifierV", "MinimizableView"]
 - ["15MinimizableView0aB8ModifierV", "MinimizableViewHandler"]
+- ["15MinimizableView0aB8ModifierV", "ObservedObject"]
 - ["15MinimizableView0aB8ModifierV", "View"]
 - !private ["15MinimizableView0aB8ModifierV", "ZStack"]
 - ["15MinimizableView0aB8ModifierV", ""]
 - ["15MinimizableView0aB8ModifierV", "_Default_Body"]
+- !private ["15MinimizableView0aB8ModifierV", "_keyboardNotifier"]
 - ["15MinimizableView0aB8ModifierV", "_makeView"]
 - ["15MinimizableView0aB8ModifierV", "_makeViewList"]
 - !private ["15MinimizableView0aB8ModifierV", "_minimizableViewHandler"]
@@ -265,6 +274,7 @@ depends-member:
 - ["15MinimizableView0aB8ModifierV", "dragOnEnded"]
 - ["15MinimizableView0aB8ModifierV", "geometry"]
 - ["15MinimizableView0aB8ModifierV", "init"]
+- ["15MinimizableView0aB8ModifierV", "keyboardNotifier"]
 - ["15MinimizableView0aB8ModifierV", "minimizableViewHandler"]
 - ["15MinimizableView0aB8ModifierV", "minimizedBottomMargin"]
 - ["15MinimizableView0aB8ModifierV", "settings"]
@@ -277,9 +287,14 @@ depends-member:
 - !private ["So8NSObjectP", "main"]
 - !private ["Sj", ""]
 - !private ["7Combine16ObservableObjectP", "draggedOffsetY"]
+- ["7Combine16ObservableObjectP", "init"]
 - !private ["7Combine16ObservableObjectP", "isMinimized"]
 - !private ["7Combine16ObservableObjectP", "isPresented"]
 - !private ["7Combine16ObservableObjectP", "isVisible"]
+- ["7SwiftUI14ObservedObjectV", "init"]
+- ["7SwiftUI14ObservedObjectV", "projectedValue"]
+- ["7SwiftUI14ObservedObjectV", "subscript"]
+- ["7SwiftUI14ObservedObjectV", "wrappedValue"]
 - !private ["s9OptionSetP", "bottom"]
 - !private ["Sq", "none"]
 - !private ["Sq", "some"]
@@ -342,6 +357,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "none"]
 - !private ["7SwiftUI4ViewP", "offset"]
 - !private ["7SwiftUI4ViewP", "offsetY"]
+- !private ["7SwiftUI4ViewP", "opacity"]
 - !private ["7SwiftUI4ViewP", "settings"]
 - !private ["7SwiftUI4ViewP", "some"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
@@ -355,7 +371,9 @@ depends-member:
 - ["7SwiftUI12ViewModifierP", "Default_Body"]
 - !private ["7SwiftUI12ViewModifierP", "DragGesture"]
 - ["7SwiftUI12ViewModifierP", "EnvironmentObject"]
+- ["7SwiftUI12ViewModifierP", "KeyboardNotifier"]
 - !private ["7SwiftUI12ViewModifierP", "MinimizableView"]
+- ["7SwiftUI12ViewModifierP", "ObservedObject"]
 - !private ["7SwiftUI12ViewModifierP", "ZStack"]
 - ["7SwiftUI12ViewModifierP", ""]
 - ["7SwiftUI12ViewModifierP", "_Default_Body"]
@@ -425,6 +443,7 @@ depends-nominal:
 - "7SwiftUI7GestureP"
 - "SH"
 - !private "7SwiftUI19HorizontalAlignmentV"
+- "15MinimizableView16KeyboardNotifierC"
 - "s25LosslessStringConvertibleP"
 - !private "15MinimizableView12MiniSettingsV"
 - "15MinimizableViewAAV"
@@ -434,7 +453,8 @@ depends-nominal:
 - "So8NSObjectC"
 - !private "So8NSObjectP"
 - !private "Sj"
-- !private "7Combine16ObservableObjectP"
+- "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
 - !private "s9OptionSetP"
 - !private "Sq"
 - !private "7Combine9PublishedV"
@@ -506,4 +526,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c7548fe69aaf2d9c034aeab92e5e1357"
+interface-hash: "5fe825e6ea2e74d6d3b79e2ec4698b6d"

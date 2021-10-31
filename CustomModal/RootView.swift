@@ -9,6 +9,7 @@
 import SwiftUI
 import MinimizableView
 import Combine
+import NavigationStack
 
 struct RootView: View {
 
@@ -17,7 +18,6 @@ struct RootView: View {
     
     @Namespace var namespace
 
-    
     var body: some View {
         GeometryReader { proxy in
 
@@ -50,7 +50,6 @@ struct RootView: View {
                 .statusBar(hidden: self.miniHandler.isPresented && self.miniHandler.isMinimized == false)
                 .minimizableView(content: {ContentExample(animationNamespaceId: self.namespace)}, compactView: {EmptyView()}, backgroundView: {
                     VStack(spacing: 0){
-                        
                         BlurView(style: .systemChromeMaterial)
                         if self.miniHandler.isMinimized {
                             Divider()
@@ -58,7 +57,8 @@ struct RootView: View {
                     }.cornerRadius(self.miniHandler.isMinimized ? 0 : 20)
                     .onTapGesture(perform: {
                         if self.miniHandler.isMinimized {
-                        withAnimation(.spring()){self.miniHandler.isMinimized = false}
+                            self.miniHandler.expand()
+                            //alternatively, override the default animation. self.miniHandler.expand(animation: Animation)
                         }
                     })
                 }, dragOnChanged: { (value) in
@@ -75,21 +75,20 @@ struct RootView: View {
     
     
     func dragOnChanged(value: DragGesture.Value) {
+        
         if self.miniHandler.isMinimized == false  { // expanded state
             if value.translation.height > 0 {
-                self.miniHandler.draggedOffsetY = value.translation.height
-
+                self.miniHandler.draggedOffsetY = value.translation.height / 2 // divide by 2 for more "inertia"
             }
         } else {// minimized state
-            
             if value.translation.height < 0 {
-                self.miniHandler.draggedOffsetY = value.translation.height
-
+                self.miniHandler.draggedOffsetY = value.translation.height / 2 // divide by 2 for more "inertia"
             }
         }
     }
     
     func dragOnEnded(value: DragGesture.Value) {
+        
         if self.miniHandler.isMinimized == false  {
             if value.translation.height > 60 {
                   self.miniHandler.minimize()

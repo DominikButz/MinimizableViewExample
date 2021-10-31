@@ -1,0 +1,10 @@
+Target dependency graph (5 targets)
+MinimizableView in MinimizableView, no dependencies
+MinimizableView in MinimizableView, depends on:
+MinimizableView in MinimizableView (explicit)
+NavigationStack in NavigationStack, no dependencies
+NavigationStack in NavigationStack, depends on:
+NavigationStack in NavigationStack (explicit)
+MinimizableViewExample in MinimizableViewExample, depends on:
+MinimizableView in MinimizableView (explicit)
+NavigationStack in NavigationStack (explicit)

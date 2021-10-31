@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)"
 options: "f3a6d6b7c3dcff8155751ccee9c4978f"
-build_time: [1606373020, 228251000]
+build_time: [1606647818, 392406000]
 inputs:
   "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/AppDelegate.swift": [1575090815, 0]
   "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/CustomModal/BlurView.swift": [1606118673, 49132046]

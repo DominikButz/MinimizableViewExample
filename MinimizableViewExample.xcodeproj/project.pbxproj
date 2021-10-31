@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B40DEEAA25BFE8750081786D /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = B40DEEA925BFE8750081786D /* NavigationStack */; };
 		B461DFAA254C3DE400E29DE5 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B461DFA9254C3DE400E29DE5 /* ListView.swift */; };
 		B4668E4E23716EBC00E5A1DE /* CompactViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4668E4D23716EBC00E5A1DE /* CompactViewExample.swift */; };
 		B4668E74237405A400E5A1DE /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4668E73237405A400E5A1DE /* Buttons.swift */; };
@@ -46,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4668E7F23756A0D00E5A1DE /* MinimizableView in Frameworks */,
+				B40DEEAA25BFE8750081786D /* NavigationStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +125,7 @@
 			name = MinimizableViewExample;
 			packageProductDependencies = (
 				B4668E7E23756A0D00E5A1DE /* MinimizableView */,
+				B40DEEA925BFE8750081786D /* NavigationStack */,
 			);
 			productName = CustomModal;
 			productReference = B48E649C2349C0560036D203 /* MinimizableViewExample.app */;
@@ -152,6 +155,9 @@
 				Base,
 			);
 			mainGroup = B48E64932349C0560036D203;
+			packageReferences = (
+				B40DEEA825BFE8750081786D /* XCRemoteSwiftPackageReference "NavigationStack" */,
+			);
 			productRefGroup = B48E649D2349C0560036D203 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -386,7 +392,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		B40DEEA825BFE8750081786D /* XCRemoteSwiftPackageReference "NavigationStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/indieSoftware/NavigationStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		B40DEEA925BFE8750081786D /* NavigationStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B40DEEA825BFE8750081786D /* XCRemoteSwiftPackageReference "NavigationStack" */;
+			productName = NavigationStack;
+		};
 		B4668E7E23756A0D00E5A1DE /* MinimizableView */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MinimizableView;

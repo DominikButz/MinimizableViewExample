@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+MinimizableView in MinimizableView, no dependencies
+MinimizableView in MinimizableView, depends on:
+MinimizableView in MinimizableView (explicit)

@@ -30,9 +30,9 @@ depends-top-level:
 - "DragGesture"
 - "EmptyView"
 - "EnvironmentObject"
-- !private "FloatLiteralType"
+- "FloatLiteralType"
 - "GeometryProxy"
-- !private "IntegerLiteralType"
+- "IntegerLiteralType"
 - "MainContent"
 - "MiniSettings"
 - "MinimizableView"
@@ -48,6 +48,7 @@ depends-top-level:
 - "compactView"
 - "contentView"
 - "geometry"
+- "minimizedBottomMargin"
 - "settings"
 depends-member:
 - !private ["s18AdditiveArithmeticP", ""]
@@ -115,9 +116,9 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "bottom"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
-- !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
+- ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
 - !private ["s27ExpressibleByIntegerLiteralP", ""]
-- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "none"]
 - !private ["s23ExpressibleByNilLiteralP", "some"]
 - ["s32ExpressibleByStringInterpolationP", ""]
@@ -197,7 +198,6 @@ depends-member:
 - !private ["15MinimizableView12MiniSettingsV", "animation"]
 - !private ["15MinimizableView12MiniSettingsV", "init"]
 - !private ["15MinimizableView12MiniSettingsV", "lateralMargin"]
-- !private ["15MinimizableView12MiniSettingsV", "minimizedBottomMargin"]
 - !private ["15MinimizableView12MiniSettingsV", "minimizedHeight"]
 - !private ["15MinimizableView12MiniSettingsV", "overrideHeight"]
 - ["15MinimizableViewAAV", "$minimizableViewHandler"]
@@ -228,6 +228,7 @@ depends-member:
 - !private ["15MinimizableViewAAV", "gesture"]
 - ["15MinimizableViewAAV", "init"]
 - ["15MinimizableViewAAV", "minimizableViewHandler"]
+- ["15MinimizableViewAAV", "minimizedBottomMargin"]
 - ["15MinimizableViewAAV", "minimizedOffsetY"]
 - ["15MinimizableViewAAV", "offsetY"]
 - ["15MinimizableViewAAV", "settings"]
@@ -239,6 +240,7 @@ depends-member:
 - ["15MinimizableView0aB8ModifierV", "$minimizableViewHandler"]
 - !private ["15MinimizableView0aB8ModifierV", "Alignment"]
 - ["15MinimizableView0aB8ModifierV", "Body"]
+- ["15MinimizableView0aB8ModifierV", "CGFloat"]
 - ["15MinimizableView0aB8ModifierV", "Content"]
 - ["15MinimizableView0aB8ModifierV", "Default_Body"]
 - ["15MinimizableView0aB8ModifierV", "DragGesture"]
@@ -264,6 +266,7 @@ depends-member:
 - ["15MinimizableView0aB8ModifierV", "geometry"]
 - ["15MinimizableView0aB8ModifierV", "init"]
 - ["15MinimizableView0aB8ModifierV", "minimizableViewHandler"]
+- ["15MinimizableView0aB8ModifierV", "minimizedBottomMargin"]
 - ["15MinimizableView0aB8ModifierV", "settings"]
 - ["So8NSCodingP", ""]
 - ["So8NSObjectC", ""]
@@ -302,6 +305,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "main"]
 - !private ["7SwiftUI17VerticalAlignmentV", "bottom"]
 - ["7SwiftUI4ViewP", "Body"]
+- ["7SwiftUI4ViewP", "CGFloat"]
 - ["7SwiftUI4ViewP", "Default_Body"]
 - ["7SwiftUI4ViewP", "DragGesture"]
 - ["7SwiftUI4ViewP", "EnvironmentObject"]
@@ -332,6 +336,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "init"]
 - ["7SwiftUI4ViewP", "minimizableView"]
 - !private ["7SwiftUI4ViewP", "minimizableViewHandler"]
+- !private ["7SwiftUI4ViewP", "minimizedBottomMargin"]
 - !private ["7SwiftUI4ViewP", "minimizedOffsetY"]
 - !private ["7SwiftUI4ViewP", "modifier"]
 - !private ["7SwiftUI4ViewP", "none"]
@@ -366,6 +371,7 @@ depends-member:
 - !private ["7SwiftUI12ViewModifierP", "geometry"]
 - !private ["7SwiftUI12ViewModifierP", "init"]
 - !private ["7SwiftUI12ViewModifierP", "minimizableViewHandler"]
+- !private ["7SwiftUI12ViewModifierP", "minimizedBottomMargin"]
 - !private ["7SwiftUI12ViewModifierP", "settings"]
 - !private ["7SwiftUI6ZStackV", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI6ZStackV", "frame"]
@@ -375,7 +381,7 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
@@ -409,7 +415,7 @@ depends-nominal:
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
+- "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
@@ -452,7 +458,7 @@ depends-nominal:
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
@@ -500,4 +506,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "0d686a71c14a18e2efc653f639dbce6f"
+interface-hash: "c7548fe69aaf2d9c034aeab92e5e1357"

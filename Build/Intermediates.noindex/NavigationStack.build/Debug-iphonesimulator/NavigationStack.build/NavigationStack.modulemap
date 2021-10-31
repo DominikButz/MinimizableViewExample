@@ -1,0 +1,4 @@
+module NavigationStack {
+header "NavigationStack-Swift.h"
+export *
+}

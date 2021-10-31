@@ -20,16 +20,16 @@ struct ContentExample: View {
 
     var body: some View {
         GeometryReader { proxy in
-
+       
                 VStack(alignment: .center, spacing: 5.0) {
                    
-               //     if self.miniHandler.isMinimized == false {
                         VStack {
                             
                             Capsule()
                                 .fill(Color.gray)
                                 .frame(width: self.miniHandler.isMinimized == false ? 40 : 0, height: self.miniHandler.isMinimized == false ? 5 : 0)
                                 .opacity(self.miniHandler.isMinimized == false ? 1 : 0)
+                                .padding(.top, self.miniHandler.isMinimized ? 0 : safeArea?.top ?? 0)
                          
                             HStack {
                                 
@@ -67,11 +67,18 @@ struct ContentExample: View {
                             .cornerRadius(15)
                         
                         if miniHandler.isMinimized{
-                            
+                            VStack(alignment: .leading) {
                             Text("Mui Mui")
                                 .font(.title2)
                                 .fontWeight(.bold)
-                                .matchedGeometryEffect(id: "Label", in: animationNamespaceId)
+                                .fixedSize(horizontal: true, vertical: false)
+                                .matchedGeometryEffect(id: "Singer", in: animationNamespaceId)
+                                
+                                Text("emBARKation")
+                                    .fontWeight(.bold)
+                                    .fixedSize(horizontal: true, vertical: false)
+                                    .matchedGeometryEffect(id: "Song", in: animationNamespaceId)
+                            }
                             
                             Spacer(minLength: 0)
                             self.minimizedControls
@@ -106,6 +113,7 @@ struct ContentExample: View {
                     
               
             }
+            
                 
 
         }
@@ -126,7 +134,7 @@ struct ContentExample: View {
                         .font(.title2)
                         .foregroundColor(.primary)
                         .fontWeight(.bold)
-                       .matchedGeometryEffect(id: "Label", in: animationNamespaceId)
+                       .matchedGeometryEffect(id: "Singer", in: animationNamespaceId)
                 }
                 
                 Spacer(minLength: 0)
@@ -154,6 +162,8 @@ struct ContentExample: View {
                 Text("emBARKation")
                     .fontWeight(.bold)
                     .foregroundColor(.primary)
+                    .fixedSize(horizontal: true, vertical: false)
+                    .matchedGeometryEffect(id: "Song", in: animationNamespaceId)
                 
                 Capsule()
                     .fill(
@@ -188,13 +198,6 @@ struct ContentExample: View {
             
             HStack(spacing: 22){
 //
-//                Button(action: {}) {
-//
-//                    Image(systemName: "arrow.up.message")
-//                        .font(.title2)
-//                        .foregroundColor(.primary)
-//                }
-                
                 Button(action: {}) {
                     
                     Image(systemName: "airplayaudio")

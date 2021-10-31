@@ -1,0 +1,64 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "PACKAGE-PRODUCT:MinimizableView"
+    }
+  ],
+  "containerPath" : "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/MinimizableViewExample.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64e",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos15.0",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "armv4t",
+        "armv5",
+        "armv6",
+        "armv7",
+        "armv7f",
+        "armv7s",
+        "armv7k",
+        "arm64",
+        "arm64e"
+      ],
+      "targetArchitecture" : "arm64e"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/Build/Products",
+      "derivedDataPath" : "/Users/Dominik/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/Dominik/Documents/Programmieren/Libraries/MinimizableViewExample/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

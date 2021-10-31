@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "NavigationStack",
+        "repositoryURL": "https://github.com/indieSoftware/NavigationStack",
+        "state": {
+          "branch": null,
+          "revision": "663528a8602cf3f80681ac4667018c0ecaf3d96f",
+          "version": "1.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -16,10 +16,12 @@ provides-dynamic-lookup:
 - "$isMinimized"
 - "$isPresented"
 - "$isVisible"
+- "$keyboardIsShowing"
 - "_draggedOffsetY"
 - "_isMinimized"
 - "_isPresented"
 - "_isVisible"
+- "_keyboardIsShowing"
 - "dismiss"
 - "draggedOffsetY"
 - "expand"
@@ -28,6 +30,7 @@ provides-dynamic-lookup:
 - "isVisible"
 - "keyBoardWillHide"
 - "keyBoardWillShow"
+- "keyboardIsShowing"
 - "keyboardResponder"
 - "keyboardWillHide"
 - "keyboardWillShow"
@@ -105,18 +108,23 @@ depends-member:
 - !private ["SH", "keyboardWillHideNotification"]
 - !private ["SH", "keyboardWillShowNotification"]
 - !private ["SH", "removeObserver"]
+- ["15MinimizableView16KeyboardNotifierC", "$keyboardIsShowing"]
+- ["15MinimizableView16KeyboardNotifierC", "Bool"]
 - ["15MinimizableView16KeyboardNotifierC", "Default_ObjectWillChangePublisher"]
 - ["15MinimizableView16KeyboardNotifierC", "Notification"]
 - ["15MinimizableView16KeyboardNotifierC", "NotificationCenter"]
 - ["15MinimizableView16KeyboardNotifierC", "ObjectWillChangePublisher"]
+- ["15MinimizableView16KeyboardNotifierC", "Published"]
 - !private ["15MinimizableView16KeyboardNotifierC", "UIResponder"]
 - ["15MinimizableView16KeyboardNotifierC", "Void"]
 - ["15MinimizableView16KeyboardNotifierC", ""]
 - ["15MinimizableView16KeyboardNotifierC", "_Default_ObjectWillChangePublisher"]
+- !private ["15MinimizableView16KeyboardNotifierC", "_keyboardIsShowing"]
 - ["15MinimizableView16KeyboardNotifierC", "deinit"]
 - ["15MinimizableView16KeyboardNotifierC", "init"]
 - ["15MinimizableView16KeyboardNotifierC", "keyBoardWillHide"]
 - ["15MinimizableView16KeyboardNotifierC", "keyBoardWillShow"]
+- ["15MinimizableView16KeyboardNotifierC", "keyboardIsShowing"]
 - ["15MinimizableView16KeyboardNotifierC", "keyboardWillHide"]
 - ["15MinimizableView16KeyboardNotifierC", "keyboardWillShow"]
 - !private ["15MinimizableView16KeyboardNotifierC", "notificationCentre"]
@@ -194,6 +202,7 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "_isMinimized"]
 - !private ["7Combine16ObservableObjectP", "_isPresented"]
 - !private ["7Combine16ObservableObjectP", "_isVisible"]
+- !private ["7Combine16ObservableObjectP", "_keyboardIsShowing"]
 - !private ["7Combine16ObservableObjectP", "dismiss"]
 - !private ["7Combine16ObservableObjectP", "draggedOffsetY"]
 - !private ["7Combine16ObservableObjectP", "expand"]
@@ -203,6 +212,7 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "isVisible"]
 - !private ["7Combine16ObservableObjectP", "keyBoardWillHide"]
 - !private ["7Combine16ObservableObjectP", "keyBoardWillShow"]
+- !private ["7Combine16ObservableObjectP", "keyboardIsShowing"]
 - !private ["7Combine16ObservableObjectP", "keyboardResponder"]
 - !private ["7Combine16ObservableObjectP", "keyboardWillHide"]
 - !private ["7Combine16ObservableObjectP", "keyboardWillShow"]
@@ -329,4 +339,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "174d93453f18e50b119dd1bb1fd9c7a0"
+interface-hash: "bac3a9a69debcf3d52f0d87d36e82489"

@@ -127,7 +127,6 @@ depends-member:
 - ["15MinimizableView12MiniSettingsV", "animation"]
 - ["15MinimizableView12MiniSettingsV", "init"]
 - ["15MinimizableView12MiniSettingsV", "lateralMargin"]
-- ["15MinimizableView12MiniSettingsV", "minimizedBottomMargin"]
 - ["15MinimizableView12MiniSettingsV", "minimizedHeight"]
 - ["15MinimizableView12MiniSettingsV", "overrideHeight"]
 - ["15MinimizableView0aB7HandlerC", "$draggedOffsetY"]
@@ -330,4 +329,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1fe9e4bfb04f71a3cee7522c31219c09"
+interface-hash: "174d93453f18e50b119dd1bb1fd9c7a0"

@@ -24,7 +24,7 @@ struct ListView: View {
                     LazyVGrid(columns:  [GridItem(.adaptive(minimum: 160, maximum: 160))], alignment: .center, spacing: 20) {
                         ForEach(data, id:\.self) { item in
                             RowView(availableWidth: 150, item: item).onTapGesture {
-                                self.miniHandler.isPresented = true
+                                self.miniHandler.present()
                             }
                         }
                     }.navigationBarTitle(Text("List"))

@@ -1,0 +1,41 @@
+version: "Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)"
+options: "c37a9b983607173aaa619ac75dddc039d218593258e73e88f59f5ba0cd0a13c2"
+build_start_time: [1635487171, 938403129]
+build_end_time: [1635487171, 967919826]
+inputs:
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Core/NavigationAnimation.swift"
+  : [1634784761, 334358692]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Core/NavigationAnimations.swift"
+  : [1634784761, 334421634]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Core/NavigationStackModel.swift"
+  : [1634784761, 334524154]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Core/NavigationStackModelConvenienceMethods.swift"
+  : [1634784761, 334587097]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Core/NavigationStackNode.swift"
+  : [1634784761, 334656715]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Core/NavigationStackView.swift"
+  : [1634784761, 334761381]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Core/Types.swift"
+  : [1634784761, 334841728]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Transitions/Blur.swift"
+  : [1634784761, 335034847]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Transitions/Brightness.swift"
+  : [1634784761, 335110187]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Transitions/CircleShape.swift"
+  : [1634784761, 335173606]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Transitions/ClipShapeModifier.swift"
+  : [1634784761, 335236072]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Transitions/Contrast.swift"
+  : [1634784761, 335292816]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Transitions/HueRotation.swift"
+  : [1634784761, 335363388]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Transitions/RectangleShape.swift"
+  : [1634784761, 335427761]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Transitions/Saturation.swift"
+  : [1634784761, 335484981]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Transitions/Static.swift"
+  : [1634784761, 335559368]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Transitions/StripesShape.swift"
+  : [1634784761, 335624694]
+  ? "/Users/Dominik/Library/Developer/Xcode/DerivedData/MinimizableViewExample-cbwqoivdcdoouzchssebvjwdjhtd/SourcePackages/checkouts/NavigationStack/Sources/NavigationStack/Transitions/TiltAndFly.swift"
+  : [1634784761, 335692882]
