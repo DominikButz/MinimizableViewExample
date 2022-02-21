@@ -128,8 +128,8 @@
             filePath = "CustomModal/RootView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "dragOnChanged(value:)"
             landmarkType = "7">
             <Actions>
@@ -153,8 +153,8 @@
             filePath = "CustomModal/RootView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "dragOnEnded(value:)"
             landmarkType = "7">
             <Actions>

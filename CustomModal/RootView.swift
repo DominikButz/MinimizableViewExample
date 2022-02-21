@@ -48,19 +48,11 @@ struct RootView: View {
                     
                 }.background(Color(.secondarySystemFill))
                 .statusBar(hidden: self.miniHandler.isPresented && self.miniHandler.isMinimized == false)
-                .minimizableView(content: {ContentExample(animationNamespaceId: self.namespace)}, compactView: {EmptyView()}, backgroundView: {
-                    VStack(spacing: 0){
-                        BlurView(style: .systemChromeMaterial)
-                        if self.miniHandler.isMinimized {
-                            Divider()
-                        }
-                    }.cornerRadius(self.miniHandler.isMinimized ? 0 : 20)
-                    .onTapGesture(perform: {
-                        if self.miniHandler.isMinimized {
-                            self.miniHandler.expand()
-                            //alternatively, override the default animation. self.miniHandler.expand(animation: Animation)
-                        }
-                    })
+                .minimizableView(content: {ContentExample(animationNamespaceId: self.namespace)},
+                  compactView: {
+                    EmptyView()  // replace EmptyView() by CompactViewExample() to see the a different approach for the compact view
+                }, backgroundView: {
+                    self.backgroundView()
                 }, dragOnChanged: { (value) in
                     self.dragOnChanged(value: value)
                 }, dragOnEnded: { (value) in
@@ -74,37 +66,45 @@ struct RootView: View {
     }
     
     
+    func backgroundView() -> some View {
+        VStack(spacing: 0){
+            BlurView(style: .systemChromeMaterial)
+            if self.miniHandler.isMinimized {
+                Divider()
+            }
+        }.cornerRadius(self.miniHandler.isMinimized ? 0 : 20)
+        .onTapGesture(perform: {
+            if self.miniHandler.isMinimized {
+                self.miniHandler.expand()
+                //alternatively, override the default animation. self.miniHandler.expand(animation: Animation)
+            }
+        })
+    }
+    
+    
     func dragOnChanged(value: DragGesture.Value) {
         
-        if self.miniHandler.isMinimized == false  { // expanded state
-            if value.translation.height > 0 {
-                self.miniHandler.draggedOffsetY = value.translation.height / 2 // divide by 2 for more "inertia"
-            }
-        } else {// minimized state
-            if value.translation.height < 0 {
-                self.miniHandler.draggedOffsetY = value.translation.height / 2 // divide by 2 for more "inertia"
-            }
+        if self.miniHandler.isMinimized == false && value.translation.height > 0   { // expanded state
+            
+            self.miniHandler.draggedOffsetY = value.translation.height / 2 // divide by 2 for more "inertia"
+            
+        } else if self.miniHandler.isMinimized && value.translation.height < 0   {// minimized state
+            self.miniHandler.draggedOffsetY = value.translation.height / 2 // divide by 2 for more "inertia"
+            
         }
     }
     
     func dragOnEnded(value: DragGesture.Value) {
         
-        if self.miniHandler.isMinimized == false  {
-            if value.translation.height > 60 {
-                  self.miniHandler.minimize()
-           
-            }
-            
-        } else {
-            if value.translation.height < -60 {
+        if self.miniHandler.isMinimized == false && value.translation.height > 60  {
+            self.miniHandler.minimize()
+
+        } else if self.miniHandler.isMinimized &&  value.translation.height < -60 {
                   self.miniHandler.expand()
-    
-              }
-            
         }
-       withAnimation(.spring()) {
+//       withAnimation(.spring()) {
             self.miniHandler.draggedOffsetY = 0
-       }
+//       }
 
     }
 }

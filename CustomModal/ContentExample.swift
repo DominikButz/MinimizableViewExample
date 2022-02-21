@@ -50,10 +50,7 @@ struct ContentExample: View {
                                     .frame(width: self.miniHandler.isMinimized == false ? nil : 0, height: self.miniHandler.isMinimized == false ? nil : 0)
                             }.frame(width: self.miniHandler.isMinimized == false ? nil : 0, height: self.miniHandler.isMinimized == false ? nil : 0)
                         }.frame(width: self.miniHandler.isMinimized == false ? nil : 0, height: self.miniHandler.isMinimized == false ? nil : 0).opacity(self.miniHandler.isMinimized ? 0 : 1)
-                        //.transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.4)))
-                        
-             //       }
-                    
+
                   Spacer()
                     
                     HStack(spacing: 15){
@@ -68,11 +65,11 @@ struct ContentExample: View {
                         
                         if miniHandler.isMinimized{
                             VStack(alignment: .leading) {
-                            Text("Mui Mui")
-                                .font(.title2)
-                                .fontWeight(.bold)
-                                .fixedSize(horizontal: true, vertical: false)
-                                .matchedGeometryEffect(id: "Singer", in: animationNamespaceId)
+                                Text("Mui Mui")
+                                    .font(.title2)
+                                    .fontWeight(.bold)
+                                    .fixedSize(horizontal: true, vertical: false)
+                                    .matchedGeometryEffect(id: "Singer", in: animationNamespaceId)
                                 
                                 Text("emBARKation")
                                     .fontWeight(.bold)
@@ -110,15 +107,12 @@ struct ContentExample: View {
                     self.miniHandler.onMinimization = {
                         print("contracting")
                     }
-                    
-              
+
             }
-            
-                
 
         }
         .transition(AnyTransition.move(edge: .bottom))
-        //   .verticalDragGesture(translationHeightTriggerValue: 80)
+
     }
     
     var expandedControls: some View {
@@ -127,16 +121,14 @@ struct ContentExample: View {
            // Spacer(minLength: 0)
             
             HStack{
-                
-                if miniHandler.isMinimized == false {
-                    Spacer(minLength: 0)
-                    Text("Mui Mui")
-                        .font(.title2)
-                        .foregroundColor(.primary)
-                        .fontWeight(.bold)
-                       .matchedGeometryEffect(id: "Singer", in: animationNamespaceId)
-                }
-                
+     
+            Spacer(minLength: 0)
+            Text("Mui Mui")
+                .font(.title2)
+                .foregroundColor(.primary)
+                .fontWeight(.bold)
+               .matchedGeometryEffect(id: "Singer", in: animationNamespaceId)
+
                 Spacer(minLength: 0)
                 
                 Button(action: {}) {
