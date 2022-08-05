@@ -39,8 +39,8 @@
             filePath = "../MinimizableView/Sources/MinimizableView/MinimizableView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "body"
             landmarkType = "24">
             <Actions>
@@ -78,8 +78,8 @@
             filePath = "../MinimizableView/Sources/MinimizableView/MinimizableView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "unknown"
             landmarkType = "0">
             <Actions>
@@ -128,9 +128,9 @@
             filePath = "CustomModal/RootView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "dragOnChanged(value:)"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "dragUpdated(value:)"
             landmarkType = "7">
             <Actions>
                <BreakpointActionProxy
@@ -153,8 +153,8 @@
             filePath = "CustomModal/RootView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "dragOnEnded(value:)"
             landmarkType = "7">
             <Actions>

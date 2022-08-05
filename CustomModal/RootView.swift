@@ -15,7 +15,7 @@ struct RootView: View {
 
     @ObservedObject var miniHandler: MinimizableViewHandler = MinimizableViewHandler()
     @State var selectedTabIndex: Int = 0
-    
+    @GestureState var dragOffset = CGSize.zero
     @Namespace var namespace
 
     var body: some View {
@@ -52,14 +52,20 @@ struct RootView: View {
                   compactView: {
                     EmptyView()  // replace EmptyView() by CompactViewExample() to see the a different approach for the compact view
                 }, backgroundView: {
-                    self.backgroundView()
+                    self.backgroundView()},
+                    dragOffset: $dragOffset,
+                    dragUpdating: { (value, state, _) in
+                        state = value.translation
+                        self.dragUpdated(value: value)
+   
                 }, dragOnChanged: { (value) in
-                    self.dragOnChanged(value: value)
-                }, dragOnEnded: { (value) in
+           
+                },
+                    dragOnEnded: { (value) in
                     self.dragOnEnded(value: value)
                 }, geometry: proxy, settings: MiniSettings(minimizedHeight: 80))
                 .environmentObject(self.miniHandler)
-     
+           
         }
     
         //
@@ -82,14 +88,14 @@ struct RootView: View {
     }
     
     
-    func dragOnChanged(value: DragGesture.Value) {
+    func dragUpdated(value: DragGesture.Value) {
         
         if self.miniHandler.isMinimized == false && value.translation.height > 0   { // expanded state
             
-            self.miniHandler.draggedOffsetY = value.translation.height / 2 // divide by 2 for more "inertia"
+            self.miniHandler.draggedOffsetY = value.translation.height  // divide by 2 for more "inertia"
             
         } else if self.miniHandler.isMinimized && value.translation.height < 0   {// minimized state
-            self.miniHandler.draggedOffsetY = value.translation.height / 2 // divide by 2 for more "inertia"
+            self.miniHandler.draggedOffsetY = value.translation.height  // divide by 2 for more "inertia"
             
         }
     }
@@ -102,9 +108,9 @@ struct RootView: View {
         } else if self.miniHandler.isMinimized &&  value.translation.height < -60 {
                   self.miniHandler.expand()
         }
-//       withAnimation(.spring()) {
+        withAnimation(.spring()) {
             self.miniHandler.draggedOffsetY = 0
-//       }
+        }
 
     }
 }
