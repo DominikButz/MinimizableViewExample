@@ -91,18 +91,19 @@ struct RootView: View {
     func dragUpdated(value: DragGesture.Value) {
         
         if self.miniHandler.isMinimized == false && value.translation.height > 0   { // expanded state
-            
-            self.miniHandler.draggedOffsetY = value.translation.height  // divide by 2 for more "inertia"
+            withAnimation(.spring(response: 0)) {
+                self.miniHandler.draggedOffsetY = value.translation.height  // divide by a factor > 1 for more "inertia"
+            }
             
         } else if self.miniHandler.isMinimized && value.translation.height < 0   {// minimized state
-            self.miniHandler.draggedOffsetY = value.translation.height  // divide by 2 for more "inertia"
+            self.miniHandler.draggedOffsetY = value.translation.height // divide by a factor > 1 for more "inertia"
             
         }
     }
     
     func dragOnEnded(value: DragGesture.Value) {
         
-        if self.miniHandler.isMinimized == false && value.translation.height > 60  {
+        if self.miniHandler.isMinimized == false && value.translation.height > 90  {
             self.miniHandler.minimize()
 
         } else if self.miniHandler.isMinimized &&  value.translation.height < -60 {
@@ -111,6 +112,7 @@ struct RootView: View {
         withAnimation(.spring()) {
             self.miniHandler.draggedOffsetY = 0
         }
+  
 
     }
 }
