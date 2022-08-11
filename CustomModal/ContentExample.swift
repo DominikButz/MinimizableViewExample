@@ -13,7 +13,6 @@ struct ContentExample: View {
     var safeArea = UIApplication.shared.windows.first?.safeAreaInsets
     @EnvironmentObject var miniHandler: MinimizableViewHandler
     // Volume Slider...
-    
     @State var volume : CGFloat = 0
 
     var animationNamespaceId: Namespace.ID
@@ -21,16 +20,17 @@ struct ContentExample: View {
     var body: some View {
         GeometryReader { proxy in
        
-                VStack(alignment: .center, spacing: 5.0) {
-                   
+                VStack(alignment: .center, spacing: 0) {
+       
                         VStack {
                             
                             Capsule()
                                 .fill(Color.gray)
-                                .frame(width: self.miniHandler.isMinimized == false ? 40 : 0, height: self.miniHandler.isMinimized == false ? 5 : 0)
-                                .opacity(self.miniHandler.isMinimized == false ? 1 : 0)
-                                .padding(.top, self.miniHandler.isMinimized ? 0 : safeArea?.top ?? 0)
-                         
+                              //  .frame(width: self.miniHandler.isMinimized == false ? 40 : 0, height: self.miniHandler.isMinimized == false ? 5 : 0)
+                                .frame(width: 40, height: 5)
+                               // .opacity(self.miniHandler.isMinimized == false ? 1 : 0)
+                                .padding(.top, safeArea?.top ?? 0)
+
                             HStack {
                                 
                                 Button(action: {
@@ -51,7 +51,9 @@ struct ContentExample: View {
                             }.frame(width: self.miniHandler.isMinimized == false ? nil : 0, height: self.miniHandler.isMinimized == false ? nil : 0)
                         }.frame(width: self.miniHandler.isMinimized == false ? nil : 0, height: self.miniHandler.isMinimized == false ? nil : 0).opacity(self.miniHandler.isMinimized ? 0 : 1)
 
-                  Spacer()
+        
+                        Spacer()
+            
                     
                     HStack(spacing: 15){
 
@@ -60,8 +62,10 @@ struct ContentExample: View {
                         Image("MuiMui")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: miniHandler.isMinimized ? 55 : proxy.size.height * 0.33, height: miniHandler.isMinimized ? 55 : proxy.size.height * 0.33)
+                            .frame(width: self.imageSize(proxy: proxy), height: self.imageSize(proxy: proxy))
                             .cornerRadius(15)
+                            
+                           
                         
                         if miniHandler.isMinimized{
                             VStack(alignment: .leading) {
@@ -75,8 +79,9 @@ struct ContentExample: View {
                                     .fontWeight(.bold)
                                     .fixedSize(horizontal: true, vertical: false)
                                     .matchedGeometryEffect(id: "Song", in: animationNamespaceId)
+                                
+                             
                             }
-                            
                             Spacer(minLength: 0)
                             self.minimizedControls
                         } else {
@@ -85,6 +90,7 @@ struct ContentExample: View {
                     }
                     .padding(.horizontal)
                     
+                
                     self.expandedControls
                     
                     Spacer()
@@ -110,25 +116,26 @@ struct ContentExample: View {
 
             }
 
-        }
-        .transition(AnyTransition.move(edge: .bottom))
+        }.transition(AnyTransition.move(edge: .bottom))
+      
 
     }
     
     var expandedControls: some View {
         VStack(spacing: 15){
 
-           // Spacer(minLength: 0)
+            Spacer(minLength: 0)
             
             HStack{
-     
-            Spacer(minLength: 0)
-            Text("Mui Mui")
-                .font(.title2)
-                .foregroundColor(.primary)
-                .fontWeight(.bold)
-               .matchedGeometryEffect(id: "Singer", in: animationNamespaceId)
-
+                
+                Spacer(minLength: 0)
+                Text("Mui Mui")
+                    .font(.title2)
+                    .foregroundColor(.primary)
+                    .fontWeight(.bold)
+                    .matchedGeometryEffect(id: "Singer", in: animationNamespaceId)
+                   // .padding(.top, 10)
+                
                 Spacer(minLength: 0)
                 
                 Button(action: {}) {
@@ -226,6 +233,16 @@ struct ContentExample: View {
                     .foregroundColor(.primary)
             })
         }
+    }
+    
+    // square shaped, so we only need the edge length
+    func imageSize(proxy: GeometryProxy)->CGFloat {
+        if miniHandler.isMinimized {
+            return 55 + abs(self.miniHandler.draggedOffsetY) / 2
+        } else {
+            return proxy.size.height * 0.33
+        }
+
     }
 }
 

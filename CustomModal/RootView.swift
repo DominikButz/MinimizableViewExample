@@ -63,7 +63,7 @@ struct RootView: View {
                 },
                     dragOnEnded: { (value) in
                     self.dragOnEnded(value: value)
-                }, geometry: proxy, settings: MiniSettings(minimizedHeight: 80))
+                }, geometry: proxy, settings: MiniSettings(minimizedHeight: 75))
                 .environmentObject(self.miniHandler)
            
         }
@@ -79,6 +79,7 @@ struct RootView: View {
                 Divider()
             }
         }.cornerRadius(self.miniHandler.isMinimized ? 0 : 20)
+        .shadow(color: .gray.opacity(0.5), radius: 5, x: 0, y: -5)
         .onTapGesture(perform: {
             if self.miniHandler.isMinimized {
                 self.miniHandler.expand()
@@ -96,7 +97,11 @@ struct RootView: View {
             }
             
         } else if self.miniHandler.isMinimized && value.translation.height < 0   {// minimized state
-            self.miniHandler.draggedOffsetY = value.translation.height // divide by a factor > 1 for more "inertia"
+            if self.miniHandler.draggedOffsetY >= -60 {
+                withAnimation(.spring(response: 0)) {
+                    self.miniHandler.draggedOffsetY = value.translation.height // divide by a factor > 1 for more "inertia"
+                }
+            }
             
         }
     }
@@ -106,7 +111,7 @@ struct RootView: View {
         if self.miniHandler.isMinimized == false && value.translation.height > 90  {
             self.miniHandler.minimize()
 
-        } else if self.miniHandler.isMinimized &&  value.translation.height < -60 {
+        } else if self.miniHandler.isMinimized &&  value.translation.height <= -60 {
                   self.miniHandler.expand()
         }
         withAnimation(.spring()) {
