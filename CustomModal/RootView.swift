@@ -14,6 +14,7 @@ import NavigationStack
 struct RootView: View {
 
     @ObservedObject var miniHandler: MinimizableViewHandler = MinimizableViewHandler()
+    @Environment(\.colorScheme) var colorScheme
     @State var selectedTabIndex: Int = 0
     @GestureState var dragOffset = CGSize.zero
     @Namespace var namespace
@@ -79,7 +80,7 @@ struct RootView: View {
                 Divider()
             }
         }.cornerRadius(self.miniHandler.isMinimized ? 0 : 20)
-        .shadow(color: .gray.opacity(0.5), radius: 5, x: 0, y: -5)
+            .shadow(color: .gray.opacity(self.colorScheme == .light ? 0.5 : 0), radius: 5, x: 0, y: -5)
         .onTapGesture(perform: {
             if self.miniHandler.isMinimized {
                 self.miniHandler.expand()
