@@ -8,7 +8,6 @@
 
 import SwiftUI
 import MinimizableView
-import Combine
 import NavigationStack
 
 struct RootView: View {
@@ -16,6 +15,7 @@ struct RootView: View {
     @ObservedObject var miniHandler: MinimizableViewHandler = MinimizableViewHandler()
     @Environment(\.colorScheme) var colorScheme
     @State var selectedTabIndex: Int = 0
+    @State var miniViewBottomMargin: CGFloat = 0  // not strictly necessary but the tab bar can change its height, e.g. when iPad window gets resized with stage manager
     @GestureState var dragOffset = CGSize.zero
     @Namespace var namespace
 
@@ -34,6 +34,9 @@ struct RootView: View {
                             Image(systemName: "chevron.up.square.fill")
                             Text("Main View")
                     }.tag(0)
+                        .background(TabBarAccessor { tabBar in
+                            self.miniViewBottomMargin = tabBar.bounds.height - 1
+                        })
                     
                     Text("More stuff").tabItem {
                         Image(systemName: "dot.square.fill")
@@ -64,12 +67,12 @@ struct RootView: View {
                 },
                     dragOnEnded: { (value) in
                     self.dragOnEnded(value: value)
-                }, geometry: proxy, settings: MiniSettings(minimizedHeight: 75))
+                }, minimizedBottomMargin: self.miniViewBottomMargin, settings: MiniSettings(minimizedHeight: 75))
                 .environmentObject(self.miniHandler)
            
         }
     
-        //
+        
     }
     
     

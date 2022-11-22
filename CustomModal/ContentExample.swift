@@ -29,7 +29,7 @@ struct ContentExample: View {
                               //  .frame(width: self.miniHandler.isMinimized == false ? 40 : 0, height: self.miniHandler.isMinimized == false ? 5 : 0)
                                 .frame(width: 40, height: 5)
                                // .opacity(self.miniHandler.isMinimized == false ? 1 : 0)
-                                .padding(.top, safeArea?.top ?? 0)
+                                .padding(.top, safeArea?.top ?? 5)
 
                             HStack {
                                 
@@ -50,6 +50,7 @@ struct ContentExample: View {
                                     .frame(width: self.miniHandler.isMinimized == false ? nil : 0, height: self.miniHandler.isMinimized == false ? nil : 0)
                             }.frame(width: self.miniHandler.isMinimized == false ? nil : 0, height: self.miniHandler.isMinimized == false ? nil : 0)
                         }.frame(width: self.miniHandler.isMinimized == false ? nil : 0, height: self.miniHandler.isMinimized == false ? nil : 0).opacity(self.miniHandler.isMinimized ? 0 : 1)
+                        .padding(.top, self.miniHandler.isMinimized ? 0 : 10)
 
         
                         Spacer()
