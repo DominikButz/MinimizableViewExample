@@ -10,10 +10,10 @@ import MinimizableView
 
 struct ContentExample: View {
     
-    var safeArea = UIApplication.shared.windows.first?.safeAreaInsets
+    //var safeArea = UIApplication.shared.windows.first?.safeAreaInsets
     @EnvironmentObject var miniHandler: MinimizableViewHandler
     // Volume Slider...
-    @State var volume : CGFloat = 0
+    @State private var volume : Double = 0
 
     var animationNamespaceId: Namespace.ID
 
@@ -26,10 +26,8 @@ struct ContentExample: View {
                             
                             Capsule()
                                 .fill(Color.gray)
-                              //  .frame(width: self.miniHandler.isMinimized == false ? 40 : 0, height: self.miniHandler.isMinimized == false ? 5 : 0)
                                 .frame(width: 40, height: 5)
-                               // .opacity(self.miniHandler.isMinimized == false ? 1 : 0)
-                                .padding(.top, safeArea?.top ?? 5)
+                                .padding(.top, proxy.safeAreaInsets.top + 8)
 
                             HStack {
                                 
@@ -74,7 +72,7 @@ struct ContentExample: View {
                                     .font(.title2)
                                     .fontWeight(.bold)
                                     .fixedSize(horizontal: true, vertical: false)
-                                    .matchedGeometryEffect(id: "Singer", in: animationNamespaceId)
+                                   .matchedGeometryEffect(id: "Singer", in: animationNamespaceId)
                                 
                                 Text("emBARKation")
                                     .fontWeight(.bold)
@@ -91,8 +89,9 @@ struct ContentExample: View {
                     }
                     .padding(.horizontal)
                     
-                
-                    self.expandedControls
+                    if self.miniHandler.isMinimized == false {
+                        self.expandedControls(safeInsets: proxy.safeAreaInsets)
+                    }
                     
                     Spacer()
 
@@ -122,7 +121,7 @@ struct ContentExample: View {
 
     }
     
-    var expandedControls: some View {
+    func expandedControls(safeInsets: EdgeInsets)-> some View {
         VStack(spacing: 15){
 
             Spacer(minLength: 0)
@@ -175,8 +174,10 @@ struct ContentExample: View {
             .padding()
             
             // Stop Button...
-            
-            Button(action: {}) {
+        
+            Button(action: {
+                print("stop button tapped")
+            }) {
                 
                 Image(systemName: "stop.fill")
                     .font(.largeTitle)
@@ -190,11 +191,12 @@ struct ContentExample: View {
                 
                 Image(systemName: "speaker.fill")
                 
-                Slider(value: $volume)
+                Slider(value: $volume, in: 0...100)
                 
                 Image(systemName: "speaker.wave.2.fill")
             }
             .padding()
+            .padding(.bottom, 40)
             
             HStack(spacing: 22){
 //
@@ -212,10 +214,10 @@ struct ContentExample: View {
                         .foregroundColor(.primary)
                 }
             }
-            .padding(.bottom, safeArea?.bottom == 0 ? 15 : safeArea?.bottom)
+            .padding(.bottom, safeInsets.bottom == 0 ? 15 : safeInsets.bottom)
         }
-        .frame(height: self.miniHandler.isMinimized ? 0 : nil)
-        .opacity(self.miniHandler.isMinimized ? 0 : 1)
+      //  .frame(height: self.miniHandler.isMinimized ? 0 : nil)
+       // .opacity(self.miniHandler.isMinimized ? 0 : 1)
     }
     
     var minimizedControls: some View {

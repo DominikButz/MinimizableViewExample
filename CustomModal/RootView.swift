@@ -8,7 +8,7 @@
 
 import SwiftUI
 import MinimizableView
-import NavigationStack
+//import NavigationStack
 
 struct RootView: View {
 
@@ -34,9 +34,11 @@ struct RootView: View {
                             Image(systemName: "chevron.up.square.fill")
                             Text("Main View")
                     }.tag(0)
+                    #if os(iOS)
                         .background(TabBarAccessor { tabBar in
                             self.miniViewBottomMargin = tabBar.bounds.height - 1
                         })
+                    #endif
                     
                     Text("More stuff").tabItem {
                         Image(systemName: "dot.square.fill")
@@ -49,27 +51,26 @@ struct RootView: View {
                         Text("List View")
                     }.tag(2)
                     
-                    
                 }.background(Color(.secondarySystemFill))
                 .statusBar(hidden: self.miniHandler.isPresented && self.miniHandler.isMinimized == false)
                 .minimizableView(content: {ContentExample(animationNamespaceId: self.namespace)},
                   compactView: {
-                    EmptyView()  // replace EmptyView() by CompactViewExample() to see the a different approach for the compact view
+                    return EmptyView()
+                     // put CompactViewExample() here to see the a different approach for the compact view
                 }, backgroundView: {
                     self.backgroundView()},
                     dragOffset: $dragOffset,
                     dragUpdating: { (value, state, _) in
                         state = value.translation
                         self.dragUpdated(value: value)
-   
                 }, dragOnChanged: { (value) in
-           
+                    // unused
                 },
                     dragOnEnded: { (value) in
                     self.dragOnEnded(value: value)
-                }, minimizedBottomMargin: self.miniViewBottomMargin, settings: MiniSettings(minimizedHeight: 75))
+                }, minimizedBottomMargin: self.miniViewBottomMargin, settings: MiniSettings(minimizedHeight: 75, minimumDragDistance: 1))
                 .environmentObject(self.miniHandler)
-           
+  
         }
     
         
@@ -95,7 +96,8 @@ struct RootView: View {
     
     func dragUpdated(value: DragGesture.Value) {
         
-        if self.miniHandler.isMinimized == false && value.translation.height > 0   { // expanded state
+        if self.miniHandler.isMinimized == false && value.location.y > 200 && value.translation.height > 0   { // expanded state
+           
             withAnimation(.spring(response: 0)) {
                 self.miniHandler.draggedOffsetY = value.translation.height  // divide by a factor > 1 for more "inertia"
             }
